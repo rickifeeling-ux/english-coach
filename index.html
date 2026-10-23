@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>English Coach - Test vocal</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; padding: 20px; background: #f4f7f5; color: #1c2b24; }
+  main { max-width: 480px; margin: 0 auto; }
+  h1 { font-size: 1.4rem; }
+  .card { background: #fff; border-radius: 14px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  .phrase { font-size: 1.3rem; font-weight: 600; margin: 8px 0; }
+  button { width: 100%; padding: 14px; font-size: 1rem; border: 0; border-radius: 10px; background: #2f7d5b; color: #fff; margin-top: 8px; }
+  button:disabled { background: #9db8ab; }
+  #status { min-height: 1.4em; font-size: .95rem; }
+  .ok { color: #1b7a43; } .warn { color: #b25e00; } .err { color: #b3261e; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Test vocal anglais</h1>
+
+  <div class="card">
+    <div>Phrase à répéter :</div>
+    <div class="phrase" id="phrase">Hello, my name is Anna.</div>
+    <button id="btnListen">1. Écouter la phrase</button>
+    <button id="btnSpeak">2. Parler (répéter la phrase)</button>
+  </div>
+
+  <div class="card">
+    <div>Ce que le navigateur a compris :</div>
+    <div class="phrase" id="heard">—</div>
+    <div id="status"></div>
+  </div>
+</main>
+
+<script>
+  const phraseEl = document.getElementById('phrase');
+  const heardEl = document.getElementById('heard');
+  const statusEl = document.getElementById('status');
+  const btnListen = document.getElementById('btnListen');
+  const btnSpeak = document.getElementById('btnSpeak');
+
+  function setStatus(text, cls) {
+    statusEl.textContent = text;
+    statusEl.className = cls || '';
+  }
+
+  function normalize(s) {
+    return s.toLowerCase().replace(/[^a-z' ]/g, '').replace(/\s+/g, ' ').trim();
+  }
+
+  // --- 1. Synthèse vocale (écouter) ---
+  btnListen.addEventListener('click', () => {
+    if (!('speechSynthesis' in window)) {
+      setStatus("Ton navigateur ne sait pas lire à voix haute. Utilise Chrome.", 'err');
+      return;
+    }
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(phraseEl.textContent);
+    u.lang = 'en-US';
+    u.rate = 0.9;
+    u.onstart = () => { btnListen.disabled = true; setStatus('Lecture en cours...'); };
+    u.onend = () => { btnListen.disabled = false; setStatus('Lecture terminée. Appuie sur "Parler".'); };
+    u.onerror = () => { btnListen.disabled = false; setStatus("Impossible de lire la phrase. Vérifie le volume.", 'err'); };
+    window.speechSynthesis.speak(u);
+  });
+
+  // --- 2. Reconnaissance vocale (parler) ---
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+  if (!SR) {
+    btnSpeak.disabled = true;
+    setStatus("La reconnaissance vocale n'est pas disponible dans ce navigateur. Ouvre la page dans Chrome.", 'err');
+  }
+
+  btnSpeak.addEventListener('click', () => {
+    if (!SR) return;
+    const rec = new SR();
+    rec.lang = 'en-US';
+    rec.interimResults = false;
+    rec.maxAlternatives = 1;
+
+    rec.onstart = () => {
+      btnSpeak.disabled = true;
+      heardEl.textContent = '...';
+      setStatus("Je t'écoute... Parle maintenant.");
+    };
+
+    rec.onresult = (event) => {
+      const text = event.results[0][0].transcript;
+      heardEl.textContent = text;
+      if (normalize(text) === normalize(phraseEl.textContent)) {
+        setStatus("Le navigateur a compris exactement la phrase. Bravo !", 'ok');
+      } else {
+        setStatus("Phrase différente de l'attendu. Ce n'est pas forcément une erreur de ta part : la reconnaissance n'est pas parfaite.", 'warn');
+      }
+    };
+
+    rec.onerror = (event) => {
+      const messages = {
+        'not-allowed': "Le micro est refusé. Autorise le micro pour ce site dans les réglages de Chrome.",
+        'service-not-allowed': "Le micro est refusé. Autorise le micro pour ce site dans les réglages de Chrome.",
+        'no-speech': "Je n'ai rien entendu. Réessaie en parlant plus près du micro.",
+        'audio-capture': "Aucun micro détecté sur ce téléphone.",
+        'network': "Problème de réseau : la reconnaissance vocale a besoin d'internet."
+      };
+      heardEl.textContent = '—';
+      setStatus(messages[event.error] || ("Erreur : " + event.error), 'err');
+    };
+
+    rec.onend = () => { btnSpeak.disabled = false; };
+
+    try {
+      rec.start();
+    } catch (e) {
+      btnSpeak.disabled = false;
+      setStatus("Impossible de démarrer le micro : " + e.message, 'err');
+    }
+  });
+</script>
+</body>
+</html>
