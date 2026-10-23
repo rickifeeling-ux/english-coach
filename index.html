@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#2f7d5b">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <title>English Coach</title>
 <style>
 :root{--g:#2f7d5b;--gd:#215a42;--bg:#f4f7f5;--tx:#1c2b24;--mu:#5b6b63;--ok:#1b7a43;--er:#b3261e;--wa:#b25e00}
@@ -61,6 +64,7 @@ nav button.on{color:var(--g);font-weight:700}
   var S = { tab: 'home', lesson: null, step: 'intro', qi: 0, score: 0, picked: null, review: null };
   var app = document.getElementById('app');
   var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  var installEvent = null;
 
   // ---------- Stockage local ----------
   function load() {
@@ -98,6 +102,9 @@ nav button.on{color:var(--g);font-weight:700}
     for (var i = 0; i < LESSONS.length; i++) { if (!data.done[LESSONS[i].id]) return i; }
     return -1;
   }
+  function isInstalled() {
+    return (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true;
+  }
   function speak(text) {
     if (!('speechSynthesis' in window)) { return false; }
     window.speechSynthesis.cancel();
@@ -126,6 +133,10 @@ nav button.on{color:var(--g);font-weight:700}
     if (due) h += '<p>' + due + ' mot(s) à réviser.</p><button class="full alt" data-a="startReview">Réviser maintenant</button>';
     else h += '<p class="muted">Aucun mot à réviser pour le moment.</p>';
     h += '</div>';
+    if (installEvent && !isInstalled()) {
+      h += '<div class="card"><h3>Installer l\'application</h3><p class="muted">Ajoute English Coach à ton écran d\'accueil pour l\'ouvrir comme une vraie appli.</p>' +
+        '<button class="full" data-a="install">📲 Installer</button></div>';
+    }
     h += '<div class="card"><h3>Astuce</h3><p class="muted">Dans chaque leçon, 🔊 te fait écouter une phrase et 🎤 te permet de la répéter. Utilise Chrome.</p></div>';
     return h;
   }
@@ -357,6 +368,11 @@ nav button.on{color:var(--g);font-weight:700}
       save(); R.i++; R.shown = false; render();
     }
     else if (a === 'endReview') { S.review = null; render(); }
+    else if (a === 'install') {
+      if (!installEvent) return;
+      installEvent.prompt();
+      installEvent.userChoice.then(function () { installEvent = null; render(); });
+    }
     else if (a === 'reset') {
       if (confirm('Effacer toute ta progression et ton carnet ?')) {
         data = { done: {}, vocab: {}, errors: {} }; save(); render();
@@ -368,6 +384,22 @@ nav button.on{color:var(--g);font-weight:700}
     var b = e.target.closest('[data-tab]');
     if (b) goTab(b.getAttribute('data-tab'));
   });
+
+  // ---------- Installation (PWA) ----------
+  window.addEventListener('beforeinstallprompt', function (e) {
+    e.preventDefault();
+    installEvent = e;
+    if (S.tab === 'home') render();
+  });
+  window.addEventListener('appinstalled', function () {
+    installEvent = null;
+    if (S.tab === 'home') render();
+  });
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').catch(function () {});
+    });
+  }
 
   load();
   render();
