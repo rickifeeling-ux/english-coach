@@ -3,121 +3,375 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>English Coach - Test vocal</title>
+<meta name="theme-color" content="#2f7d5b">
+<title>English Coach</title>
 <style>
-  body { font-family: system-ui, sans-serif; margin: 0; padding: 20px; background: #f4f7f5; color: #1c2b24; }
-  main { max-width: 480px; margin: 0 auto; }
-  h1 { font-size: 1.4rem; }
-  .card { background: #fff; border-radius: 14px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
-  .phrase { font-size: 1.3rem; font-weight: 600; margin: 8px 0; }
-  button { width: 100%; padding: 14px; font-size: 1rem; border: 0; border-radius: 10px; background: #2f7d5b; color: #fff; margin-top: 8px; }
-  button:disabled { background: #9db8ab; }
-  #status { min-height: 1.4em; font-size: .95rem; }
-  .ok { color: #1b7a43; } .warn { color: #b25e00; } .err { color: #b3261e; }
+:root{--g:#2f7d5b;--gd:#215a42;--bg:#f4f7f5;--tx:#1c2b24;--mu:#5b6b63;--ok:#1b7a43;--er:#b3261e;--wa:#b25e00}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,sans-serif;background:var(--bg);color:var(--tx);padding-bottom:76px}
+header{background:var(--g);color:#fff;padding:14px 18px;font-weight:700;font-size:1.1rem}
+#app{max-width:520px;margin:0 auto;padding:16px}
+h2{font-size:1.25rem;margin:4px 0 12px}
+h3{font-size:1.05rem;margin:0 0 8px}
+p{margin:0 0 10px;line-height:1.45}
+.card{background:#fff;border-radius:14px;padding:16px;margin-bottom:14px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.muted{color:var(--mu);font-size:.92rem}
+button{font:inherit;border:0;border-radius:10px;padding:12px 14px;background:var(--g);color:#fff;cursor:pointer}
+button.full{width:100%;margin-top:8px}
+button.alt{background:#e3ede8;color:var(--gd)}
+button.danger{background:#fbe9e7;color:var(--er)}
+button:disabled{opacity:.5}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:6px}
+.ex{border-top:1px solid #e7eeea;padding:10px 0}
+.ex:first-of-type{border-top:0}
+.en{font-weight:600;font-size:1.05rem}
+.opt{display:block;width:100%;text-align:left;background:#fff;color:var(--tx);border:2px solid #d5e2db;margin-top:8px}
+.opt:disabled{opacity:1}
+.opt.right{border-color:var(--ok);background:#e6f4ec}
+.opt.wrong{border-color:var(--er);background:#fbe9e7}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:#fff;border-top:1px solid #d5e2db}
+nav button{flex:1;background:none;color:var(--mu);border-radius:0;padding:12px 4px;font-size:.8rem}
+nav button.on{color:var(--g);font-weight:700}
+.msg{margin-top:6px;font-size:.95rem}
+.ok{color:var(--ok)}.err{color:var(--er)}.warn{color:var(--wa)}
+.tag{display:inline-block;background:#e3ede8;color:var(--gd);border-radius:6px;padding:2px 8px;font-size:.8rem;margin-right:6px}
+.bar{height:8px;background:#e3ede8;border-radius:4px;overflow:hidden}
+.bar>div{height:100%;background:var(--g)}
+.big{font-size:1.6rem;font-weight:700}
 </style>
 </head>
 <body>
-<main>
-  <h1>Test vocal anglais</h1>
+<header>English Coach <span style="font-weight:400;font-size:.8rem">· prototype</span></header>
+<div id="app"></div>
+<nav id="nav">
+  <button data-tab="home">🏠<br>Accueil</button>
+  <button data-tab="lessons">📚<br>Leçons</button>
+  <button data-tab="vocab">🗂️<br>Carnet</button>
+  <button data-tab="progress">📈<br>Progrès</button>
+</nav>
 
-  <div class="card">
-    <div>Phrase à répéter :</div>
-    <div class="phrase" id="phrase">Hello, my name is Anna.</div>
-    <button id="btnListen">1. Écouter la phrase</button>
-    <button id="btnSpeak">2. Parler (répéter la phrase)</button>
-  </div>
-
-  <div class="card">
-    <div>Ce que le navigateur a compris :</div>
-    <div class="phrase" id="heard">—</div>
-    <div id="status"></div>
-  </div>
-</main>
-
+<script src="lessons.js"></script>
 <script>
-  const phraseEl = document.getElementById('phrase');
-  const heardEl = document.getElementById('heard');
-  const statusEl = document.getElementById('status');
-  const btnListen = document.getElementById('btnListen');
-  const btnSpeak = document.getElementById('btnSpeak');
+(function () {
+  var LESSONS = window.LESSONS || [];
+  var KEY = 'ec_data_v1';
+  var INTERVALS = [1, 3, 7, 14, 30];
+  var PASS = 0.75;
+  var data = { done: {}, vocab: {}, errors: {} };
+  var S = { tab: 'home', lesson: null, step: 'intro', qi: 0, score: 0, picked: null, review: null };
+  var app = document.getElementById('app');
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 
-  function setStatus(text, cls) {
-    statusEl.textContent = text;
-    statusEl.className = cls || '';
-  }
-
-  function normalize(s) {
-    return s.toLowerCase().replace(/[^a-z' ]/g, '').replace(/\s+/g, ' ').trim();
-  }
-
-  // --- 1. Synthèse vocale (écouter) ---
-  btnListen.addEventListener('click', () => {
-    if (!('speechSynthesis' in window)) {
-      setStatus("Ton navigateur ne sait pas lire à voix haute. Utilise Chrome.", 'err');
-      return;
-    }
-    window.speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(phraseEl.textContent);
-    u.lang = 'en-US';
-    u.rate = 0.9;
-    u.onstart = () => { btnListen.disabled = true; setStatus('Lecture en cours...'); };
-    u.onend = () => { btnListen.disabled = false; setStatus('Lecture terminée. Appuie sur "Parler".'); };
-    u.onerror = () => { btnListen.disabled = false; setStatus("Impossible de lire la phrase. Vérifie le volume.", 'err'); };
-    window.speechSynthesis.speak(u);
-  });
-
-  // --- 2. Reconnaissance vocale (parler) ---
-  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-
-  if (!SR) {
-    btnSpeak.disabled = true;
-    setStatus("La reconnaissance vocale n'est pas disponible dans ce navigateur. Ouvre la page dans Chrome.", 'err');
-  }
-
-  btnSpeak.addEventListener('click', () => {
-    if (!SR) return;
-    const rec = new SR();
-    rec.lang = 'en-US';
-    rec.interimResults = false;
-    rec.maxAlternatives = 1;
-
-    rec.onstart = () => {
-      btnSpeak.disabled = true;
-      heardEl.textContent = '...';
-      setStatus("Je t'écoute... Parle maintenant.");
-    };
-
-    rec.onresult = (event) => {
-      const text = event.results[0][0].transcript;
-      heardEl.textContent = text;
-      if (normalize(text) === normalize(phraseEl.textContent)) {
-        setStatus("Le navigateur a compris exactement la phrase. Bravo !", 'ok');
-      } else {
-        setStatus("Phrase différente de l'attendu. Ce n'est pas forcément une erreur de ta part : la reconnaissance n'est pas parfaite.", 'warn');
+  // ---------- Stockage local ----------
+  function load() {
+    try {
+      var r = localStorage.getItem(KEY);
+      if (r) {
+        var d = JSON.parse(r);
+        data.done = d.done || {};
+        data.vocab = d.vocab || {};
+        data.errors = d.errors || {};
       }
-    };
+    } catch (e) {}
+  }
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) {}
+  }
 
-    rec.onerror = (event) => {
-      const messages = {
-        'not-allowed': "Le micro est refusé. Autorise le micro pour ce site dans les réglages de Chrome.",
-        'service-not-allowed': "Le micro est refusé. Autorise le micro pour ce site dans les réglages de Chrome.",
-        'no-speech': "Je n'ai rien entendu. Réessaie en parlant plus près du micro.",
-        'audio-capture': "Aucun micro détecté sur ce téléphone.",
+  // ---------- Outils ----------
+  function p2(n) { return n < 10 ? '0' + n : '' + n; }
+  function addDays(n) {
+    var d = new Date(); d.setDate(d.getDate() + n);
+    return d.getFullYear() + '-' + p2(d.getMonth() + 1) + '-' + p2(d.getDate());
+  }
+  function todayStr() { return addDays(0); }
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  function norm(s) { return s.toLowerCase().replace(/[^a-z' ]/g, '').replace(/\s+/g, ' ').trim(); }
+  function cur() { return LESSONS[S.lesson]; }
+  function dueWords() {
+    var t = todayStr();
+    return Object.keys(data.vocab).filter(function (w) { return data.vocab[w].next <= t; });
+  }
+  function nextLessonIndex() {
+    for (var i = 0; i < LESSONS.length; i++) { if (!data.done[LESSONS[i].id]) return i; }
+    return -1;
+  }
+  function speak(text) {
+    if (!('speechSynthesis' in window)) { return false; }
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-US'; u.rate = 0.9;
+    window.speechSynthesis.speak(u);
+    return true;
+  }
+  function addWord(v) {
+    if (data.vocab[v.en]) return false;
+    data.vocab[v.en] = {
+      fr: v.fr, example: v.example, exampleFr: v.exampleFr, context: v.context,
+      learned: todayStr(), box: 0, next: todayStr()
+    };
+    return true;
+  }
+
+  // ---------- Vues ----------
+  function vHome() {
+    var n = nextLessonIndex(), due = dueWords().length, h = '';
+    h += '<div class="card"><h2>Bienvenue 👋</h2><p class="muted">Une leçon, un quiz, puis tu révises tes mots. Pas à pas.</p>';
+    if (n >= 0) h += '<button class="full" data-a="openLesson" data-i="' + n + '">Continuer : ' + esc(LESSONS[n].title) + '</button>';
+    else h += '<p class="ok">Toutes les leçons actuelles sont validées. D\'autres arrivent bientôt !</p>';
+    h += '</div>';
+    h += '<div class="card"><h3>Révision du jour</h3>';
+    if (due) h += '<p>' + due + ' mot(s) à réviser.</p><button class="full alt" data-a="startReview">Réviser maintenant</button>';
+    else h += '<p class="muted">Aucun mot à réviser pour le moment.</p>';
+    h += '</div>';
+    h += '<div class="card"><h3>Astuce</h3><p class="muted">Dans chaque leçon, 🔊 te fait écouter une phrase et 🎤 te permet de la répéter. Utilise Chrome.</p></div>';
+    return h;
+  }
+
+  function vLessons() {
+    var h = '<h2>Leçons</h2>';
+    LESSONS.forEach(function (L, i) {
+      var d = data.done[L.id];
+      h += '<div class="card"><span class="tag">' + esc(L.level) + '</span>' +
+        (d ? '<span class="tag ok">Validée ' + d.score + '/' + d.total + '</span>' : '') +
+        '<h3 style="margin-top:8px">' + esc(L.title) + '</h3><p class="muted">' + esc(L.objective) + '</p>' +
+        '<button class="full" data-a="openLesson" data-i="' + i + '">' + (d ? 'Revoir' : 'Commencer') + '</button></div>';
+    });
+    return h;
+  }
+
+  function vIntro() {
+    var L = cur(), h = '';
+    h += '<button class="alt" data-a="backLessons">← Leçons</button>';
+    h += '<div class="card" style="margin-top:12px"><span class="tag">' + esc(L.level) + '</span><h2 style="margin-top:8px">' + esc(L.title) + '</h2>';
+    h += '<p><b>Objectif :</b> ' + esc(L.objective) + '</p>';
+    L.explanation.forEach(function (t) { h += '<p>' + esc(t) + '</p>'; });
+    h += '</div>';
+    h += '<div class="card"><h3>Exemples</h3>';
+    L.examples.forEach(function (x, i) {
+      h += '<div class="ex"><div class="en">' + esc(x.en) + '</div><div class="muted">' + esc(x.fr) + '</div>' +
+        '<div class="row"><button class="alt" data-a="listenEx" data-i="' + i + '">🔊 Écouter</button>' +
+        '<button class="alt" data-a="speakEx" data-i="' + i + '">🎤 Répéter</button></div>' +
+        '<div class="msg" id="m' + i + '"></div></div>';
+    });
+    h += '<p class="muted">Le micro compare le texte compris par Chrome avec la phrase. Ce n\'est pas une évaluation de ta prononciation.</p></div>';
+    h += '<div class="card"><h3>Prononciation</h3><p>' + esc(L.pronunciation) + '</p></div>';
+    h += '<div class="card"><h3>Vocabulaire</h3>';
+    L.vocab.forEach(function (v) {
+      h += '<div class="ex"><span class="en">' + esc(v.en) + '</span> — ' + esc(v.fr) +
+        '<div class="muted">' + esc(v.example) + ' (' + esc(v.exampleFr) + ')</div></div>';
+    });
+    h += '<button class="full alt" data-a="addAll">➕ Ajouter ces mots au carnet</button><div class="msg" id="addmsg"></div></div>';
+    h += '<button class="full" data-a="startQuiz">Passer au quiz</button>';
+    return h;
+  }
+
+  function vQuiz() {
+    var L = cur(), q = L.exercises[S.qi], h = '';
+    h += '<div class="card"><div class="muted">Question ' + (S.qi + 1) + ' / ' + L.exercises.length + '</div>';
+    h += '<div class="bar"><div style="width:' + (S.qi / L.exercises.length * 100) + '%"></div></div>';
+    h += '<h3 style="margin-top:12px">' + esc(q.q) + '</h3>';
+    q.options.forEach(function (o, i) {
+      var c = 'opt';
+      if (S.picked !== null) { if (i === q.answer) c += ' right'; else if (i === S.picked) c += ' wrong'; }
+      h += '<button class="' + c + '" data-a="pick" data-i="' + i + '"' + (S.picked !== null ? ' disabled' : '') + '>' + esc(o) + '</button>';
+    });
+    if (S.picked !== null) {
+      var good = S.picked === q.answer;
+      h += '<p class="msg ' + (good ? 'ok' : 'err') + '"><b>' + (good ? 'Correct !' : 'Pas tout à fait.') + '</b> ' + esc(q.explain) + '</p>';
+      h += '<button class="full" data-a="next">' + (S.qi + 1 < L.exercises.length ? 'Question suivante' : 'Voir le résultat') + '</button>';
+    }
+    h += '</div>';
+    return h;
+  }
+
+  function vResult() {
+    var L = cur(), total = L.exercises.length, ok = S.score / total >= PASS, h = '';
+    h += '<div class="card"><h2>Résultat</h2><div class="big">' + S.score + ' / ' + total + '</div>';
+    if (ok) h += '<p class="ok">Leçon validée ✅ (condition : au moins 75 %).</p>';
+    else h += '<p class="warn">Il faut au moins 75 % pour valider. Relis la leçon et réessaie.</p>';
+    h += '<button class="full" data-a="openLesson" data-i="' + S.lesson + '">' + (ok ? 'Revoir la leçon' : 'Relire la leçon') + '</button>';
+    if (!ok) h += '<button class="full alt" data-a="startQuiz">Refaire le quiz</button>';
+    h += '<button class="full alt" data-a="backLessons">Retour aux leçons</button></div>';
+    return h;
+  }
+
+  function vVocab() {
+    if (S.review) return vReview();
+    var words = Object.keys(data.vocab).sort(), due = dueWords().length, h = '<h2>Carnet de vocabulaire</h2>';
+    h += '<div class="card"><p><b>' + words.length + '</b> mot(s) · <b>' + due + '</b> à réviser</p>';
+    if (due) h += '<button class="full" data-a="startReview">Réviser (' + due + ')</button>';
+    h += '</div>';
+    if (!words.length) h += '<div class="card"><p class="muted">Ton carnet est vide. Ouvre une leçon et ajoute ses mots.</p></div>';
+    words.forEach(function (w) {
+      var v = data.vocab[w];
+      h += '<div class="card"><div class="row" style="justify-content:space-between;margin-top:0"><span class="en">' + esc(w) + '</span>' +
+        '<button class="alt" data-a="speakWord" data-w="' + encodeURIComponent(w) + '">🔊</button></div>' +
+        '<div>' + esc(v.fr) + '</div><div class="muted">' + esc(v.example) + ' (' + esc(v.exampleFr) + ')</div>' +
+        '<div class="muted">Contexte : ' + esc(v.context) + ' · appris le ' + esc(v.learned) + ' · prochaine révision : ' + esc(v.next) + '</div></div>';
+    });
+    return h;
+  }
+
+  function vReview() {
+    var R = S.review, h = '';
+    if (R.i >= R.queue.length) {
+      h += '<div class="card"><h2>Révision terminée 🎉</h2><p>Tu as revu ' + R.queue.length + ' mot(s).</p><button class="full" data-a="endReview">Retour au carnet</button></div>';
+      return h;
+    }
+    var w = R.queue[R.i], v = data.vocab[w];
+    h += '<div class="card"><div class="muted">Mot ' + (R.i + 1) + ' / ' + R.queue.length + '</div>';
+    h += '<div class="big">' + esc(w) + '</div>';
+    h += '<div class="row"><button class="alt" data-a="speakWord" data-w="' + encodeURIComponent(w) + '">🔊 Écouter</button></div>';
+    if (!R.shown) {
+      h += '<button class="full" data-a="reveal">Voir la traduction</button>';
+    } else {
+      h += '<p style="margin-top:12px"><b>' + esc(v.fr) + '</b></p><p class="muted">' + esc(v.example) + ' (' + esc(v.exampleFr) + ')</p>';
+      h += '<div class="row"><button class="danger" data-a="rate" data-v="0">Non maîtrisé</button>' +
+        '<button class="alt" data-a="rate" data-v="1">Difficile</button>' +
+        '<button data-a="rate" data-v="2">Facile</button></div>';
+    }
+    h += '<button class="full alt" data-a="endReview">Arrêter</button></div>';
+    return h;
+  }
+
+  function vProgress() {
+    var total = LESSONS.length, done = Object.keys(data.done).length, words = Object.keys(data.vocab).length, h = '<h2>Progression</h2>';
+    h += '<div class="card"><h3>Leçons validées</h3><div class="big">' + done + ' / ' + total + '</div><div class="bar"><div style="width:' + (total ? done / total * 100 : 0) + '%"></div></div></div>';
+    h += '<div class="card"><h3>Niveau estimé</h3><p>' + (done ? 'A1 (en cours)' : 'Pas encore estimé') + '</p>' +
+      '<p class="muted">Estimation indicative basée sur les leçons validées. Ce n\'est pas une certification officielle.</p></div>';
+    h += '<div class="card"><h3>Vocabulaire</h3><p><b>' + words + '</b> mot(s) dans le carnet · <b>' + dueWords().length + '</b> à réviser</p></div>';
+    var errs = Object.keys(data.errors).sort(function (a, b) { return data.errors[b] - data.errors[a]; }).slice(0, 3);
+    h += '<div class="card"><h3>Questions les plus ratées</h3>';
+    if (!errs.length) h += '<p class="muted">Aucune erreur enregistrée pour l\'instant.</p>';
+    errs.forEach(function (q) { h += '<p>• ' + esc(q) + ' <span class="muted">(' + data.errors[q] + 'x)</span></p>'; });
+    h += '</div>';
+    h += '<div class="card"><h3>Données</h3><p class="muted">Ta progression est enregistrée uniquement sur ce téléphone, dans ce navigateur.</p><button class="danger full" data-a="reset">Effacer mes données</button></div>';
+    return h;
+  }
+
+  // ---------- Affichage ----------
+  function render() {
+    var h;
+    if (S.tab === 'home') h = vHome();
+    else if (S.tab === 'lessons') {
+      if (S.lesson === null) h = vLessons();
+      else if (S.step === 'intro') h = vIntro();
+      else if (S.step === 'quiz') h = vQuiz();
+      else h = vResult();
+    }
+    else if (S.tab === 'vocab') h = vVocab();
+    else h = vProgress();
+    app.innerHTML = h;
+    var btns = document.querySelectorAll('#nav button');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].className = btns[i].getAttribute('data-tab') === S.tab ? 'on' : '';
+    }
+  }
+
+  function goTab(t) {
+    S.tab = t; S.review = null;
+    if (t === 'lessons') { S.lesson = null; S.step = 'intro'; }
+    render(); window.scrollTo(0, 0);
+  }
+
+  // ---------- Reconnaissance vocale d'un exemple ----------
+  function speakEx(i) {
+    var target = cur().examples[i].en, m = document.getElementById('m' + i);
+    if (!SR) { m.className = 'msg err'; m.textContent = "Reconnaissance vocale indisponible ici. Ouvre la page dans Chrome."; return; }
+    var rec = new SR();
+    rec.lang = 'en-US'; rec.interimResults = false; rec.maxAlternatives = 1;
+    rec.onstart = function () { m.className = 'msg'; m.textContent = "Je t'écoute... Parle maintenant."; };
+    rec.onresult = function (ev) {
+      var t = ev.results[0][0].transcript;
+      if (norm(t) === norm(target)) { m.className = 'msg ok'; m.textContent = 'Compris : "' + t + '". Identique à la phrase, bravo !'; }
+      else { m.className = 'msg warn'; m.textContent = 'Compris : "' + t + '". Différent de la phrase attendue. La reconnaissance n\'est pas parfaite, réessaie.'; }
+    };
+    rec.onerror = function (ev) {
+      var M = {
+        'not-allowed': "Micro refusé. Autorise le micro pour ce site dans les réglages de Chrome.",
+        'service-not-allowed': "Micro refusé. Autorise le micro pour ce site dans les réglages de Chrome.",
+        'no-speech': "Je n'ai rien entendu. Réessaie plus près du micro.",
+        'audio-capture': "Aucun micro détecté.",
         'network': "Problème de réseau : la reconnaissance vocale a besoin d'internet."
       };
-      heardEl.textContent = '—';
-      setStatus(messages[event.error] || ("Erreur : " + event.error), 'err');
+      m.className = 'msg err'; m.textContent = M[ev.error] || ('Erreur : ' + ev.error);
     };
+    try { rec.start(); } catch (e) { m.className = 'msg err'; m.textContent = "Impossible de démarrer le micro : " + e.message; }
+  }
 
-    rec.onend = () => { btnSpeak.disabled = false; };
+  // ---------- Actions ----------
+  app.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-a]');
+    if (!b) return;
+    var a = b.getAttribute('data-a'), i = parseInt(b.getAttribute('data-i'), 10), L;
 
-    try {
-      rec.start();
-    } catch (e) {
-      btnSpeak.disabled = false;
-      setStatus("Impossible de démarrer le micro : " + e.message, 'err');
+    if (a === 'openLesson') { S.tab = 'lessons'; S.lesson = i; S.step = 'intro'; render(); window.scrollTo(0, 0); }
+    else if (a === 'backLessons') { S.lesson = null; S.step = 'intro'; S.tab = 'lessons'; render(); window.scrollTo(0, 0); }
+    else if (a === 'listenEx') {
+      var m = document.getElementById('m' + i);
+      if (!speak(cur().examples[i].en)) { m.className = 'msg err'; m.textContent = "Ton navigateur ne sait pas lire à voix haute. Utilise Chrome."; }
+    }
+    else if (a === 'speakEx') speakEx(i);
+    else if (a === 'addAll') {
+      var n = 0; cur().vocab.forEach(function (v) { if (addWord(v)) n++; }); save();
+      var am = document.getElementById('addmsg'); am.className = 'msg ok';
+      am.textContent = n ? (n + ' mot(s) ajouté(s) au carnet.') : 'Ces mots sont déjà dans ton carnet.';
+    }
+    else if (a === 'startQuiz') { S.step = 'quiz'; S.qi = 0; S.score = 0; S.picked = null; render(); window.scrollTo(0, 0); }
+    else if (a === 'pick') {
+      if (S.picked !== null) return;
+      L = cur(); var q = L.exercises[S.qi];
+      S.picked = i;
+      if (i === q.answer) S.score++;
+      else { data.errors[q.q] = (data.errors[q.q] || 0) + 1; save(); }
+      render();
+    }
+    else if (a === 'next') {
+      L = cur();
+      if (S.qi + 1 < L.exercises.length) { S.qi++; S.picked = null; }
+      else {
+        S.step = 'result';
+        if (S.score / L.exercises.length >= PASS) {
+          var old = data.done[L.id];
+          if (!old || S.score >= old.score) data.done[L.id] = { score: S.score, total: L.exercises.length, date: todayStr() };
+          save();
+        }
+      }
+      render(); window.scrollTo(0, 0);
+    }
+    else if (a === 'speakWord') speak(decodeURIComponent(b.getAttribute('data-w')));
+    else if (a === 'startReview') {
+      var queue = dueWords();
+      if (!queue.length) return;
+      S.tab = 'vocab'; S.review = { queue: queue, i: 0, shown: false }; render(); window.scrollTo(0, 0);
+    }
+    else if (a === 'reveal') { S.review.shown = true; render(); }
+    else if (a === 'rate') {
+      var R = S.review, w = R.queue[R.i], v = data.vocab[w], val = parseInt(b.getAttribute('data-v'), 10);
+      if (val === 2) { v.next = addDays(INTERVALS[v.box]); v.box = Math.min(v.box + 1, INTERVALS.length - 1); }
+      else if (val === 1) { v.next = addDays(1); }
+      else { v.box = 0; v.next = addDays(1); }
+      save(); R.i++; R.shown = false; render();
+    }
+    else if (a === 'endReview') { S.review = null; render(); }
+    else if (a === 'reset') {
+      if (confirm('Effacer toute ta progression et ton carnet ?')) {
+        data = { done: {}, vocab: {}, errors: {} }; save(); render();
+      }
     }
   });
+
+  document.getElementById('nav').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-tab]');
+    if (b) goTab(b.getAttribute('data-tab'));
+  });
+
+  load();
+  render();
+})();
 </script>
 </body>
 </html>
