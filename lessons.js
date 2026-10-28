@@ -294,5 +294,274 @@ window.LESSONS = [
       { q: "Quelle phrase est correcte ?", options: ["He can swims.", "He can swim.", "He cans swim.", "He can to swim."], answer: 1, explain: "Après « can », le verbe reste à sa forme de base : swim." },
       { q: "Comment dit-on « Tu peux m'aider ? »", options: ["Can you help me?", "You can help me?", "Are you can help me?", "Can you helps me?"], answer: 0, explain: "Pour une question avec « can », on met « Can » en début de phrase." }
     ]
+  },
+{
+    id: "a1-plurals",
+    level: "A1",
+    title: "Le pluriel des noms",
+    objective: "Mettre un nom au pluriel, y compris les pluriels irréguliers.",
+    explanation: [
+      "Pour la plupart des noms, on ajoute « s » : one book, two books (un livre, deux livres).",
+      "Si le nom finit par s, sh, ch, x ou z, on ajoute « es » : bus → buses, box → boxes, watch → watches.",
+      "Si le nom finit par une consonne + y, le « y » devient « ies » : baby → babies (bébé → bébés). Mais avec une voyelle + y, on ajoute seulement « s » : day → days.",
+      "Quelques pluriels sont irréguliers et ne suivent pas ces règles : man → men, woman → women, child → children, person → people, tooth → teeth."
+    ],
+    examples: [
+      { en: "I have two sisters.", fr: "J'ai deux sœurs." },
+      { en: "The children are at school.", fr: "Les enfants sont à l'école." },
+      { en: "She has many friends.", fr: "Elle a beaucoup d'amis." },
+      { en: "The buses are late today.", fr: "Les bus sont en retard aujourd'hui." },
+      { en: "There are two men and three women.", fr: "Il y a deux hommes et trois femmes." }
+    ],
+    pronunciation: "Le « s » du pluriel se prononce « s » après un son sans voix (books) et « z » après un son avec voix (dogs). Après s, sh, ch, x, on entend « iz » : buses (BUH-siz), boxes (BOK-siz).",
+    vocab: [
+      { en: "book", fr: "livre", example: "I read two books.", exampleFr: "Je lis deux livres.", context: "objets" },
+      { en: "friend", fr: "ami(e)", example: "My friends are nice.", exampleFr: "Mes amis sont gentils.", context: "relations" },
+      { en: "child", fr: "enfant (pluriel : children)", example: "Two children are playing.", exampleFr: "Deux enfants jouent.", context: "famille" },
+      { en: "city", fr: "ville (pluriel : cities)", example: "Libreville is a big city.", exampleFr: "Libreville est une grande ville.", context: "lieux" },
+      { en: "person", fr: "personne (pluriel : people)", example: "Many people live here.", exampleFr: "Beaucoup de gens vivent ici.", context: "personnes" }
+    ],
+    exercises: [
+      { q: "Quel est le pluriel de « book » ?", options: ["bookes", "books", "book", "bookies"], answer: 1, explain: "Pour la plupart des noms, on ajoute simplement « s »." },
+      { q: "Quel est le pluriel de « child » ?", options: ["childs", "childes", "children", "childrens"], answer: 2, explain: "« Child » est irrégulier : son pluriel est « children »." },
+      { q: "Quel est le pluriel de « city » ?", options: ["citys", "cities", "citeis", "cityes"], answer: 1, explain: "Consonne + y : le « y » devient « ies »." },
+      { q: "Quelle phrase est correcte ?", options: ["I have two friend.", "I have two friends.", "I have two friendes.", "I have two friends'."], answer: 1, explain: "Avec « two », le nom prend un « s » : friends." }
+    ]
+  },
+  {
+    id: "a1-there-is",
+    level: "A1",
+    title: "Il y a : there is et there are",
+    objective: "Dire qu'il y a quelque chose ou quelqu'un, et poser la question.",
+    explanation: [
+      "« There is » (il y a) s'utilise avec un seul élément ou avec un nom qu'on ne compte pas : There is a bank near my house. There is some water.",
+      "« There are » (il y a) s'utilise avec plusieurs éléments : There are five students in the class.",
+      "Pour dire qu'il n'y a pas : there isn't (there is not) et there aren't (there are not).",
+      "Pour poser la question, on inverse : Is there a pharmacy here? (Y a-t-il une pharmacie ici ?) Are there any shops? (Y a-t-il des magasins ?)"
+    ],
+    examples: [
+      { en: "There is a bank near here.", fr: "Il y a une banque près d'ici." },
+      { en: "There are two chairs in the room.", fr: "Il y a deux chaises dans la pièce." },
+      { en: "There isn't any water.", fr: "Il n'y a pas d'eau." },
+      { en: "There aren't any buses today.", fr: "Il n'y a pas de bus aujourd'hui." },
+      { en: "Is there a pharmacy here?", fr: "Y a-t-il une pharmacie ici ?" }
+    ],
+    pronunciation: "À l'oral, « there is » se dit souvent « there's ». Le « th » de « there » est doux : la langue touche légèrement les dents et la voix vibre (ce n'est pas un « z »).",
+    vocab: [
+      { en: "bank", fr: "banque", example: "The bank is open.", exampleFr: "La banque est ouverte.", context: "lieux" },
+      { en: "chair", fr: "chaise", example: "There is a chair near the door.", exampleFr: "Il y a une chaise près de la porte.", context: "objets" },
+      { en: "class", fr: "classe", example: "There are ten people in the class.", exampleFr: "Il y a dix personnes dans la classe.", context: "école" },
+      { en: "pharmacy", fr: "pharmacie", example: "Is there a pharmacy near here?", exampleFr: "Y a-t-il une pharmacie près d'ici ?", context: "lieux" },
+      { en: "water", fr: "eau", example: "Can I have some water?", exampleFr: "Puis-je avoir de l'eau ?", context: "boissons" }
+    ],
+    exercises: [
+      { q: "Complète : « There ___ a bank near here. »", options: ["is", "are", "am", "be"], answer: 0, explain: "Avec un seul élément, on utilise « is »." },
+      { q: "Complète : « There ___ two chairs. »", options: ["is", "are", "am", "be"], answer: 1, explain: "Avec plusieurs éléments, on utilise « are »." },
+      { q: "Complète : « Is ___ a shop here? »", options: ["there", "it", "they", "this"], answer: 0, explain: "La question commence par « Is there ». " },
+      { q: "Quelle phrase veut dire « Il n'y a pas d'eau » ?", options: ["There not water.", "There isn't any water.", "There is no waters.", "There isn't waters."], answer: 1, explain: "On dit « There isn't any water » : « any » est utilisé avec les noms non comptables dans les phrases négatives." }
+    ]
+  },
+  {
+    id: "a1-possessives",
+    level: "A1",
+    title: "Mon, ton, son... : my, your, his, her",
+    objective: "Dire à qui appartient quelque chose avec les adjectifs possessifs.",
+    explanation: [
+      "Les adjectifs possessifs indiquent à qui appartient quelque chose. Ils se placent AVANT le nom : my car (ma voiture).",
+      "I → my (mon, ma, mes) · you → your (ton, ta, tes, votre) · he → his (son, sa, ses) · she → her (son, sa, ses) · it → its · we → our (notre, nos) · they → their (leur, leurs).",
+      "Ils ne changent jamais avec le nom : my book, my books (mes livres). Il n'y a pas de « s » à ajouter.",
+      "Attention : « his » ou « her » dépend de la personne qui possède, pas de l'objet. Anna's bag → her bag (son sac à elle)."
+    ],
+    examples: [
+      { en: "This is my house.", fr: "Voici ma maison." },
+      { en: "Where is your phone?", fr: "Où est ton téléphone ?" },
+      { en: "His brother is a doctor.", fr: "Son frère est médecin." },
+      { en: "Her name is Grace.", fr: "Elle s'appelle Grace." },
+      { en: "We love our family.", fr: "Nous aimons notre famille." },
+      { en: "They are at their house.", fr: "Ils sont chez eux." }
+    ],
+    pronunciation: "« Your » se prononce « yor ». « Their » se prononce comme « there » (le « th » est doux). « Her » commence par un « h » soufflé et se dit « heur ».",
+    vocab: [
+      { en: "doctor", fr: "médecin", example: "My mother is a doctor.", exampleFr: "Ma mère est médecin.", context: "métier" },
+      { en: "country", fr: "pays", example: "Gabon is our country.", exampleFr: "Le Gabon est notre pays.", context: "lieux" },
+      { en: "bag", fr: "sac", example: "She has a red bag.", exampleFr: "Elle a un sac rouge.", context: "objets" },
+      { en: "garden", fr: "jardin", example: "Their garden is big.", exampleFr: "Leur jardin est grand.", context: "logement" },
+      { en: "family", fr: "famille", example: "Our family is big.", exampleFr: "Notre famille est grande.", context: "famille" }
+    ],
+    exercises: [
+      { q: "Complète : « I love ___ family. » (ma famille)", options: ["my", "your", "his", "our"], answer: 0, explain: "Pour « I », on utilise « my »." },
+      { q: "Complète : « She is at school with ___ friend. » (son amie à elle)", options: ["his", "her", "our", "their"], answer: 1, explain: "C'est une femme qui possède : on utilise « her »." },
+      { q: "Complète : « They are at ___ house. » (leur maison)", options: ["our", "their", "your", "my"], answer: 1, explain: "Pour « they », on utilise « their »." },
+      { q: "Quelle phrase veut dire « Ta voiture est rouge » ?", options: ["Your car is red.", "You car is red.", "Yours car is red.", "Your is car red."], answer: 0, explain: "« Your car » : le possessif se place avant le nom." }
+    ]
+  },
+  {
+    id: "a1-prepositions-place",
+    level: "A1",
+    title: "Où ? : in, on, at, next to",
+    objective: "Dire où se trouve quelque chose avec in, on, at et les expressions de lieu.",
+    explanation: [
+      "« In » veut dire « dans » : in the room (dans la pièce), in the box (dans la boîte), in Libreville (à Libreville).",
+      "« On » veut dire « sur » quand il y a contact : on the table (sur la table). On utilise aussi « on » pour les jours : on Monday.",
+      "« At » veut dire « à » pour un endroit précis ou une activité : at home (à la maison), at school (à l'école), at work (au travail).",
+      "D'autres mots utiles : next to (à côté de), under (sous), behind (derrière), between (entre)."
+    ],
+    examples: [
+      { en: "The keys are on the table.", fr: "Les clés sont sur la table." },
+      { en: "My bag is in the car.", fr: "Mon sac est dans la voiture." },
+      { en: "I am at work now.", fr: "Je suis au travail maintenant." },
+      { en: "The bank is next to the pharmacy.", fr: "La banque est à côté de la pharmacie." },
+      { en: "The cat is under the bed.", fr: "Le chat est sous le lit." },
+      { en: "The shop is between the school and the church.", fr: "Le magasin est entre l'école et l'église." }
+    ],
+    pronunciation: "Dans « next to », le « t » final est à peine audible : on entend « nex-tou ». « Between » se prononce « bi-TWEEN », avec un son proche de « tw ».",
+    vocab: [
+      { en: "keys", fr: "clés", example: "Where are my keys?", exampleFr: "Où sont mes clés ?", context: "objets" },
+      { en: "table", fr: "table", example: "The phone is on the table.", exampleFr: "Le téléphone est sur la table.", context: "maison" },
+      { en: "bed", fr: "lit", example: "I sleep in my bed.", exampleFr: "Je dors dans mon lit.", context: "maison" },
+      { en: "cat", fr: "chat", example: "The cat is sleeping.", exampleFr: "Le chat dort.", context: "animaux" },
+      { en: "church", fr: "église", example: "The church is next to the school.", exampleFr: "L'église est à côté de l'école.", context: "lieux" }
+    ],
+    exercises: [
+      { q: "Complète : « The book is ___ the table. » (sur la table)", options: ["in", "on", "at", "under"], answer: 1, explain: "Il y a contact avec la table : on utilise « on »." },
+      { q: "Complète : « I am ___ home. » (à la maison)", options: ["in", "on", "at", "under"], answer: 2, explain: "Pour « home », on dit « at home »." },
+      { q: "Complète : « The cat is ___ the bed. » (sous le lit)", options: ["under", "on", "at", "in"], answer: 0, explain: "« Under » veut dire « sous »." },
+      { q: "Quelle phrase veut dire « Le magasin est à côté de la pharmacie » ?", options: ["The shop is next to the pharmacy.", "The shop is the pharmacy next.", "The shop is at pharmacy next.", "The shop is under the pharmacy."], answer: 0, explain: "« Next to » veut dire « à côté de »." }
+    ]
+  },
+  {
+    id: "a1-prepositions-time",
+    level: "A1",
+    title: "Quand ? : at, on, in (le temps)",
+    objective: "Dire à quelle heure, quel jour et quelle période on fait quelque chose.",
+    explanation: [
+      "On utilise « at » pour une heure précise et pour certains moments : at 8 o'clock (à 8 h), at noon (à midi), at night (la nuit).",
+      "On utilise « on » pour les jours et les dates : on Monday (lundi), on Sunday (dimanche), on my birthday (le jour de mon anniversaire).",
+      "On utilise « in » pour les parties de la journée (sauf night), les mois, les saisons et les années : in the morning, in the evening, in December, in 2026.",
+      "Pour « aujourd'hui », « demain » et « hier », on ne met pas de préposition : today, tomorrow, yesterday."
+    ],
+    examples: [
+      { en: "I wake up at 6 o'clock.", fr: "Je me réveille à 6 heures." },
+      { en: "We go to church on Sunday.", fr: "Nous allons à l'église le dimanche." },
+      { en: "She works in the morning.", fr: "Elle travaille le matin." },
+      { en: "They travel in December.", fr: "Ils voyagent en décembre." },
+      { en: "We study at night.", fr: "Nous étudions la nuit." },
+      { en: "See you tomorrow.", fr: "À demain." }
+    ],
+    pronunciation: "« Sunday » se prononce « SUN-dey » : l'accent est sur la première syllabe. « Morning » se dit « MOR-ning », le « g » final est à peine audible.",
+    vocab: [
+      { en: "morning", fr: "matin", example: "Good morning!", exampleFr: "Bonjour ! (le matin)", context: "temps" },
+      { en: "evening", fr: "soir", example: "I read in the evening.", exampleFr: "Je lis le soir.", context: "temps" },
+      { en: "week", fr: "semaine", example: "I work five days a week.", exampleFr: "Je travaille cinq jours par semaine.", context: "temps" },
+      { en: "Friday", fr: "vendredi", example: "See you on Friday.", exampleFr: "À vendredi.", context: "jours" },
+      { en: "o'clock", fr: "heure pile", example: "It is 3 o'clock.", exampleFr: "Il est 3 heures.", context: "heure" }
+    ],
+    exercises: [
+      { q: "Complète : « I wake up ___ 6 o'clock. »", options: ["in", "on", "at", "by"], answer: 2, explain: "Pour une heure précise, on utilise « at »." },
+      { q: "Complète : « We go to church ___ Sunday. »", options: ["at", "on", "in", "to"], answer: 1, explain: "Pour un jour, on utilise « on »." },
+      { q: "Complète : « She works ___ the morning. »", options: ["at", "on", "in", "for"], answer: 2, explain: "Pour une partie de la journée, on utilise « in »." },
+      { q: "Complète : « They travel ___ December. »", options: ["on", "at", "in", "for"], answer: 2, explain: "Pour un mois, on utilise « in »." }
+    ]
+  },
+  {
+    id: "a1-adjectives",
+    level: "A1",
+    title: "Les adjectifs : big, red, very good",
+    objective: "Décrire un nom avec un adjectif, à la bonne place.",
+    explanation: [
+      "Un adjectif décrit un nom : a big house (une grande maison), a red car (une voiture rouge).",
+      "En anglais, l'adjectif se place AVANT le nom : a new phone (un nouveau téléphone). On ne dit jamais « a phone new ».",
+      "L'adjectif ne change jamais : a big house, big houses (de grandes maisons).",
+      "Avec « to be », l'adjectif vient après le verbe : The car is red. Pour renforcer, on ajoute « very » : very good (très bon), very tired (très fatigué)."
+    ],
+    examples: [
+      { en: "She has a beautiful dress.", fr: "Elle a une belle robe." },
+      { en: "The house is very big.", fr: "La maison est très grande." },
+      { en: "I am very tired.", fr: "Je suis très fatigué(e)." },
+      { en: "They have new cars.", fr: "Ils ont de nouvelles voitures." },
+      { en: "He is a good student.", fr: "C'est un bon étudiant." }
+    ],
+    pronunciation: "« Beautiful » se dit « BYOO-ti-ful ». « Very » se prononce « VE-ri » : le « y » final est un « i » court.",
+    vocab: [
+      { en: "big", fr: "grand, gros", example: "A big dog.", exampleFr: "Un gros chien.", context: "taille" },
+      { en: "small", fr: "petit", example: "A small room.", exampleFr: "Une petite pièce.", context: "taille" },
+      { en: "new", fr: "nouveau, neuf", example: "A new book.", exampleFr: "Un nouveau livre.", context: "qualité" },
+      { en: "old", fr: "vieux, ancien", example: "An old car.", exampleFr: "Une vieille voiture.", context: "âge" },
+      { en: "red", fr: "rouge", example: "A red bag.", exampleFr: "Un sac rouge.", context: "couleurs" }
+    ],
+    exercises: [
+      { q: "Comment dit-on « une grande maison » ?", options: ["a big house", "a bigs house", "a bigger house", "a bigly house"], answer: 0, explain: "L'adjectif « big » ne change pas : a big house." },
+      { q: "Quelle phrase est correcte ?", options: ["I have a car new.", "I have a new car.", "I have new a car.", "I have a new cars."], answer: 1, explain: "L'adjectif se place avant le nom : a new car." },
+      { q: "Comment dit-on « Elle est très belle » ?", options: ["She is very beautiful.", "She is beautiful very.", "She very is beautiful.", "She is more beautiful."], answer: 0, explain: "« Very » se place avant l'adjectif : very beautiful." },
+      { q: "Complète : « The car is ___. » (rouge)", options: ["red", "redly", "reds", "reddish"], answer: 0, explain: "Après « is », on met l'adjectif tel quel : red." }
+    ]
+  },
+  {
+    id: "a1-wh-questions",
+    level: "A1",
+    title: "Les questions : what, where, when, who, how",
+    objective: "Poser des questions avec les mots interrogatifs.",
+    explanation: [
+      "Les mots interrogatifs se mettent au début de la question : What (quoi), Where (où), When (quand), Who (qui), How (comment), Why (pourquoi), How much (combien, pour un prix), How many (combien, pour un nombre).",
+      "Avec un verbe normal, on ajoute do ou does après le mot interrogatif : Where do you live? (Où habites-tu ?) Where does she work? (Où travaille-t-elle ?)",
+      "Avec « to be », on n'ajoute pas do : What is your name? Where is the bank?",
+      "Quand « who » est le sujet de la question, on n'ajoute pas do ni does : Who speaks English? (Qui parle anglais ?)"
+    ],
+    examples: [
+      { en: "What is your name?", fr: "Comment t'appelles-tu ?" },
+      { en: "Where do you live?", fr: "Où habites-tu ?" },
+      { en: "When does the bank open?", fr: "Quand la banque ouvre-t-elle ?" },
+      { en: "Who is your teacher?", fr: "Qui est ton professeur ?" },
+      { en: "How are you?", fr: "Comment vas-tu ?" },
+      { en: "How much is this?", fr: "Combien ça coûte ?" }
+    ],
+    pronunciation: "« What » se prononce « wot » (le « a » devient un « o »). « Where » se dit « wèr ». « How » commence par un « h » soufflé.",
+    vocab: [
+      { en: "what", fr: "quoi, que", example: "What is this?", exampleFr: "Qu'est-ce que c'est ?", context: "questions" },
+      { en: "where", fr: "où", example: "Where is the school?", exampleFr: "Où est l'école ?", context: "questions" },
+      { en: "when", fr: "quand", example: "When is the test?", exampleFr: "Quand a lieu le test ?", context: "questions" },
+      { en: "who", fr: "qui", example: "Who is at the door?", exampleFr: "Qui est à la porte ?", context: "questions" },
+      { en: "how", fr: "comment", example: "How do you say this?", exampleFr: "Comment dit-on cela ?", context: "questions" }
+    ],
+    exercises: [
+      { q: "Complète : « ___ do you live? »", options: ["Where", "Who", "What", "Yes"], answer: 0, explain: "On demande un lieu avec « Where »." },
+      { q: "Complète : « ___ is your teacher? »", options: ["Where", "Who", "When", "Yes"], answer: 1, explain: "On demande une personne avec « Who »." },
+      { q: "Complète : « Where ___ she work? »", options: ["do", "does", "is", "are"], answer: 1, explain: "Avec she, on utilise « does » dans la question." },
+      { q: "Comment dit-on « Combien ça coûte ? »", options: ["How much is it?", "How many is it?", "What much is it?", "Where is it?"], answer: 0, explain: "Pour un prix, on dit « How much ». " }
+    ]
+  },
+  {
+    id: "a1-past-be",
+    level: "A1",
+    title: "Le passé de « to be » : was et were",
+    objective: "Parler de ce qui s'est passé hier ou la semaine dernière avec was et were.",
+    explanation: [
+      "Au passé, « am » et « is » deviennent « was », et « are » devient « were ».",
+      "I was, you were, he / she / it was, we were, they were.",
+      "Pour la négation : was not (wasn't) et were not (weren't). Pour la question, on inverse : Was she at home? Were they late?",
+      "On utilise ce temps pour parler de ce qui s'est passé : Yesterday I was at school."
+    ],
+    examples: [
+      { en: "I was tired yesterday.", fr: "J'étais fatigué(e) hier." },
+      { en: "She was at school this morning.", fr: "Elle était à l'école ce matin." },
+      { en: "We were at home last night.", fr: "Nous étions à la maison hier soir." },
+      { en: "They weren't late.", fr: "Ils n'étaient pas en retard." },
+      { en: "Was he your teacher?", fr: "Était-il ton professeur ?" },
+      { en: "Were you happy?", fr: "Étais-tu heureux (heureuse) ?" }
+    ],
+    pronunciation: "« Was » se prononce « wos » (le « a » est un son court). « Were » se prononce « wer », comme « where ». « Weren't » se dit « wernt ».",
+    vocab: [
+      { en: "yesterday", fr: "hier", example: "Yesterday was Monday.", exampleFr: "Hier, c'était lundi.", context: "temps" },
+      { en: "last night", fr: "hier soir, la nuit dernière", example: "I was at home last night.", exampleFr: "J'étais à la maison hier soir.", context: "temps" },
+      { en: "this morning", fr: "ce matin", example: "She was late this morning.", exampleFr: "Elle était en retard ce matin.", context: "temps" },
+      { en: "late", fr: "en retard", example: "Sorry, I am late.", exampleFr: "Désolé, je suis en retard.", context: "temps" },
+      { en: "last week", fr: "la semaine dernière", example: "We were busy last week.", exampleFr: "Nous étions occupés la semaine dernière.", context: "temps" }
+    ],
+    exercises: [
+      { q: "Complète : « Yesterday I ___ tired. »", options: ["am", "was", "were", "be"], answer: 1, explain: "Au passé, avec « I », on utilise « was »." },
+      { q: "Complète : « They ___ at school last week. »", options: ["was", "were", "is", "are"], answer: 1, explain: "Avec « they », on utilise « were »." },
+      { q: "Complète : « She ___ not at home. »", options: ["were", "weren't", "wasn't", "isn't"], answer: 2, explain: "Avec « she », la négation au passé est « wasn't »." },
+      { q: "Quelle question est correcte ?", options: ["Was you happy?", "Were you happy?", "Are you were happy?", "Did you were happy?"], answer: 1, explain: "Avec « you », on utilise « were » au passé." }
+    ]
   }
 ];
