@@ -229,5 +229,70 @@ window.LESSONS = [
       { q: "Quelle question est correcte ?", options: ["Does they live here?", "Do they live here?", "Do they lives here?", "They do live here?"], answer: 1, explain: "Avec they, on utilise « Do » et le verbe reste à sa forme de base." },
       { q: "Comment répond-on « Does he play football? » si c'est oui ?", options: ["Yes, he does.", "Yes, he is.", "Yes, he plays.", "Yes, he do."], answer: 0, explain: "On répond avec « Yes, he does. » en reprenant l'auxiliaire." }
     ]
+  },
+  {
+    id: "a1-articles",
+    level: "A1",
+    title: "Les articles : a, an, the",
+    objective: "Choisir entre a, an et the devant un nom.",
+    explanation: [
+      "« A » et « an » correspondent à « un / une ». On utilise « a » devant un son consonne, et « an » devant un son voyelle (a, e, i, o, u).",
+      "« An » s'utilise devant un son voyelle : an apple (une pomme), an hour (une heure, le « h » est muet).",
+      "« The » correspond à « le / la / les ». On l'utilise quand on parle d'une chose précise, déjà connue de l'autre personne : the car = la voiture dont on parle.",
+      "Pour parler d'une chose en général au pluriel, on ne met pas d'article : I like apples (j'aime les pommes)."
+    ],
+    examples: [
+      { en: "I have a car.", fr: "J'ai une voiture." },
+      { en: "She is an engineer.", fr: "Elle est ingénieure." },
+      { en: "The car is red.", fr: "La voiture est rouge." },
+      { en: "He eats an apple every day.", fr: "Il mange une pomme tous les jours." },
+      { en: "I like apples.", fr: "J'aime les pommes." }
+    ],
+    pronunciation: "« A » se prononce « ə » (un son très court, presque « e » muet). « An » se prononce « ən ». « The » se prononce « thə » devant une consonne, et « thi » devant une voyelle.",
+    vocab: [
+      { en: "apple", fr: "pomme", example: "I eat an apple.", exampleFr: "Je mange une pomme.", context: "nourriture" },
+      { en: "engineer", fr: "ingénieur(e)", example: "He is an engineer.", exampleFr: "Il est ingénieur.", context: "métier" },
+      { en: "hour", fr: "heure", example: "It takes an hour.", exampleFr: "Ça prend une heure.", context: "temps" },
+      { en: "red", fr: "rouge", example: "The car is red.", exampleFr: "La voiture est rouge.", context: "couleurs" },
+      { en: "book", fr: "livre", example: "I read a book.", exampleFr: "Je lis un livre.", context: "objets" }
+    ],
+    exercises: [
+      { q: "Complète : « I have ___ apple. »", options: ["a", "an", "the", "some"], answer: 1, explain: "Devant un son voyelle (apple), on utilise « an »." },
+      { q: "Complète : « ___ car is red. » (la voiture dont on parle)", options: ["A", "An", "The", "One"], answer: 2, explain: "Pour une chose précise et connue, on utilise « the »." },
+      { q: "Complète : « She is ___ teacher. »", options: ["a", "an", "the", "an the"], answer: 0, explain: "Devant un son consonne (teacher), on utilise « a »." },
+      { q: "Comment dit-on « J'aime les pommes » ?", options: ["I like the apples.", "I like apples.", "I like an apples.", "I like a apples."], answer: 1, explain: "Pour parler de quelque chose en général au pluriel, on ne met pas d'article." }
+    ]
+  },
+  {
+    id: "a1-can",
+    level: "A1",
+    title: "Savoir faire : can et can't",
+    objective: "Dire ce que tu peux ou ne peux pas faire avec can et can't.",
+    explanation: [
+      "« Can » signifie « pouvoir » ou « savoir ». Il reste identique avec toutes les personnes : I can, you can, he can, she can, we can, they can.",
+      "Après « can », le verbe reste à sa forme de base, sans « s » ni « to ». On dit « She can swim », jamais « She can swims » ou « She can to swim ».",
+      "Pour la négation, on écrit « can't » (cannot). Pour les questions, on met « Can » en début de phrase : Can you swim? (Tu sais nager ?)."
+    ],
+    examples: [
+      { en: "I can cook.", fr: "Je sais cuisiner." },
+      { en: "She can speak three languages.", fr: "Elle parle trois langues." },
+      { en: "We can't come tomorrow.", fr: "Nous ne pouvons pas venir demain." },
+      { en: "Can you help me?", fr: "Tu peux m'aider ?" },
+      { en: "Yes, I can.", fr: "Oui, je peux." }
+    ],
+    pronunciation: "« Can » se prononce « kən » dans une phrase, et « kæn » quand on le met en valeur (Yes, I CAN). « Can't » se prononce « kænt », avec un son « a » long et le « t » final bien net.",
+    vocab: [
+      { en: "swim", fr: "nager", example: "I can swim.", exampleFr: "Je sais nager.", context: "sports" },
+      { en: "cook", fr: "cuisiner", example: "She can cook well.", exampleFr: "Elle cuisine bien.", context: "cuisine" },
+      { en: "help", fr: "aider", example: "Can you help me?", exampleFr: "Tu peux m'aider ?", context: "entraide" },
+      { en: "language", fr: "langue", example: "He speaks two languages.", exampleFr: "Il parle deux langues.", context: "langues" },
+      { en: "tomorrow", fr: "demain", example: "See you tomorrow.", exampleFr: "À demain.", context: "temps" }
+    ],
+    exercises: [
+      { q: "Complète : « I ___ swim. » (je sais nager)", options: ["can", "cans", "can to", "am can"], answer: 0, explain: "Avec « can », on met le verbe à sa forme de base, sans « to »." },
+      { q: "Complète : « She ___ cook well. » (elle ne cuisine pas bien)", options: ["can", "can't", "cans", "is can"], answer: 1, explain: "La négation de « can » est « can't »." },
+      { q: "Quelle phrase est correcte ?", options: ["He can swims.", "He can swim.", "He cans swim.", "He can to swim."], answer: 1, explain: "Après « can », le verbe reste à sa forme de base : swim." },
+      { q: "Comment dit-on « Tu peux m'aider ? »", options: ["Can you help me?", "You can help me?", "Are you can help me?", "Can you helps me?"], answer: 0, explain: "Pour une question avec « can », on met « Can » en début de phrase." }
+    ]
   }
 ];
