@@ -281,7 +281,66 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
     doctor: { label: 'Chez le médecin', en: 'Good morning. What is your name, and why are you here today?', fr: 'Bonjour. Quel est votre nom, et pourquoi venez-vous aujourd\'hui ?', tryEn: 'My name is Paul. I have a headache.' }
   };
   var SCENE_KEYS = ['restaurant', 'airport', 'interview', 'shop', 'doctor'];
-  var C = { busy: false, error: null, openFr: {}, listening: false, draft: '' };
+  var C = { busy: false, error: null, openFr: {}, listening: false, draft: '', authErr: null, authInfo: null };
+  // Comptes (Supabase) : ces deux valeurs sont publiques, elles se mettent ici une fois le projet créé.
+  var SUPABASE_URL = '';
+  var SUPABASE_ANON_KEY = '';
+  var SESSION_KEY = 'ec_session';
+  var session = null;
+  function authOn() { return !!(SUPABASE_URL && SUPABASE_ANON_KEY); }
+  function loadSession() { try { var r = localStorage.getItem(SESSION_KEY); session = r ? JSON.parse(r) : null; } catch (e) { session = null; } }
+  function saveSession(s2) { session = s2; try { if (s2) localStorage.setItem(SESSION_KEY, JSON.stringify(s2)); else localStorage.removeItem(SESSION_KEY); } catch (e) {} }
+  function sessionFrom(j) { return { access: j.access_token, refresh: j.refresh_token, email: (j.user && j.user.email) || '' }; }
+  function authErr(j) {
+    var m = (j && (j.msg || j.error_description || j.message)) || '';
+    if (/Invalid login/i.test(m)) return 'E-mail ou mot de passe incorrect.';
+    if (/already registered|already been registered/i.test(m)) return 'Un compte existe déjà avec cet e-mail. Connecte-toi.';
+    if (/at least 6|Password should/i.test(m)) return 'Le mot de passe doit faire au moins 6 caractères.';
+    if (/invalid.*email|valid email/i.test(m)) return 'Adresse e-mail invalide.';
+    return 'Connexion impossible pour le moment. Réessaie.';
+  }
+  async function authPost(path, body) {
+    var r = await fetch(SUPABASE_URL + path, { method: 'POST', headers: { 'Content-Type': 'application/json', 'apikey': SUPABASE_ANON_KEY }, body: JSON.stringify(body) });
+    var j = null; try { j = await r.json(); } catch (e) { j = null; }
+    return { ok: r.ok, status: r.status, json: j || {} };
+  }
+  async function refreshSession() {
+    if (!session || !session.refresh) { saveSession(null); return false; }
+    try {
+      var r = await authPost('/auth/v1/token?grant_type=refresh_token', { refresh_token: session.refresh });
+      if (r.ok && r.json.access_token) { saveSession(sessionFrom(r.json)); return true; }
+    } catch (e) {}
+    saveSession(null); return false;
+  }
+  async function doAuth(a) {
+    if (a === 'authOut') { saveSession(null); C.authErr = null; C.authInfo = null; render(); return; }
+    var email = ((document.getElementById('authEmail') || {}).value || '').trim();
+    var pass = (document.getElementById('authPass') || {}).value || '';
+    if (!email || !pass) { C.authErr = 'Renseigne ton e-mail et ton mot de passe.'; C.authInfo = null; render(); return; }
+    try {
+      if (a === 'authIn') {
+        var r = await authPost('/auth/v1/token?grant_type=password', { email: email, password: pass });
+        if (!r.ok || !r.json.access_token) { C.authErr = authErr(r.json); C.authInfo = null; }
+        else { saveSession(sessionFrom(r.json)); C.authErr = null; C.authInfo = null; }
+      } else {
+        var u = await authPost('/auth/v1/signup', { email: email, password: pass });
+        if (!u.ok) { C.authErr = authErr(u.json); C.authInfo = null; }
+        else if (u.json.access_token) { saveSession(sessionFrom(u.json)); C.authErr = null; C.authInfo = null; }
+        else { C.authErr = null; C.authInfo = 'Compte créé. Si on te demande de confirmer ton e-mail, ouvre le message reçu, puis connecte-toi.'; }
+      }
+    } catch (e) { C.authErr = 'Impossible de joindre le serveur de comptes. Vérifie ta connexion.'; C.authInfo = null; }
+    render();
+  }
+  function authCardHtml() {
+    return '<div class="card"><div class="st"><span class="dot">' + ic('chat') + '</span>Connecte-toi pour parler au professeur</div>' +
+      '<p class="muted">Crée un compte gratuit avec ton e-mail. Chaque élève a un nombre de messages par jour, pour que le service gratuit tienne pour tout le monde.</p>' +
+      (C.authErr ? '<div class="msg err">' + esc(C.authErr) + '</div>' : '') +
+      (C.authInfo ? '<div class="msg ok">' + esc(C.authInfo) + '</div>' : '') +
+      '<input id="authEmail" type="email" autocomplete="email" placeholder="Ton e-mail" style="width:100%;box-sizing:border-box;margin:6px 0;padding:12px;border-radius:12px;border:1px solid var(--line, #ddd);font:inherit">' +
+      '<input id="authPass" type="password" autocomplete="current-password" placeholder="Mot de passe (6 caractères minimum)" style="width:100%;box-sizing:border-box;margin:6px 0;padding:12px;border-radius:12px;border:1px solid var(--line, #ddd);font:inherit">' +
+      '<button class="btn block" data-a="authIn">Se connecter</button>' +
+      '<button class="btn soft block" data-a="authUp" style="margin-top:8px">Créer un compte</button></div>';
+  }
   var rec = null;
 
   // ---------- Icônes ----------
@@ -641,7 +700,7 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
       });
     }
     h += '</div>';
-    h += '<div class="card"><div class="st"><span class="dot">' + ic('list') + '</span>Données</div><p class="muted">Ta progression est enregistrée uniquement sur ce téléphone, dans ce navigateur.</p><button class="btn danger block" data-a="reset">Effacer mes données</button><p class="muted" style="margin:12px 0 0"><a href="confidentialite.html">Politique de confidentialité</a></p></div>';
+    h += '<div class="card"><div class="st"><span class="dot">' + ic('list') + '</span>Données</div><p class="muted">Ta progression est enregistrée uniquement sur ce téléphone, dans ce navigateur.</p><button class="btn danger block" data-a="reset">Effacer mes données</button><p class="muted" style="margin:12px 0 0"><a href="confidentialite.html">Politique de confidentialité</a></p>' + (authOn() && session ? '<button class="btn soft block" data-a="authOut" style="margin-top:8px">Se déconnecter</button>' : '') + '</div>';
     return h;
   }
 
@@ -680,6 +739,7 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
   }
 
   function chatListHtml() {
+    if (authOn() && !session) return authCardHtml();
     var ch = data.chat, h = '';
     if (!ch.msgs.length) {
       h += '<div class="card"><div class="st"><span class="dot">' + ic('chat') + '</span>Commence une conversation</div>' +
@@ -744,6 +804,7 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
   function voiceRate() { return data.chat.slow ? 0.7 : 0.9; }
 
   function chatSend() {
+    if (authOn() && !session) { C.authErr = 'Connecte-toi pour envoyer un message au professeur.'; render(); return; }
     if (C.busy) return;
     var inp = document.getElementById('chatInput');
     var text = (inp ? inp.value : '').trim();
@@ -774,14 +835,20 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
     var ctrl = ('AbortController' in window) ? new AbortController() : null;
     var timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 25000);
     try {
+      var hdr = { 'Content-Type': 'application/json' };
+      if (authOn() && session) hdr.Authorization = 'Bearer ' + session.access;
       var res = await fetch(API_URL + '/chat', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: hdr,
         body: JSON.stringify(payload),
         signal: ctrl ? ctrl.signal : undefined
       });
       var out = null;
       try { out = await res.json(); } catch (e) { out = null; }
+      if (res.status === 401 && authOn()) {
+        var renewed = await refreshSession();
+        throw { api: true, message: renewed ? 'Ta session a été renouvelée. Renvoie ton message.' : 'Ta session a expiré. Reconnecte-toi.' };
+      }
       if (!res.ok || !out || typeof out.reply !== 'string' || !out.reply) {
         throw { api: true, message: (out && out.message) || "Le professeur n'a pas pu répondre. Réessaie dans un instant." };
       }
@@ -800,6 +867,7 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
       else if (e && e.name === 'AbortError') m2 = 'Le professeur met trop de temps à répondre. Réessaie.';
       else m2 = 'Impossible de joindre le professeur. Vérifie ta connexion, puis réessaie.';
       C.error = { message: m2 };
+      if (authOn() && !session) C.authErr = m2;
     } finally {
       clearTimeout(timer);
       C.busy = false;
@@ -899,6 +967,7 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
     if (!b) return;
     var a = b.getAttribute('data-a'), i = parseInt(b.getAttribute('data-i'), 10), L;
     if (a === 'startPl' || a === 'plPick' || a === 'plNext' || a === 'plClose' || a === 'plLessons') { placement(a, i); return; }
+    if (a === 'authIn' || a === 'authUp' || a === 'authOut') { doAuth(a); return; }
 
     if (a === 'openLesson') { S.tab = 'lessons'; S.lesson = i; S.step = 'intro'; render(); window.scrollTo(0, 0); }
     else if (a === 'backLessons') { S.lesson = null; S.step = 'intro'; S.tab = 'lessons'; render(); window.scrollTo(0, 0); }
@@ -1034,6 +1103,7 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
   }
 
   load();
+  loadSession();
   render();
 })();
 </script>
