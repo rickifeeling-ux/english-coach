@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Politique de confidentialité · English Coach</title>
+<style>
+  :root { --bg:#f7f5f0; --fg:#22211f; --muted:#6b6862; --card:#ffffff; --accent:#2f6b5a; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#1b1c1a; --fg:#ecebe6; --muted:#a4a29a; --card:#252723; --accent:#7fb8a4; }
+  }
+  :root[data-theme="dark"] { --bg:#1b1c1a; --fg:#ecebe6; --muted:#a4a29a; --card:#252723; --accent:#7fb8a4; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family:system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height:1.6; }
+  main { max-width:720px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:1.6rem; margin:0 0 6px; }
+  h2 { font-size:1.1rem; margin:28px 0 8px; color:var(--accent); }
+  p, li { font-size:1rem; }
+  .muted { color:var(--muted); font-size:.92rem; }
+  .card { background:var(--card); border-radius:14px; padding:16px; margin:12px 0; }
+  a { color:var(--accent); }
+  .back { display:inline-block; margin-bottom:12px; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">← Retour à l'application</a>
+  <h1>Politique de confidentialité</h1>
+  <p class="muted">Dernière mise à jour : 29 octobre 2026. Version de travail, à faire relire avant tout lancement payant.</p>
+
+  <div class="card">
+    <p style="margin:0"><b>En résumé :</b> pas de compte, pas de publicité, pas de revente de données. Ta progression reste sur ton téléphone. Quand tu écris ou parles au professeur, ton message est envoyé à un service d'IA (Google Gemini) pour obtenir la réponse. N'écris donc jamais d'information personnelle dans la conversation.</p>
+  </div>
+
+  <h2>1. Qui est responsable ?</h2>
+  <p>English Coach est une application éducative développée par un créateur indépendant. Pour toute question sur tes données, utilise la page du projet : <a href="https://github.com/rickifeeling-ux/english-coach/issues">github.com/rickifeeling-ux/english-coach</a>.</p>
+
+  <h2>2. Quelles données sont enregistrées sur ton téléphone ?</h2>
+  <p>Ces données restent dans le navigateur de ton appareil (stockage local). Elles ne sont envoyées à personne :</p>
+  <ul>
+    <li>ta progression dans les leçons et tes scores aux quiz ;</li>
+    <li>ton carnet de vocabulaire et les dates de révision ;</li>
+    <li>ton niveau de départ (test de niveau) et le niveau choisi pour le professeur ;</li>
+    <li>l'historique de ta conversation avec le professeur (les derniers messages) et les corrections reçues.</li>
+  </ul>
+  <p class="muted">Tu peux tout effacer à tout moment : onglet Progrès, bouton « Effacer mes données ». Tu peux aussi vider les données du site dans les réglages de Chrome.</p>
+
+  <h2>3. Ce qui est envoyé quand tu parles au professeur</h2>
+  <p>Quand tu envoies un message au professeur, l'application transmet :</p>
+  <ul>
+    <li>le texte des derniers messages de la conversation ;</li>
+    <li>ton niveau et, si tu en as choisi une, la mise en situation.</li>
+  </ul>
+  <p>Ce texte passe par notre serveur (un Worker Cloudflare, qui garde la clé du service d'IA cachée) puis par <b>Google Gemini</b> pour produire la réponse. Notre serveur ne garde pas l'historique de tes conversations. Google traite ces messages selon ses propres conditions d'utilisation. Pour la version gratuite de l'API, Google indique pouvoir utiliser les données pour améliorer ses produits : ne partage donc aucune information personnelle, ni mot de passe, ni numéro de carte, ni adresse.</p>
+
+  <h2>4. Le micro</h2>
+  <p>Si tu utilises le micro, la reconnaissance vocale est assurée par Chrome, qui envoie ta voix à Google pour la transformer en texte. L'application ne reçoit que le texte. Tu peux refuser le micro à tout moment dans les réglages du site.</p>
+
+  <h2>5. Hébergement</h2>
+  <p>L'application est hébergée sur GitHub Pages. Le serveur qui relie l'application à l'IA est hébergé chez Cloudflare. Ces hébergeurs peuvent conserver des journaux techniques standards (adresse IP, date, type de navigateur) selon leurs propres politiques.</p>
+
+  <h2>6. Ce que nous ne faisons pas</h2>
+  <ul>
+    <li>pas de création de compte, pas de demande de nom, d'adresse e-mail ou d'âge ;</li>
+    <li>pas de publicité, pas de cookies publicitaires, pas de suivi entre applications ;</li>
+    <li>pas de revente ni de partage de tes données à des fins commerciales.</li>
+  </ul>
+
+  <h2>7. Tes droits</h2>
+  <p>Tu peux accéder à tes données (elles sont sur ton téléphone), les corriger ou les effacer avec le bouton prévu dans l'application. Pour toute autre demande concernant le serveur, écris via la page du projet mentionnée plus haut.</p>
+
+  <h2>8. Enfants</h2>
+  <p>L'application n'est pas conçue pour recueillir des données d'enfants. Si tu es parent et que ton enfant l'utilise, aide-le à ne pas écrire d'informations personnelles dans la conversation.</p>
+
+  <h2>9. Modifications</h2>
+  <p>Si cette politique change, la date de mise à jour en haut de page sera modifiée.</p>
+</main>
+</body>
+</html>
