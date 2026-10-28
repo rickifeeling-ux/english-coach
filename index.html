@@ -272,6 +272,15 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
     { label: 'Travail ou études', en: 'Hi! Are you a student, or do you work?', fr: 'Salut ! Es-tu étudiant, ou travailles-tu ?', tryEn: 'I am a student.' },
     { label: 'Nourriture', en: 'Hello! What food do you like?', fr: 'Bonjour ! Quelle nourriture aimes-tu ?', tryEn: 'I like rice and fish.' }
   ];
+  // Mises en situation : les clés doivent correspondre à SCENES dans le Worker
+  var SCENES = {
+    restaurant: { label: 'Au restaurant', en: 'Hello! Welcome to our restaurant. Are you ready to order?', fr: 'Bonjour ! Bienvenue dans notre restaurant. Prêt à commander ?', tryEn: 'Yes, I would like a chicken, please.' },
+    airport: { label: 'À l\'aéroport', en: 'Good morning! May I see your passport, please?', fr: 'Bonjour ! Puis-je voir votre passeport, s\'il vous plaît ?', tryEn: 'Here it is. Thank you.' },
+    interview: { label: 'Entretien d\'embauche', en: 'Hello, please sit down. What is your name?', fr: 'Bonjour, asseyez-vous. Quel est votre nom ?', tryEn: 'My name is Anna. Nice to meet you.' },
+    shop: { label: 'Dans une boutique', en: 'Hello! Can I help you find something?', fr: 'Bonjour ! Puis-je vous aider à trouver quelque chose ?', tryEn: 'Yes, I am looking for a shirt.' },
+    doctor: { label: 'Chez le médecin', en: 'Good morning. What is your name, and why are you here today?', fr: 'Bonjour. Quel est votre nom, et pourquoi venez-vous aujourd\'hui ?', tryEn: 'My name is Paul. I have a headache.' }
+  };
+  var SCENE_KEYS = ['restaurant', 'airport', 'interview', 'shop', 'doctor'];
   var C = { busy: false, error: null, openFr: {}, listening: false, draft: '' };
   var rec = null;
 
@@ -319,7 +328,8 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
           msgs: Array.isArray(ch.msgs) ? ch.msgs.slice(-40) : [],
           level: CHAT_LEVELS.indexOf(ch.level) !== -1 ? ch.level : 'A1',
           slow: !!ch.slow,
-          auto: ch.auto !== false
+          auto: ch.auto !== false,
+          scene: SCENE_KEYS.indexOf(ch.scene) !== -1 ? ch.scene : null
         };
         data.fixes = Array.isArray(d.fixes) ? d.fixes.slice(-50) : [];
         data.placement = d.placement && d.placement.level ? d.placement : null;
@@ -675,6 +685,9 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
       h += '<div class="card"><div class="st"><span class="dot">' + ic('chat') + '</span>Commence une conversation</div>' +
         '<p>Choisis un sujet, ou écris directement ton premier message en anglais. Même un seul mot suffit.</p><div class="starters">';
       STARTERS.forEach(function (s, k) { h += '<button class="btn soft" data-a="chatStart" data-i="' + k + '">' + esc(s.label) + '</button>'; });
+      h += '</div>';
+      h += '<p class="muted" style="margin:14px 0 8px">Mises en situation</p><div class="starters">';
+      SCENE_KEYS.forEach(function (key) { h += '<button class="btn soft" data-a="chatScene" data-s="' + key + '">' + esc(SCENES[key].label) + '</button>'; });
       h += '</div></div>';
       h += '<div class="card tip"><div class="st"><span class="dot">' + ic('bulb') + '</span>À savoir</div>' +
         '<p class="muted">Le professeur est une IA : il peut se tromper. Sa première phrase est fixe, les réponses suivantes sont générées.</p>' +
@@ -755,6 +768,7 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
     setComposerState(); renderChatList(true);
     var payload = {
       level: data.chat.level,
+      scene: data.chat.scene || null,
       messages: data.chat.msgs.slice(-12).map(function (m) { return { role: m.role, content: m.content }; })
     };
     var ctrl = ('AbortController' in window) ? new AbortController() : null;
@@ -940,8 +954,17 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
       var st = STARTERS[i];
       if (!st) return;
       data.chat.msgs = [{ role: 'assistant', content: st.en, fr: st.fr, tryEn: st.tryEn, local: true }];
+      data.chat.scene = null;
       C.openFr = {}; C.error = null; save(); render(); window.scrollTo(0, 0);
       if (data.chat.auto) speak(st.en, voiceRate());
+    }
+    else if (a === 'chatScene') {
+      var skey = b.getAttribute('data-s'), sc = SCENES[skey];
+      if (!sc) return;
+      data.chat.msgs = [{ role: 'assistant', content: sc.en, fr: sc.fr, tryEn: sc.tryEn, local: true }];
+      data.chat.scene = skey;
+      C.openFr = {}; C.error = null; save(); render(); window.scrollTo(0, 0);
+      if (data.chat.auto) speak(sc.en, voiceRate());
     }
     else if (a === 'chatLevel') {
       var lv = b.getAttribute('data-l');
@@ -951,7 +974,7 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
     else if (a === 'chatSlow') { data.chat.slow = !data.chat.slow; save(); render(); }
     else if (a === 'chatReset') {
       if (confirm('Commencer une nouvelle conversation ? La conversation actuelle sera effacée.')) {
-        data.chat.msgs = []; C.openFr = {}; C.error = null; save(); render();
+        data.chat.msgs = []; data.chat.scene = null; C.openFr = {}; C.error = null; save(); render();
       }
     }
     else if (a === 'chatListen') { var m1 = data.chat.msgs[i]; if (m1) speak(m1.content, voiceRate()); }
