@@ -417,7 +417,9 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
   }
 
   function vLessons() {
-    var total = LESSONS.length, done = doneCount(), h = '<div class="page-h"><h2>Leçons</h2><p>' + (total ? 'Niveau A1 · ' + done + ' sur ' + total + ' validée(s)' : 'Aucune leçon disponible') + '</p></div>';
+    var total = LESSONS.length, done = doneCount();
+    var lvls = LESSONS.map(function (x) { return x.level; }).filter(function (v, k, arr) { return arr.indexOf(v) === k; });
+    var h = '<div class="page-h"><h2>Leçons</h2><p>' + (total ? 'Niveau ' + lvls.join(' et ') + ' · ' + done + ' sur ' + total + ' validée(s)' : 'Aucune leçon disponible') + '</p></div>';
     if (!total) return h + noLessons();
     LESSONS.forEach(function (L, i) {
       var d = data.done[L.id];
@@ -492,7 +494,7 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
   var PL_TEXT = {
     'pre-A1': "Tu pars de zéro, et c'est très bien. Commence par la première leçon : elle pose les bases.",
     'A1': "Tu connais déjà une partie des bases. Les leçons A1 vont consolider ce que tu sais et combler les trous.",
-    'A2': "Tu as un bon départ. Revois les leçons A1 pour solidifier les bases ; les leçons A2 arriveront bientôt."
+    'A2': "Tu as un bon départ. Commence par les leçons A2 (passé simple, futur, comparatifs), et revois les A1 si besoin."
   };
   function plLevel(score) { return score >= 9 ? 'A2' : (score >= 5 ? 'A1' : 'pre-A1'); }
 
@@ -611,7 +613,7 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
       '<div><h3>Leçons validées</h3><p class="muted">' + (total ? (total - done) + ' restante(s) pour le moment.' : 'Aucune leçon chargée.') + '</p></div></div></div>';
     h += '<div class="stats"><div class="stat"><span>Mots dans le carnet</span><b>' + words + '</b></div><div class="stat"><span>À réviser</span><b>' + dueWords().length + '</b></div></div>';
     var lv = ['Pré-A1', 'A1', 'A2', 'B1', 'B2', 'C1', 'C2'], chips = '';
-    lv.forEach(function (l) { chips += '<span class="chip' + (l === 'A1' && done ? '' : ' mute') + '">' + l + '</span>'; });
+    lv.forEach(function (l) { chips += '<span class="chip' + ((l === 'A1' || l === 'A2') && done ? '' : ' mute') + '">' + l + '</span>'; });
     h += '<div class="card"><div class="st"><span class="dot">' + ic('star') + '</span>Niveau estimé</div><p style="margin:0">' + (done ? 'A1 (en cours)' : 'Pas encore estimé') + '</p>' +
       '<div class="levels">' + chips + '</div>' +
       '<p class="muted" style="margin:12px 0 0">Estimation indicative basée sur les leçons validées. Ce n\'est pas une certification officielle.</p></div>';

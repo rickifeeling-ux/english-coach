@@ -563,5 +563,205 @@ window.LESSONS = [
       { q: "Complète : « She ___ not at home. »", options: ["were", "weren't", "wasn't", "isn't"], answer: 2, explain: "Avec « she », la négation au passé est « wasn't »." },
       { q: "Quelle question est correcte ?", options: ["Was you happy?", "Were you happy?", "Are you were happy?", "Did you were happy?"], answer: 1, explain: "Avec « you », on utilise « were » au passé." }
     ]
+  },
+{
+    id: "a2-past-simple",
+    level: "A2",
+    title: "Le passé simple : verbes réguliers et irréguliers",
+    objective: "Raconter ce qui s'est passé avec les verbes au passé.",
+    explanation: [
+      "Pour la plupart des verbes réguliers, on ajoute « -ed » à la base : work → worked, play → played, visit → visited.",
+      "Si le verbe finit par consonne + y, le « y » devient « ied » : study → studied. Certains doublent la dernière consonne : stop → stopped.",
+      "Beaucoup de verbes courants sont irréguliers : go → went, have → had, see → saw, eat → ate, make → made, buy → bought, take → took. Il faut les apprendre par cœur.",
+      "Au passé simple, la forme est la même pour toutes les personnes : I worked, you worked, she worked, they worked."
+    ],
+    examples: [
+      { en: "I worked in a bank last year.", fr: "J'ai travaillé dans une banque l'année dernière." },
+      { en: "She visited her aunt yesterday.", fr: "Elle a rendu visite à sa tante hier." },
+      { en: "We went to Port-Gentil on Sunday.", fr: "Nous sommes allés à Port-Gentil dimanche." },
+      { en: "He bought a new phone.", fr: "Il a acheté un nouveau téléphone." },
+      { en: "They had a party last night.", fr: "Ils ont fait une fête hier soir." }
+    ],
+    pronunciation: "La terminaison « -ed » se prononce de trois façons : « t » après un son sans voix (worked), « d » après un son avec voix (played), et « id » après t ou d (wanted).",
+    vocab: [
+      { en: "visit", fr: "rendre visite à, visiter", example: "I visit my grandmother every week.", exampleFr: "Je rends visite à ma grand-mère chaque semaine.", context: "famille" },
+      { en: "buy", fr: "acheter (passé : bought)", example: "I bought bread this morning.", exampleFr: "J'ai acheté du pain ce matin.", context: "achats" },
+      { en: "see", fr: "voir (passé : saw)", example: "I saw a good film.", exampleFr: "J'ai vu un bon film.", context: "loisirs" },
+      { en: "last year", fr: "l'année dernière", example: "We moved here last year.", exampleFr: "Nous avons déménagé ici l'année dernière.", context: "temps" },
+      { en: "party", fr: "fête", example: "The party was fun.", exampleFr: "La fête était amusante.", context: "loisirs" }
+    ],
+    exercises: [
+      { q: "Complète : « Yesterday I ___ late. » (work)", options: ["work", "worked", "working", "works"], answer: 1, explain: "Au passé, un verbe régulier prend « -ed » : worked." },
+      { q: "Complète : « She ___ to school yesterday. » (go)", options: ["goed", "went", "gone", "goes"], answer: 1, explain: "« Go » est irrégulier : le passé est « went »." },
+      { q: "Complète : « They ___ a new car last month. » (buy)", options: ["buyed", "buy", "bought", "buying"], answer: 2, explain: "« Buy » est irrégulier : le passé est « bought »." },
+      { q: "Quelle phrase est correcte ?", options: ["I play football yesterday.", "I played football yesterday.", "I playing football yesterday.", "I plays football yesterday."], answer: 1, explain: "Avec un marqueur de passé comme « yesterday », on utilise le passé : played." }
+    ]
+  },
+  {
+    id: "a2-past-negatives",
+    level: "A2",
+    title: "Le passé : didn't et les questions avec did",
+    objective: "Dire ce qui ne s'est pas passé et poser des questions au passé.",
+    explanation: [
+      "Pour la négation au passé, on utilise « didn't » (did not) suivi du verbe de base : I didn't go out. Après « didn't », le verbe ne prend plus de « -ed » ni de forme irrégulière.",
+      "Pour une question, on commence par « Did » suivi du sujet et du verbe de base : Did you call her? Did they arrive?",
+      "On répond avec « Yes, I did. » ou « No, I didn't. »",
+      "Ne confonds pas avec « was / were » (leçon A1) : avec « to be » au passé, on n'utilise pas « did »."
+    ],
+    examples: [
+      { en: "I didn't see the film.", fr: "Je n'ai pas vu le film." },
+      { en: "She didn't come to school yesterday.", fr: "Elle n'est pas venue à l'école hier." },
+      { en: "Did you finish your homework?", fr: "As-tu fini tes devoirs ?" },
+      { en: "Did they win the match?", fr: "Ont-ils gagné le match ?" },
+      { en: "Yes, they did.", fr: "Oui, ils l'ont fait (gagné)." },
+      { en: "No, I didn't.", fr: "Non, je ne l'ai pas fait." }
+    ],
+    pronunciation: "« Didn't » se prononce « DI-dent » : le « t » final est à peine audible.",
+    vocab: [
+      { en: "finish", fr: "finir, terminer", example: "I finished my work.", exampleFr: "J'ai fini mon travail.", context: "travail" },
+      { en: "win", fr: "gagner (passé : won)", example: "Our team won the game.", exampleFr: "Notre équipe a gagné le match.", context: "sport" },
+      { en: "homework", fr: "devoirs", example: "I did my homework.", exampleFr: "J'ai fait mes devoirs.", context: "école" },
+      { en: "arrive", fr: "arriver", example: "The bus arrived late.", exampleFr: "Le bus est arrivé en retard.", context: "transport" },
+      { en: "answer", fr: "répondre", example: "She answered the question.", exampleFr: "Elle a répondu à la question.", context: "communication" }
+    ],
+    exercises: [
+      { q: "Complète : « I ___ go to work yesterday. »", options: ["didn't", "don't", "wasn't", "not"], answer: 0, explain: "Au passé, la négation est « didn't »." },
+      { q: "Complète : « ___ you see the doctor? »", options: ["Did", "Do", "Were", "Does"], answer: 0, explain: "La question au passé commence par « Did »." },
+      { q: "Complète : « She didn't ___ the message. » (répondre)", options: ["answered", "answer", "answers", "answering"], answer: 1, explain: "Après « didn't », le verbe garde sa forme de base : answer." },
+      { q: "Complète la réponse : « Did they arrive? — Yes, they ___. »", options: ["do", "did", "were", "made"], answer: 1, explain: "On répond en reprenant « did » : Yes, they did." }
+    ]
+  },
+  {
+    id: "a2-going-to",
+    level: "A2",
+    title: "Le futur : be going to",
+    objective: "Parler de projets et de ce qui va probablement se passer.",
+    explanation: [
+      "Pour un projet ou une intention déjà décidée, on utilise « am / is / are going to » suivi du verbe de base : I am going to travel next week (je vais voyager la semaine prochaine).",
+      "Pour la négation, on ajoute « not » après le verbe être : I am not going to, she isn't going to, we aren't going to.",
+      "Pour la question, on inverse le sujet et le verbe être : Are you going to study tonight?",
+      "On utilise aussi « going to » pour une prévision basée sur ce qu'on voit : Look at those clouds! It is going to rain."
+    ],
+    examples: [
+      { en: "I am going to visit my family next month.", fr: "Je vais rendre visite à ma famille le mois prochain." },
+      { en: "She is going to start a new job on Monday.", fr: "Elle va commencer un nouveau travail lundi." },
+      { en: "We aren't going to the party tonight.", fr: "Nous n'allons pas à la fête ce soir." },
+      { en: "Are you going to study tonight?", fr: "Vas-tu étudier ce soir ?" },
+      { en: "Look at those clouds! It is going to rain.", fr: "Regarde ces nuages ! Il va pleuvoir." }
+    ],
+    pronunciation: "À l'oral, « going to » se dit souvent « gonna », surtout dans la conversation courante.",
+    vocab: [
+      { en: "travel", fr: "voyager", example: "I love to travel.", exampleFr: "J'adore voyager.", context: "voyage" },
+      { en: "start", fr: "commencer", example: "The class starts at eight.", exampleFr: "Le cours commence à huit heures.", context: "école" },
+      { en: "tonight", fr: "ce soir", example: "We are going out tonight.", exampleFr: "Nous sortons ce soir.", context: "temps" },
+      { en: "rain", fr: "pluie, pleuvoir", example: "It is raining.", exampleFr: "Il pleut.", context: "météo" },
+      { en: "cloud", fr: "nuage", example: "There are no clouds today.", exampleFr: "Il n'y a pas de nuages aujourd'hui.", context: "météo" }
+    ],
+    exercises: [
+      { q: "Complète : « I ___ going to travel next week. »", options: ["am", "is", "are", "be"], answer: 0, explain: "Avec « I », on utilise « am going to »." },
+      { q: "Complète : « She ___ going to start a new job. »", options: ["am", "is", "are", "be"], answer: 1, explain: "Avec « she », on utilise « is going to »." },
+      { q: "Complète : « We are ___ going to the party. » (pas)", options: ["no", "not", "none", "nothing"], answer: 1, explain: "La négation se place après le verbe être : are not going." },
+      { q: "Complète : « It is ___ to rain. » (il va pleuvoir)", options: ["going", "go", "went", "goes"], answer: 0, explain: "Le futur se forme avec « going to » : It is going to rain." }
+    ]
+  },
+  {
+    id: "a2-comparatives",
+    level: "A2",
+    title: "Comparer : bigger, more expensive, better",
+    objective: "Comparer deux choses avec les formes comparatives.",
+    explanation: [
+      "Pour un adjectif court (une syllabe), on ajoute « -er » et « than » (que) : big → bigger than (plus grand que), tall → taller than (plus grand, de taille, que).",
+      "Si l'adjectif finit par « e », on ajoute seulement « r » : nice → nicer. Si c'est consonne + y, le « y » devient « ier » : happy → happier.",
+      "Pour un adjectif long (deux syllabes ou plus), on utilise « more » avant l'adjectif : more expensive than (plus cher que), more interesting than (plus intéressant que).",
+      "Trois formes irrégulières : good → better (meilleur), bad → worse (pire), far → further (plus loin)."
+    ],
+    examples: [
+      { en: "My house is bigger than yours.", fr: "Ma maison est plus grande que la tienne." },
+      { en: "This bag is more expensive than that one.", fr: "Ce sac est plus cher que celui-là." },
+      { en: "Libreville is busier than Oyem.", fr: "Libreville est plus animée qu'Oyem." },
+      { en: "My English is better now.", fr: "Mon anglais est meilleur maintenant." },
+      { en: "Cars are more expensive than bikes.", fr: "Les voitures sont plus chères que les vélos." }
+    ],
+    pronunciation: "« Than » se prononce faiblement, presque « dan » : le « th » est doux, la langue touche légèrement les dents.",
+    vocab: [
+      { en: "expensive", fr: "cher", example: "This phone is expensive.", exampleFr: "Ce téléphone est cher.", context: "prix" },
+      { en: "cheap", fr: "bon marché", example: "The bus is cheap.", exampleFr: "Le bus est bon marché.", context: "prix" },
+      { en: "tall", fr: "grand (de taille)", example: "My brother is tall.", exampleFr: "Mon frère est grand.", context: "taille" },
+      { en: "busy", fr: "occupé, animé", example: "The market is busy today.", exampleFr: "Le marché est animé aujourd'hui.", context: "lieux" },
+      { en: "better", fr: "meilleur", example: "This is a better idea.", exampleFr: "C'est une meilleure idée.", context: "qualité" }
+    ],
+    exercises: [
+      { q: "Comment dit-on « plus rapide » (fast) ?", options: ["faster", "more fast", "fastest", "most fast"], answer: 0, explain: "Un adjectif court prend « -er » : faster." },
+      { q: "Complète : « This bag is ___ than that one. » (plus cher)", options: ["more expensive", "expensiver", "most expensive", "expensive more"], answer: 0, explain: "Un adjectif long prend « more » : more expensive." },
+      { q: "Complète : « My English is ___ now. » (meilleur)", options: ["good", "better", "best", "more good"], answer: 1, explain: "« Good » devient « better » au comparatif." },
+      { q: "Quelle phrase est correcte ?", options: ["She is more tall than me.", "She is taller than me.", "She is tallest than me.", "She is taller that me."], answer: 1, explain: "« Tall » est court : taller than." }
+    ]
+  },
+  {
+    id: "a2-present-continuous",
+    level: "A2",
+    title: "L'action en cours : I am working now",
+    objective: "Dire ce qui se passe au moment où l'on parle.",
+    explanation: [
+      "Pour une action en train de se passer maintenant, on utilise « am / is / are » + verbe en « -ing » : I am working now (je travaille en ce moment).",
+      "Pour former le « -ing » : on ajoute simplement « -ing » (play → playing). Si le verbe finit par un « e » muet, on le retire (write → writing). Si le verbe finit par une voyelle + consonne courte, on double la consonne (run → running, sit → sitting).",
+      "Négation : am not / isn't / aren't + -ing. Question : Are you working? What are you doing?",
+      "Ne l'utilise pas pour une habitude : I work in a bank (habitude) mais I am working now (maintenant)."
+    ],
+    examples: [
+      { en: "I am reading a book right now.", fr: "Je suis en train de lire un livre en ce moment." },
+      { en: "She is cooking dinner.", fr: "Elle est en train de préparer le dîner." },
+      { en: "They are playing football at the moment.", fr: "Ils jouent au football en ce moment." },
+      { en: "We aren't listening to the radio.", fr: "Nous n'écoutons pas la radio." },
+      { en: "What are you doing?", fr: "Qu'est-ce que tu fais ?" }
+    ],
+    pronunciation: "À l'oral, « -ing » se prononce « in » : « working » se dit « WOR-kin' ». Le « g » final est à peine audible.",
+    vocab: [
+      { en: "right now", fr: "maintenant, tout de suite", example: "I need help right now.", exampleFr: "J'ai besoin d'aide tout de suite.", context: "temps" },
+      { en: "dinner", fr: "dîner", example: "We eat dinner at eight.", exampleFr: "Nous dînons à huit heures.", context: "repas" },
+      { en: "at the moment", fr: "en ce moment", example: "I am busy at the moment.", exampleFr: "Je suis occupé en ce moment.", context: "temps" },
+      { en: "radio", fr: "radio", example: "I listen to the radio in the car.", exampleFr: "J'écoute la radio dans la voiture.", context: "médias" },
+      { en: "write", fr: "écrire", example: "I am writing an email.", exampleFr: "Je suis en train d'écrire un e-mail.", context: "travail" }
+    ],
+    exercises: [
+      { q: "Complète : « I am ___ now. » (travailler)", options: ["work", "working", "works", "worked"], answer: 1, explain: "Avec « am », on utilise le verbe en « -ing » : working." },
+      { q: "Complète : « She ___ dinner right now. » (préparer)", options: ["is cooking", "cooks", "cook", "cooked"], answer: 0, explain: "Une action en cours se dit avec « is » + « -ing »." },
+      { q: "Complète : « Are they ___ football? » (jouer)", options: ["play", "played", "playing", "plays"], answer: 2, explain: "Pour une action en cours, on met le verbe en « -ing »." },
+      { q: "Quelle phrase est correcte ?", options: ["I am work now.", "I am working now.", "I working now am.", "I works now."], answer: 1, explain: "On dit « I am working now » : sujet + am + verbe en -ing." }
+    ]
+  },
+  {
+    id: "a2-must-have-to",
+    level: "A2",
+    title: "Obligation et interdiction : must, have to, mustn't",
+    objective: "Dire ce qu'il faut faire, ce qui est interdit et ce qui n'est pas nécessaire.",
+    explanation: [
+      "« Must » + verbe de base exprime une obligation forte : You must wear a seatbelt (tu dois mettre ta ceinture). « Must » ne change jamais, pas de « s » ni de passé.",
+      "« Have to » (ou « has to » avec he, she, it) exprime une obligation liée à une règle extérieure : I have to work tomorrow (je dois travailler demain). He has to study.",
+      "« Mustn't » veut dire « il est interdit de » : You mustn't park here (tu ne dois pas te garer ici).",
+      "« Don't have to » veut dire « ce n'est pas nécessaire » : You don't have to come (tu n'es pas obligé de venir)."
+    ],
+    examples: [
+      { en: "You must wear a seatbelt.", fr: "Tu dois mettre ta ceinture." },
+      { en: "I have to wake up early tomorrow.", fr: "Je dois me réveiller tôt demain." },
+      { en: "She has to study for the exam.", fr: "Elle doit réviser pour l'examen." },
+      { en: "You mustn't park here.", fr: "Tu ne dois pas te garer ici." },
+      { en: "You don't have to pay now.", fr: "Tu n'as pas besoin de payer maintenant." },
+      { en: "Do we have to leave now?", fr: "Devons-nous partir maintenant ?" }
+    ],
+    pronunciation: "À l'oral, « have to » se dit souvent « hafta ». « Must » se prononce « mast », avec un « t » final léger.",
+    vocab: [
+      { en: "seatbelt", fr: "ceinture de sécurité", example: "Put on your seatbelt.", exampleFr: "Mets ta ceinture.", context: "transport" },
+      { en: "exam", fr: "examen", example: "The exam is on Friday.", exampleFr: "L'examen est vendredi.", context: "école" },
+      { en: "park", fr: "garer, se garer", example: "You can park here.", exampleFr: "Tu peux te garer ici.", context: "transport" },
+      { en: "leave", fr: "partir, quitter", example: "We leave at six.", exampleFr: "Nous partons à six heures.", context: "voyage" },
+      { en: "smoke", fr: "fumer", example: "Smoking is not allowed here.", exampleFr: "Il est interdit de fumer ici.", context: "règles" }
+    ],
+    exercises: [
+      { q: "Complète : « You ___ wear a seatbelt. » (obligation)", options: ["must", "musts", "musted", "mustting"], answer: 0, explain: "« Must » ne change jamais : must." },
+      { q: "Complète : « She ___ study tonight. » (elle doit)", options: ["have to", "has to", "have", "is"], answer: 1, explain: "Avec « she », on utilise « has to »." },
+      { q: "Complète : « You ___ park here. » (c'est interdit)", options: ["mustn't", "don't have to", "can't have to", "musted"], answer: 0, explain: "« Mustn't » exprime une interdiction." },
+      { q: "Complète : « You ___ come. » (ce n'est pas obligatoire)", options: ["don't have to", "mustn't", "musts", "can't"], answer: 0, explain: "« Don't have to » veut dire que ce n'est pas nécessaire." }
+    ]
   }
 ];
