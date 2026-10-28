@@ -138,7 +138,7 @@ window.LESSONS = [
       "On utilise le présent simple pour parler de ce qu'on fait régulièrement (habitudes, routines) et de choses toujours vraies.",
       "Avec I, you, we et they, le verbe garde sa forme de base : I work, they play.",
       "Avec he, she et it, on ajoute un « s » : he works, she plays. Après s, sh, ch, x ou o, on ajoute « es » (watch → watches, go → goes). Quand le verbe finit par une consonne + y, le « y » devient « ies » (study → studies). Le verbe « have » devient « has ».",
-      "Les phrases négatives et les questions viendront dans une prochaine leçon."
+      "Pour dire « ne… pas » et poser des questions, il faut un auxiliaire (do / does). Ça fait l'objet des deux leçons suivantes."
     ],
     examples: [
       { en: "I work in a bank.", fr: "Je travaille dans une banque." },
@@ -161,6 +161,73 @@ window.LESSONS = [
       { q: "Complète : « He ___ TV every evening. »", options: ["watch", "watchs", "watching", "watches"], answer: 3, explain: "Après « ch », on ajoute « es » : watches." },
       { q: "Quelle phrase est correcte ?", options: ["He work in a bank.", "He works in a bank.", "He working in a bank.", "He is work in a bank."], answer: 1, explain: "Avec he, le verbe prend un « s » : works." }
     ]
+  },
+  {
+    id: "a1-negatives",
+    level: "A1",
+    title: "Les phrases négatives : don't et doesn't",
+    objective: "Dire ce que tu ne fais pas avec don't et doesn't.",
+    explanation: [
+      "Pour faire une phrase négative au présent simple, on ajoute « don't » (do not) ou « doesn't » (does not) avant le verbe.",
+      "Avec I, you, we et they : « don't » + verbe de base. Exemple : I don't work on Sunday.",
+      "Avec he, she et it : « doesn't » + verbe de base, sans « s ». Le « s » passe sur « doesn't ». On dit « She doesn't work », jamais « She doesn't works ».",
+      "Le verbe « be » fait exception : on dit « I am not », « he is not » (sans don't ni doesn't)."
+    ],
+    examples: [
+      { en: "I don't like coffee.", fr: "Je n'aime pas le café." },
+      { en: "You don't speak Spanish.", fr: "Tu ne parles pas espagnol." },
+      { en: "She doesn't work on Monday.", fr: "Elle ne travaille pas le lundi." },
+      { en: "He doesn't play football.", fr: "Il ne joue pas au football." },
+      { en: "We don't live here.", fr: "Nous n'habitons pas ici." },
+      { en: "I am not tired.", fr: "Je ne suis pas fatigué(e)." }
+    ],
+    pronunciation: "« Don't » se prononce « dooont » (le « o » est long). « Doesn't » se prononce « dazn't », avec un « z » et sans le « s » final audible. À l'oral, on entend surtout la différence entre « don't » et « doesn't » : répète les deux phrases « I don't » et « she doesn't ».",
+    vocab: [
+      { en: "like", fr: "aimer (apprécier)", example: "I like music.", exampleFr: "J'aime la musique.", context: "goûts" },
+      { en: "live", fr: "habiter, vivre", example: "She lives in Libreville.", exampleFr: "Elle habite à Libreville.", context: "lieux" },
+      { en: "coffee", fr: "café", example: "I drink coffee in the morning.", exampleFr: "Je bois du café le matin.", context: "boissons" },
+      { en: "Monday", fr: "lundi", example: "I work on Monday.", exampleFr: "Je travaille le lundi.", context: "jours" },
+      { en: "Spanish", fr: "espagnol (la langue)", example: "They speak Spanish.", exampleFr: "Ils parlent espagnol.", context: "langues" }
+    ],
+    exercises: [
+      { q: "Complète : « I ___ like coffee. »", options: ["doesn't", "don't", "isn't", "not"], answer: 1, explain: "Avec I, on utilise « don't »." },
+      { q: "Complète : « She ___ work on Monday. »", options: ["don't", "doesn't", "isn't", "no"], answer: 1, explain: "Avec she, on utilise « doesn't »." },
+      { q: "Quelle phrase est correcte ?", options: ["He doesn't works here.", "He doesn't work here.", "He don't work here.", "He not work here."], answer: 1, explain: "Après « doesn't », le verbe garde sa forme de base, sans « s »." },
+      { q: "Comment dit-on « Je ne suis pas fatigué » ?", options: ["I don't tired.", "I am not tired.", "I not am tired.", "I doesn't tired."], answer: 1, explain: "Avec « to be », on dit « am not » sans don't ni doesn't." }
+    ]
+  },
+  {
+    id: "a1-questions",
+    level: "A1",
+    title: "Les questions : do et does",
+    objective: "Poser des questions simples au présent avec do et does, et y répondre.",
+    explanation: [
+      "Pour poser une question au présent simple (sauf avec « be »), on commence par « Do » ou « Does », puis le sujet, puis le verbe de base.",
+      "« Do » s'utilise avec I, you, we et they : Do you work? (Tu travailles ?). « Does » s'utilise avec he, she et it : Does she work? (Est-ce qu'elle travaille ?).",
+      "On répond en reprenant l'auxiliaire : Yes, I do. / No, I don't. / Yes, she does. / No, she doesn't.",
+      "Les mots interrogatifs se placent devant : Where do you live? (Où habites-tu ?)."
+    ],
+    examples: [
+      { en: "Do you speak English?", fr: "Tu parles anglais ?" },
+      { en: "Does he work here?", fr: "Est-ce qu'il travaille ici ?" },
+      { en: "Do they play football?", fr: "Est-ce qu'ils jouent au football ?" },
+      { en: "Yes, I do.", fr: "Oui, je le fais." },
+      { en: "No, she doesn't.", fr: "Non, elle ne le fait pas." },
+      { en: "Where do you live?", fr: "Où habites-tu ?" }
+    ],
+    pronunciation: "« Do you » se dit souvent « dju » à l'oral. « Does » se prononce « daz », comme « doesn't » sans le « n't ». Dans une question, la voix monte à la fin : « Do you speak English? ».",
+    vocab: [
+      { en: "where", fr: "où", example: "Where is the school?", exampleFr: "Où est l'école ?", context: "questions" },
+      { en: "what", fr: "quoi, que", example: "What do you do?", exampleFr: "Que fais-tu (dans la vie) ?", context: "questions" },
+      { en: "live", fr: "habiter", example: "Where do you live?", exampleFr: "Où habites-tu ?", context: "lieux" },
+      { en: "yes", fr: "oui", example: "Yes, I do.", exampleFr: "Oui, je le fais.", context: "réponses" },
+      { en: "no", fr: "non", example: "No, I don't.", exampleFr: "Non, je ne le fais pas.", context: "réponses" }
+    ],
+    exercises: [
+      { q: "Complète : « ___ you speak English? »", options: ["Does", "Do", "Is", "Are"], answer: 1, explain: "Avec you, on utilise « Do » pour une question." },
+      { q: "Complète : « ___ she work here? »", options: ["Do", "Does", "Is", "Are"], answer: 1, explain: "Avec she, on utilise « Does » pour une question." },
+      { q: "Quelle question est correcte ?", options: ["Does they live here?", "Do they live here?", "Do they lives here?", "They do live here?"], answer: 1, explain: "Avec they, on utilise « Do » et le verbe reste à sa forme de base." },
+      { q: "Comment répond-on « Does he play football? » si c'est oui ?", options: ["Yes, he does.", "Yes, he is.", "Yes, he plays.", "Yes, he do."], answer: 0, explain: "On répond avec « Yes, he does. » en reprenant l'auxiliaire." }
+    ]
   }
 ];
-
