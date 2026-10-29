@@ -763,5 +763,203 @@ window.LESSONS = [
       { q: "Complète : « You ___ park here. » (c'est interdit)", options: ["mustn't", "don't have to", "can't have to", "musted"], answer: 0, explain: "« Mustn't » exprime une interdiction." },
       { q: "Complète : « You ___ come. » (ce n'est pas obligatoire)", options: ["don't have to", "mustn't", "musts", "can't"], answer: 0, explain: "« Don't have to » veut dire que ce n'est pas nécessaire." }
     ]
+  },
+  {
+    id: "a2-present-perfect",
+    level: "A2",
+    title: "Le present perfect : have / has + participe passé",
+    objective: "Parler d'expériences de vie et de ce qui dure depuis un moment.",
+    explanation: [
+      "Le present perfect se forme avec have ou has, puis le participe passé : I have visited Paris (j'ai visité Paris). She has finished (elle a fini).",
+      "On l'utilise pour une expérience de vie, sans dire quand : I have never been to Gabon (je ne suis jamais allé au Gabon). Have you ever tried sushi? (as-tu déjà essayé les sushis ?)",
+      "Avec since (depuis + moment précis) et for (pendant + durée) : We have lived here since 2019. We have lived here for five years.",
+      "Participes passés irréguliers à retenir : go → gone, see → seen, write → written, do → done, have → had, eat → eaten."
+    ],
+    examples: [
+      { en: "I have visited Paris.", fr: "J'ai visité Paris." },
+      { en: "She has never eaten sushi.", fr: "Elle n'a jamais mangé de sushis." },
+      { en: "We have lived here for five years.", fr: "Nous habitons ici depuis cinq ans." },
+      { en: "They have already finished.", fr: "Ils ont déjà fini." },
+      { en: "Have you ever been to Gabon?", fr: "Es-tu déjà allé au Gabon ?" }
+    ],
+    pronunciation: "À l'oral, « have » se dit souvent « 'v » : « I've visited », « she's finished ». « Ever » se prononce « EV-er ».",
+    vocab: [
+      { en: "ever", fr: "déjà (dans une question d'expérience)", example: "Have you ever flown?", exampleFr: "As-tu déjà pris l'avion ?", context: "expérience" },
+      { en: "never", fr: "jamais", example: "I have never seen snow.", exampleFr: "Je n'ai jamais vu la neige.", context: "expérience" },
+      { en: "already", fr: "déjà (dans une affirmation)", example: "I have already eaten.", exampleFr: "J'ai déjà mangé.", context: "temps" },
+      { en: "since", fr: "depuis (un moment précis)", example: "I have worked here since May.", exampleFr: "Je travaille ici depuis mai.", context: "temps" },
+      { en: "for", fr: "pendant, depuis (une durée)", example: "I have known her for ten years.", exampleFr: "Je la connais depuis dix ans.", context: "temps" }
+    ],
+    exercises: [
+      { q: "Complète : « I ___ never been to Paris. »", options: ["have", "has", "am", "did"], answer: 0, explain: "Avec « I », on utilise « have ». " },
+      { q: "Complète : « She ___ already eaten. »", options: ["have", "has", "is", "was"], answer: 1, explain: "Avec « she », on utilise « has ». " },
+      { q: "Complète : « Have you ___ this film? » (seen)", options: ["see", "saw", "seen", "seeing"], answer: 2, explain: "Le participe passé de « see » est « seen »." },
+      { q: "Complète : « We have lived here ___ 2019. »", options: ["since", "for", "ago", "during"], answer: 0, explain: "« Since » s'utilise avec un moment précis, comme une année." }
+    ]
+  },
+  {
+    id: "a2-past-continuous",
+    level: "A2",
+    title: "Le passé continu : was / were + -ing",
+    objective: "Décrire ce qui se passait à un moment du passé.",
+    explanation: [
+      "Le passé continu se forme avec was ou were, puis le verbe en -ing : I was reading at 8 pm (je lisais à 20 h).",
+      "On l'utilise pour une action en cours dans le passé : What were you doing at noon? (que faisais-tu à midi ?)",
+      "Avec when, l'action courte interrompt l'action longue : I was cooking when the power went out (je cuisinais quand le courant a coupé).",
+      "Was avec I, he, she, it. Were avec you, we, they."
+    ],
+    examples: [
+      { en: "I was reading when she called.", fr: "Je lisais quand elle a appelé." },
+      { en: "They were playing football at five o'clock.", fr: "Ils jouaient au football à cinq heures." },
+      { en: "What were you doing at eight?", fr: "Que faisais-tu à huit heures ?" },
+      { en: "It was raining all day yesterday.", fr: "Il a plu toute la journée hier." },
+      { en: "She was sleeping when I arrived.", fr: "Elle dormait quand je suis arrivé." }
+    ],
+    pronunciation: "« Was » et « were » sont souvent faibles à l'oral : « wuz » et « wer ». Le « -ing » se dit « in ».",
+    vocab: [
+      { en: "cook", fr: "cuisiner", example: "I was cooking dinner.", exampleFr: "Je préparais le dîner.", context: "cuisine" },
+      { en: "power", fr: "courant électrique", example: "The power went out.", exampleFr: "Le courant a coupé.", context: "maison" },
+      { en: "call", fr: "appeler", example: "She called me last night.", exampleFr: "Elle m'a appelé hier soir.", context: "communication" },
+      { en: "sleep", fr: "dormir", example: "The baby was sleeping.", exampleFr: "Le bébé dormait.", context: "maison" },
+      { en: "arrive", fr: "arriver", example: "We arrived at noon.", exampleFr: "Nous sommes arrivés à midi.", context: "voyage" }
+    ],
+    exercises: [
+      { q: "Complète : « At 8 pm I ___ dinner. » (cuisiner)", options: ["was cooking", "cooked", "cook", "am cooking"], answer: 0, explain: "Une action en cours dans le passé : was + -ing." },
+      { q: "Complète : « They ___ TV when the power went out. »", options: ["were watching", "watched", "watch", "watching"], answer: 0, explain: "Avec « they », on utilise « were » + -ing." },
+      { q: "Quelle phrase est correcte ?", options: ["She was go to school.", "She was going to school.", "She was goes to school.", "She is going to school yesterday."], answer: 1, explain: "Le passé continu : was + going." },
+      { q: "Complète : « What ___ you doing at noon? »", options: ["are", "did", "were", "was"], answer: 2, explain: "Avec « you », on utilise « were »." }
+    ]
+  },
+  {
+    id: "a2-will-future",
+    level: "A2",
+    title: "Le futur avec will",
+    objective: "Faire une promesse, prendre une décision sur le moment ou faire une prédiction.",
+    explanation: [
+      "Pour le futur, on utilise will suivi du verbe de base : I will call you later (je t'appellerai plus tard). Will ne change pas avec les personnes.",
+      "On utilise will pour une décision prise au moment où l'on parle : Oh, it's cold. I will close the window (ah, il fait froid, je vais fermer la fenêtre).",
+      "Pour une promesse ou une prédiction : I think it will rain tomorrow (je pense qu'il pleuvra demain).",
+      "Négation : will not = won't. Question : Will you come? (tu viendras ?)"
+    ],
+    examples: [
+      { en: "I will call you later.", fr: "Je t'appellerai plus tard." },
+      { en: "I think it will rain tomorrow.", fr: "Je pense qu'il pleuvra demain." },
+      { en: "Don't worry, I will help you.", fr: "Ne t'inquiète pas, je vais t'aider." },
+      { en: "Will you come to the party?", fr: "Viendras-tu à la fête ?" },
+      { en: "I won't be late.", fr: "Je ne serai pas en retard." }
+    ],
+    pronunciation: "« Will » se prononce « wil ». À l'oral, « I will » devient souvent « I'll » : « aïl ».",
+    vocab: [
+      { en: "later", fr: "plus tard", example: "See you later!", exampleFr: "À plus tard !", context: "temps" },
+      { en: "help", fr: "aider", example: "Can you help me?", exampleFr: "Peux-tu m'aider ?", context: "entraide" },
+      { en: "worry", fr: "s'inquiéter", example: "Don't worry about it.", exampleFr: "Ne t'en fais pas.", context: "émotions" },
+      { en: "party", fr: "fête", example: "Are you coming to the party?", exampleFr: "Tu viens à la fête ?", context: "loisirs" },
+      { en: "window", fr: "fenêtre", example: "Close the window, please.", exampleFr: "Ferme la fenêtre, s'il te plaît.", context: "maison" }
+    ],
+    exercises: [
+      { q: "Complète : « I ___ call you tomorrow. »", options: ["will", "am will", "wills", "willing"], answer: 0, explain: "Avec « will », on utilise la forme de base du verbe." },
+      { q: "Complète : « Will you ___ the door? » (ouvrir)", options: ["open", "opening", "opens", "to open"], answer: 0, explain: "Après « will », le verbe reste à sa forme de base : open." },
+      { q: "Complète : « It ___ rain tomorrow, I think. »", options: ["will", "is will", "wills", "rains will"], answer: 0, explain: "Pour une prédiction, on utilise « will »." },
+      { q: "Quelle phrase est correcte ?", options: ["I will go.", "I will to go.", "I will going.", "I will goes."], answer: 0, explain: "Après « will », pas de « to » : I will go." }
+    ]
+  },
+  {
+    id: "a2-first-conditional",
+    level: "A2",
+    title: "Si... alors : la première conditionnelle",
+    objective: "Dire ce qui va se passer si une condition réelle est remplie.",
+    explanation: [
+      "On utilise if (si) avec le présent, et will dans la partie « alors » : If it rains, we will stay home (s'il pleut, nous resterons à la maison).",
+      "La partie avec if peut venir au début ou à la fin : We will stay home if it rains. La virgule ne sert qu'avec if au début.",
+      "Ne mets jamais will après if : on dit « if you study », pas « if you will study ».",
+      "Cette structure parle de situations réelles ou probables dans le futur."
+    ],
+    examples: [
+      { en: "If it rains, we will stay home.", fr: "S'il pleut, nous resterons à la maison." },
+      { en: "If you study, you will pass the exam.", fr: "Si tu étudies, tu réussiras l'examen." },
+      { en: "She will be happy if you come.", fr: "Elle sera heureuse si tu viens." },
+      { en: "If I see him, I will tell him.", fr: "Si je le vois, je le lui dirai." },
+      { en: "We will go to the beach if it is sunny.", fr: "Nous irons à la plage s'il fait beau." }
+    ],
+    pronunciation: "« If » se prononce « if » bref. Dans « if it rains », le « t » de « it » est souvent à peine audible.",
+    vocab: [
+      { en: "if", fr: "si", example: "If you are tired, rest.", exampleFr: "Si tu es fatigué, repose-toi.", context: "conditions" },
+      { en: "exam", fr: "examen", example: "The exam is next week.", exampleFr: "L'examen a lieu la semaine prochaine.", context: "école" },
+      { en: "pass", fr: "réussir (un examen), passer", example: "I hope to pass the test.", exampleFr: "J'espère réussir le test.", context: "école" },
+      { en: "beach", fr: "plage", example: "We go to the beach on Sundays.", exampleFr: "Nous allons à la plage le dimanche.", context: "loisirs" },
+      { en: "sunny", fr: "ensoleillé", example: "It is sunny today.", exampleFr: "Il fait beau aujourd'hui.", context: "météo" }
+    ],
+    exercises: [
+      { q: "Complète : « If you ___ late, I will be angry. »", options: ["are", "will be", "be", "were"], answer: 0, explain: "Après « if », on utilise le présent : are." },
+      { q: "Complète : « If it ___ sunny tomorrow, we will go to the beach. »", options: ["is", "will be", "sunny", "was"], answer: 0, explain: "Après « if », on utilise le présent : is." },
+      { q: "Complète : « If he ___ hard, he will succeed. » (travailler)", options: ["works", "will work", "working", "worked"], answer: 0, explain: "Après « if », le présent : works." },
+      { q: "Quelle phrase est correcte ?", options: ["If I will see him, I will tell him.", "If I see him, I will tell him.", "If I see him, I tell him will.", "If I will see him, I tell him."], answer: 1, explain: "Après « if », pas de « will » : if I see." }
+    ]
+  },
+  {
+    id: "a2-modals-advice",
+    level: "A2",
+    title: "Donner un conseil : should, might, could",
+    objective: "Donner un conseil, parler d'une possibilité et faire une demande polie.",
+    explanation: [
+      "Should + verbe de base sert à donner un conseil : You should drink more water (tu devrais boire plus d'eau).",
+      "Might + verbe de base sert à parler d'une possibilité : It might rain later (il pourrait pleuvoir plus tard).",
+      "Could sert à demander poliment : Could you help me? (pourrais-tu m'aider ?) Et au passé, pour une capacité : I could swim when I was five (je savais nager à cinq ans).",
+      "Ces verbes ne prennent pas de « s » et ne sont suivis d'aucun « to »."
+    ],
+    examples: [
+      { en: "You should see a doctor.", fr: "Tu devrais voir un médecin." },
+      { en: "It might rain later.", fr: "Il pourrait pleuvoir plus tard." },
+      { en: "Could you help me, please?", fr: "Pourrais-tu m'aider, s'il te plaît ?" },
+      { en: "I could swim when I was five.", fr: "Je savais nager à cinq ans." },
+      { en: "You should rest today.", fr: "Tu devrais te reposer aujourd'hui." }
+    ],
+    pronunciation: "« Should » se dit « choud » à l'oral. « Might » se dit « mait ». « Could » se dit « koud ».",
+    vocab: [
+      { en: "doctor", fr: "médecin", example: "I need a doctor.", exampleFr: "J'ai besoin d'un médecin.", context: "santé" },
+      { en: "rest", fr: "se reposer", example: "You need to rest.", exampleFr: "Tu as besoin de te reposer.", context: "santé" },
+      { en: "later", fr: "plus tard", example: "I will call you later.", exampleFr: "Je t'appellerai plus tard.", context: "temps" },
+      { en: "help", fr: "aider", example: "Can you help me with this?", exampleFr: "Peux-tu m'aider avec ça ?", context: "entraide" },
+      { en: "swim", fr: "nager", example: "I can swim well.", exampleFr: "Je sais bien nager.", context: "sports" }
+    ],
+    exercises: [
+      { q: "Complète : « You ___ see a doctor. » (conseil)", options: ["should", "shoulds", "shoulding", "should to"], answer: 0, explain: "« Should » sert à donner un conseil." },
+      { q: "Complète : « It ___ rain later. » (peut-être)", options: ["might", "mights", "might to", "mighted"], answer: 0, explain: "« Might » exprime une possibilité." },
+      { q: "Complète la demande polie : « ___ you help me? »", options: ["Could", "Coulded", "Can to", "Shoulds"], answer: 0, explain: "« Could » rend la demande plus polie." },
+      { q: "Complète : « I ___ swim when I was five. »", options: ["could", "can to", "coulded", "cans"], answer: 0, explain: "Pour une capacité au passé, on utilise « could »." }
+    ]
+  },
+  {
+    id: "a2-verbs-reference",
+    level: "A2",
+    title: "Tableau de référence : les verbes irréguliers courants",
+    objective: "Connaître le présent, le passé et le participe passé des verbes les plus utilisés.",
+    explanation: [
+      "Pour les verbes irréguliers, il faut apprendre trois formes : le verbe de base, le passé simple, et le participe passé (utilisé avec have).",
+      "Exemples : go – went – gone (aller) ; have – had – had (avoir) ; do – did – done (faire) ; make – made – made (fabriquer, faire) ; take – took – taken (prendre).",
+      "Autres verbes courants : see – saw – seen (voir) ; eat – ate – eaten (manger) ; write – wrote – written (écrire) ; buy – bought – bought (acheter) ; come – came – come (venir).",
+      "Avec he, she, it, le présent prend un « s » : she goes, he does, it has. Au passé et au participe, la forme ne change pas avec la personne."
+    ],
+    examples: [
+      { en: "She goes to school by bus.", fr: "Elle va à l'école en bus." },
+      { en: "He did his homework last night.", fr: "Il a fait ses devoirs hier soir." },
+      { en: "I took the bus this morning.", fr: "J'ai pris le bus ce matin." },
+      { en: "They came to see us last week.", fr: "Ils sont venus nous voir la semaine dernière." },
+      { en: "We have written many letters.", fr: "Nous avons écrit beaucoup de lettres." }
+    ],
+    pronunciation: "Réviser à l'oral : dis les trois formes à voix haute, par exemple « go, went, gone ». Insiste sur la voyelle, qui change souvent.",
+    vocab: [
+      { en: "take", fr: "prendre (passé : took)", example: "I take the bus.", exampleFr: "Je prends le bus.", context: "transport" },
+      { en: "come", fr: "venir (passé : came)", example: "Where do you come from?", exampleFr: "D'où viens-tu ?", context: "verbes" },
+      { en: "write", fr: "écrire (passé : wrote)", example: "I write in my notebook.", exampleFr: "J'écris dans mon cahier.", context: "école" },
+      { en: "buy", fr: "acheter (passé : bought)", example: "I bought some bread.", exampleFr: "J'ai acheté du pain.", context: "achats" },
+      { en: "make", fr: "faire, fabriquer (passé : made)", example: "She made a cake.", exampleFr: "Elle a fait un gâteau.", context: "cuisine" }
+    ],
+    exercises: [
+      { q: "Quel est le passé de « take » ?", options: ["took", "taken", "taked", "takes"], answer: 0, explain: "« Take » est irrégulier : passé « took »." },
+      { q: "Quel est le participe passé de « see » ?", options: ["saw", "seen", "seed", "see"], answer: 1, explain: "Le participe passé de « see » est « seen »." },
+      { q: "Présent avec « she » : « do » devient…", options: ["do", "does", "doing", "did"], answer: 1, explain: "Avec he, she, it, on ajoute « es » : does." },
+      { q: "Quel est le passé de « make » ?", options: ["made", "maked", "make", "making"], answer: 0, explain: "« Make » est irrégulier : passé « made »." }
+    ]
   }
 ];
