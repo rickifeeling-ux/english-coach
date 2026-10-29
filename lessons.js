@@ -961,5 +961,203 @@ window.LESSONS = [
       { q: "Présent avec « she » : « do » devient…", options: ["do", "does", "doing", "did"], answer: 1, explain: "Avec he, she, it, on ajoute « es » : does." },
       { q: "Quel est le passé de « make » ?", options: ["made", "maked", "make", "making"], answer: 0, explain: "« Make » est irrégulier : passé « made »." }
     ]
+  },
+  {
+    id: "b1-present-perfect-continuous",
+    level: "B1",
+    title: "Le present perfect continu : have been + -ing",
+    objective: "Parler d'une action qui a commencé dans le passé et qui continue, ou qui vient de se terminer.",
+    explanation: [
+      "On forme ce temps avec have / has been, puis le verbe en -ing : I have been learning English for two years (J'apprends l'anglais depuis deux ans).",
+      "Il insiste sur la durée. Avec since (depuis + moment précis) et for (pendant + durée) : It has been raining since morning (il pleut depuis le matin).",
+      "On l'utilise aussi pour expliquer un résultat visible : You are tired. Have you been running? (tu es fatigué, tu as couru ?)",
+      "Avec un verbe d'état (know, live, have, be), on préfère le present perfect simple : I have known her for ten years (et non « have been knowing »)."
+    ],
+    examples: [
+      { en: "I have been learning English for two years.", fr: "J'apprends l'anglais depuis deux ans." },
+      { en: "It has been raining since this morning.", fr: "Il pleut depuis ce matin." },
+      { en: "She has been working here since 2020.", fr: "Elle travaille ici depuis 2020." },
+      { en: "You look tired. Have you been running?", fr: "Tu as l'air fatigué. Tu as couru ?" },
+      { en: "They have been waiting for an hour.", fr: "Ils attendent depuis une heure." }
+    ],
+    pronunciation: "« Have been » se prononce souvent « 'v bin ». Le « -ing » est léger : « learnin' ».",
+    vocab: [
+      { en: "wait", fr: "attendre", example: "Please wait here.", exampleFr: "Attends ici, s'il te plaît.", context: "quotidien" },
+      { en: "run", fr: "courir", example: "I run every morning.", exampleFr: "Je cours chaque matin.", context: "sport" },
+      { en: "progress", fr: "progrès, avancée", example: "I am making good progress.", exampleFr: "Je fais de bons progrès.", context: "études" },
+      { en: "tired", fr: "fatigué", example: "I am so tired today.", exampleFr: "Je suis très fatigué aujourd'hui.", context: "émotions" },
+      { en: "morning", fr: "matin", example: "I work every morning.", exampleFr: "Je travaille chaque matin.", context: "temps" }
+    ],
+    exercises: [
+      { q: "Complète : « I ___ English for three years. » (apprendre)", options: ["have been learning", "am learning", "learned", "was learning"], answer: 0, explain: "Une action qui dure depuis trois ans : have been + -ing." },
+      { q: "Complète : « It ___ since Monday. » (pleuvoir)", options: ["has been raining", "rains", "was raining", "has rained since"], answer: 0, explain: "« Since » + moment précis, avec has been + -ing." },
+      { q: "Quelle phrase est correcte ?", options: ["I have been knowing him for years.", "I have known him for years.", "I am knowing him for years.", "I have knowing him for years."], answer: 1, explain: "« Know » est un verbe d'état : on utilise le present perfect simple." },
+      { q: "Complète : « You look tired. What ___ you ___? » (faire)", options: ["have / been doing", "did / do", "are / doing", "were / doing"], answer: 0, explain: "On demande ce qui a causé la fatigue : have you been doing ?" }
+    ]
+  },
+  {
+    id: "b1-used-to",
+    level: "B1",
+    title: "Used to : les habitudes du passé",
+    objective: "Parler d'une habitude ou d'un état qui n'existent plus.",
+    explanation: [
+      "Used to + verbe de base décrit une habitude passée ou un état qui n'existe plus : I used to live in Libreville (j'habitais à Libreville, avant).",
+      "Négation : didn't use to. Question : Did you use to...? (ne prononce pas le « d » de « used », il se prononce « youst »).",
+      "Ne confonds pas avec « be used to + -ing », qui veut dire « être habitué à » : I am used to waking up early (je suis habitué à me lever tôt).",
+      "Pour une habitude passée qui se répète, on peut aussi utiliser would, mais jamais pour un état : I used to have a car, pas « I would have a car »."
+    ],
+    examples: [
+      { en: "I used to live in a small village.", fr: "J'habitais dans un petit village." },
+      { en: "She used to play football.", fr: "Elle jouait au football." },
+      { en: "We didn't use to eat meat.", fr: "Nous ne mangions pas de viande." },
+      { en: "Did you use to walk to school?", fr: "Allais-tu à l'école à pied ?" },
+      { en: "I am used to the noise now.", fr: "Je suis habitué au bruit maintenant." }
+    ],
+    pronunciation: "« Used to » se dit « youst tou ». Le « d » final n'est pas prononcé.",
+    vocab: [
+      { en: "village", fr: "village", example: "We live in a village.", exampleFr: "Nous vivons dans un village.", context: "lieux" },
+      { en: "noise", fr: "bruit", example: "The noise is loud.", exampleFr: "Le bruit est fort.", context: "quotidien" },
+      { en: "walk", fr: "marcher, aller à pied", example: "I walk to work.", exampleFr: "Je vais au travail à pied.", context: "transport" },
+      { en: "early", fr: "tôt", example: "I wake up early.", exampleFr: "Je me réveille tôt.", context: "temps" },
+      { en: "meat", fr: "viande", example: "I don't eat meat.", exampleFr: "Je ne mange pas de viande.", context: "nourriture" }
+    ],
+    exercises: [
+      { q: "Complète : « I ___ live in Paris. » (habitude passée)", options: ["used to", "use to", "am used to", "used"], answer: 0, explain: "« Used to » décrit un état ou une habitude qui n'existe plus." },
+      { q: "Complète : « She ___ be very shy. »", options: ["used to", "is used", "use to", "is using"], answer: 0, explain: "« Used to » suivi du verbe de base : used to be." },
+      { q: "Complète : « I am ___ early. » (habitué à)", options: ["used to waking up", "used to wake up", "use to wake up", "used waking"], answer: 0, explain: "« Be used to » + -ing signifie « être habitué à »." },
+      { q: "Complète la négation : « We ___ go out on Sundays. »", options: ["didn't use to", "didn't used to", "not used", "don't used to"], answer: 0, explain: "Au négatif : didn't use to (sans « d » à « use »)." }
+    ]
+  },
+  {
+    id: "b1-second-conditional",
+    level: "B1",
+    title: "Si... alors : la deuxième conditionnelle",
+    objective: "Imaginer une situation irréelle ou très peu probable, et sa conséquence.",
+    explanation: [
+      "Structure : if + prétérit (passé simple), would + verbe de base : If I had money, I would travel (si j'avais de l'argent, je voyagerais).",
+      "Le sens est au présent ou au futur, malgré le passé dans la phrase : if I were rich (si j'étais riche) parle d'un rêve, pas du passé.",
+      "Avec be, on dit souvent « if I were » ou « if he were » pour toutes les personnes : If I were you, I would call her (à ta place, je l'appellerais).",
+      "Ne pas confondre avec la première conditionnelle : la première parle de situations réelles (if it rains, I will stay), la deuxième de situations imaginaires."
+    ],
+    examples: [
+      { en: "If I had more time, I would learn Spanish.", fr: "Si j'avais plus de temps, j'apprendrais l'espagnol." },
+      { en: "If I won the lottery, I would buy a house.", fr: "Si je gagnais à la loterie, j'achèterais une maison." },
+      { en: "If I were you, I would apologize.", fr: "À ta place, je m'excuserais." },
+      { en: "What would you do if you were rich?", fr: "Que ferais-tu si tu étais riche ?" },
+      { en: "She would be happier if she lived by the sea.", fr: "Elle serait plus heureuse si elle vivait au bord de la mer." }
+    ],
+    pronunciation: "« Would » se dit souvent « wud » : « I'd travel ». « If I were » se dit « if i wer ».",
+    vocab: [
+      { en: "lottery", fr: "loterie", example: "He won the lottery.", exampleFr: "Il a gagné à la loterie.", context: "argent" },
+      { en: "rich", fr: "riche", example: "They are very rich.", exampleFr: "Ils sont très riches.", context: "argent" },
+      { en: "apologize", fr: "s'excuser", example: "Please apologize to her.", exampleFr: "Excuse-toi auprès d'elle, s'il te plaît.", context: "relations" },
+      { en: "sea", fr: "mer", example: "We swim in the sea.", exampleFr: "Nous nageons dans la mer.", context: "lieux" },
+      { en: "happy", fr: "heureux", example: "I am happy today.", exampleFr: "Je suis heureux aujourd'hui.", context: "émotions" }
+    ],
+    exercises: [
+      { q: "Complète : « If I ___ a bird, I would fly. » (être)", options: ["were", "was", "am", "will be"], answer: 0, explain: "Dans une conditionnelle irréelle, on dit « if I were »." },
+      { q: "Complète : « If she ___ more money, she would buy a car. »", options: ["had", "has", "will have", "have"], answer: 0, explain: "Après « if », on utilise le passé simple : had." },
+      { q: "Complète : « I ___ you if I knew the answer. » (aider)", options: ["would help", "will help", "helped", "help"], answer: 0, explain: "La conséquence utilise « would » + verbe de base." },
+      { q: "Quelle phrase est correcte ?", options: ["If I would have time, I would call you.", "If I had time, I would call you.", "If I have time, I would call you.", "If I had time, I will call you."], answer: 1, explain: "Pas de « would » après « if », et la conséquence utilise « would »." }
+    ]
+  },
+  {
+    id: "b1-passive",
+    level: "B1",
+    title: "Le passif : be + participe passé",
+    objective: "Parler d'une action sans dire qui la fait, ou quand ce n'est pas important.",
+    explanation: [
+      "Le passif se forme avec le verbe be conjugué au temps voulu, puis le participe passé : English is spoken here (on parle anglais ici).",
+      "Présent : am / is / are + participe. Passé simple : was / were + participe. The letter was written yesterday (la lettre a été écrite hier).",
+      "On garde by seulement si l'auteur est important : This book was written by Victor Hugo (ce livre a été écrit par Victor Hugo).",
+      "Pour transformer une phrase active : l'objet devient le sujet. « They build houses » devient « Houses are built ». Le verbe be s'accorde avec le nouveau sujet."
+    ],
+    examples: [
+      { en: "English is spoken in many countries.", fr: "L'anglais est parlé dans de nombreux pays." },
+      { en: "The letter was written yesterday.", fr: "La lettre a été écrite hier." },
+      { en: "Houses are built with bricks here.", fr: "Ici, les maisons sont construites avec des briques." },
+      { en: "This book was written by a famous writer.", fr: "Ce livre a été écrit par un écrivain célèbre." },
+      { en: "The windows were cleaned this morning.", fr: "Les fenêtres ont été nettoyées ce matin." }
+    ],
+    pronunciation: "« Is spoken » : le « s » de « is » se dit « z ». « Were » se dit « wer », faible.",
+    vocab: [
+      { en: "brick", fr: "brique", example: "The wall is made of bricks.", exampleFr: "Le mur est en briques.", context: "construction" },
+      { en: "build", fr: "construire (passé : built)", example: "They built a new school.", exampleFr: "Ils ont construit une nouvelle école.", context: "construction" },
+      { en: "clean", fr: "nettoyer", example: "I clean my room on Saturdays.", exampleFr: "Je nettoie ma chambre le samedi.", context: "maison" },
+      { en: "famous", fr: "célèbre", example: "She is a famous singer.", exampleFr: "C'est une chanteuse célèbre.", context: "culture" },
+      { en: "wall", fr: "mur", example: "Hang the picture on the wall.", exampleFr: "Accroche le tableau au mur.", context: "maison" }
+    ],
+    exercises: [
+      { q: "Complète : « English ___ in many countries. » (parler)", options: ["is spoken", "speaks", "is speak", "spoken"], answer: 0, explain: "Présent passif : is + participe passé (spoken)." },
+      { q: "Complète : « The letter ___ yesterday. » (écrire)", options: ["was written", "was write", "wrote", "is written"], answer: 0, explain: "Passé passif : was + participe passé (written)." },
+      { q: "Quel est le participe passé de « build » ?", options: ["built", "builded", "build", "building"], answer: 0, explain: "« Build » est irrégulier : built." },
+      { q: "Transforme : « They sell bread here. » → « Bread ___ here. »", options: ["is sold", "is sell", "sells", "was sold"], answer: 0, explain: "Présent passif : is sold, car « bread » est au singulier." }
+    ]
+  },
+  {
+    id: "b1-relative-clauses",
+    level: "B1",
+    title: "Les propositions relatives : who, which, that, where",
+    objective: "Préciser qui ou quoi on désigne sans commencer une nouvelle phrase.",
+    explanation: [
+      "Who remplace une personne : The man who lives next door is a doctor (l'homme qui habite à côté est médecin).",
+      "Which remplace une chose ou un animal : The car which I bought is red (la voiture que j'ai achetée est rouge). That peut remplacer who ou which dans la plupart des cas.",
+      "Where remplace un lieu : This is the café where we met (c'est le café où nous nous sommes rencontrés).",
+      "Si la relative est un complément, on peut l'omettre en anglais : The book (that) I read was long (le livre que j'ai lu était long)."
+    ],
+    examples: [
+      { en: "The woman who called you is my sister.", fr: "La femme qui t'a appelé est ma sœur." },
+      { en: "The phone which I lost was new.", fr: "Le téléphone que j'ai perdu était neuf." },
+      { en: "This is the town where I was born.", fr: "C'est la ville où je suis né." },
+      { en: "The book (that) I read was very long.", fr: "Le livre que j'ai lu était très long." },
+      { en: "I know a man who speaks five languages.", fr: "Je connais un homme qui parle cinq langues." }
+    ],
+    pronunciation: "« Who » se prononce « hou ». « Where » se prononce « wer ». Dans une phrase longue, fais une petite pause avant « who ».",
+    vocab: [
+      { en: "neighbour", fr: "voisin, voisine", example: "My neighbour is very kind.", exampleFr: "Mon voisin est très gentil.", context: "quotidien" },
+      { en: "lose", fr: "perdre (passé : lost)", example: "I lost my keys.", exampleFr: "J'ai perdu mes clés.", context: "quotidien" },
+      { en: "born", fr: "né", example: "I was born in 1995.", exampleFr: "Je suis né en 1995.", context: "biographie" },
+      { en: "town", fr: "ville (plus petite qu'une city)", example: "It is a small town.", exampleFr: "C'est une petite ville.", context: "lieux" },
+      { en: "language", fr: "langue", example: "English is my second language.", exampleFr: "L'anglais est ma deuxième langue.", context: "études" }
+    ],
+    exercises: [
+      { q: "Complète : « The girl ___ called me is my friend. » (une personne)", options: ["who", "which", "where", "what"], answer: 0, explain: "Pour une personne, on utilise « who »." },
+      { q: "Complète : « This is the shop ___ I bought the shoes. » (un lieu)", options: ["where", "who", "which", "when"], answer: 0, explain: "Pour un lieu, on utilise « where »." },
+      { q: "Complète : « The dog ___ barks all night is mine. » (un animal)", options: ["which", "who", "where", "whose"], answer: 0, explain: "Pour un animal ou une chose, on utilise « which » ou « that »." },
+      { q: "Quelle phrase est correcte ?", options: ["The man who I met is nice.", "The man I met who is nice.", "The man who is nice I met.", "The man which lives here is nice."], answer: 0, explain: "« Who » introduit la relative. Ici, « I met » est déjà la relative, donc « The man who I met » est la forme la plus naturelle." }
+    ]
+  },
+  {
+    id: "b1-reported-speech",
+    level: "B1",
+    title: "Le discours indirect : rapporter ce que quelqu'un a dit",
+    objective: "Répéter les paroles de quelqu'un, avec le bon changement de temps.",
+    explanation: [
+      "Pour rapporter une phrase au passé, on recule d'un temps : present simple → past simple (« I am tired » devient « she said she was tired »).",
+      "Will devient would, can devient could, have devient had : « I will come » devient « He said he would come ».",
+      "Said sert à rapporter une phrase sans personne cible : She said she was ready. Told demande une personne : She told me she was ready (elle m'a dit qu'elle était prête).",
+      "Les marqueurs de temps changent aussi : today devient that day, tomorrow devient the next day, yesterday devient the day before."
+    ],
+    examples: [
+      { en: "She said she was tired.", fr: "Elle a dit qu'elle était fatiguée." },
+      { en: "He told me he would come to the party.", fr: "Il m'a dit qu'il viendrait à la fête." },
+      { en: "They said they had finished the work.", fr: "Ils ont dit qu'ils avaient fini le travail." },
+      { en: "I asked her if she could help me.", fr: "Je lui ai demandé si elle pouvait m'aider." },
+      { en: "He said he would call the next day.", fr: "Il a dit qu'il appellerait le lendemain." }
+    ],
+    pronunciation: "Dans « he said he would », le « would » est faible : « wud ». « Said » se prononce « sèd ».",
+    vocab: [
+      { en: "ready", fr: "prêt", example: "Are you ready?", exampleFr: "Tu es prêt ?", context: "quotidien" },
+      { en: "finish", fr: "finir, terminer", example: "I finished my homework.", exampleFr: "J'ai fini mes devoirs.", context: "études" },
+      { en: "ask", fr: "demander", example: "Can I ask you a question?", exampleFr: "Puis-je te poser une question ?", context: "communication" },
+      { en: "tell", fr: "dire à quelqu'un (passé : told)", example: "Tell me the truth.", exampleFr: "Dis-moi la vérité.", context: "communication" },
+      { en: "the next day", fr: "le lendemain", example: "The next day, it was sunny.", exampleFr: "Le lendemain, il faisait beau.", context: "temps" }
+    ],
+    exercises: [
+      { q: "Direct : « I am happy. » → Indirect : « She said she ___ happy. »", options: ["was", "is", "am", "were"], answer: 0, explain: "Le present simple recule au past simple : was." },
+      { q: "Direct : « I will come. » → « He said he ___ come. »", options: ["would", "will", "can", "is going"], answer: 0, explain: "Will devient would dans le discours indirect." },
+      { q: "Complète : « He ___ me he was tired. »", options: ["told", "said me", "say", "tells"], answer: 0, explain: "Avec une personne cible (me), on utilise « told »." },
+      { q: "Direct : « I called yesterday. » → « She said she ___ the day before. »", options: ["had called", "called", "has called", "calls"], answer: 0, explain: "Le past simple recule au past perfect : had called." }
+    ]
   }
 ];
