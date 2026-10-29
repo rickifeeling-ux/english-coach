@@ -283,8 +283,8 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
   var SCENE_KEYS = ['restaurant', 'airport', 'interview', 'shop', 'doctor'];
   var C = { busy: false, error: null, openFr: {}, listening: false, draft: '', authErr: null, authInfo: null };
   // Comptes (Supabase) : ces deux valeurs sont publiques, elles se mettent ici une fois le projet créé.
-  var SUPABASE_URL = '';
-  var SUPABASE_ANON_KEY = '';
+  var SUPABASE_URL = 'https://lvgkdiytkpmsiafcjcsw.supabase.co';
+  var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx2Z2tkaXl0a3Btc2lhZmNqY3N3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMyMjY3NTcsImV4cCI6MjEwODgwMjc1N30.F3phS9sAqGdnvoq0-p926L77lHtrFKB14Uu73axQRag';
   var SESSION_KEY = 'ec_session';
   var session = null;
   function authOn() { return !!(SUPABASE_URL && SUPABASE_ANON_KEY); }
