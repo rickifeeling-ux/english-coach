@@ -1159,5 +1159,104 @@ window.LESSONS = [
       { q: "Complète : « He ___ me he was tired. »", options: ["told", "said me", "say", "tells"], answer: 0, explain: "Avec une personne cible (me), on utilise « told »." },
       { q: "Direct : « I called yesterday. » → « She said she ___ the day before. »", options: ["had called", "called", "has called", "calls"], answer: 0, explain: "Le past simple recule au past perfect : had called." }
     ]
+  },
+  {
+    id: "b1-past-perfect",
+    level: "B1",
+    title: "Le past perfect : had + participe passé",
+    objective: "Placer une action avant une autre action passée.",
+    explanation: [
+      "On forme le past perfect avec had, puis le participe passé : I had finished before she arrived (j'avais fini avant qu'elle arrive).",
+      "Il sert à montrer l'action la plus ancienne : quand deux actions sont passées, celle qui s'est passée en premier prend had.",
+      "Avec after, before ou when, on a souvent un ordre clair : After they had eaten, they left (après avoir mangé, ils sont partis).",
+      "Négation : hadn't. Question : Had you seen it before? (l'avais-tu déjà vu avant ?)"
+    ],
+    examples: [
+      { en: "I had finished my work before she arrived.", fr: "J'avais fini mon travail avant son arrivée." },
+      { en: "When we got there, the film had already started.", fr: "Quand nous sommes arrivés, le film avait déjà commencé." },
+      { en: "She hadn't eaten, so she was hungry.", fr: "Elle n'avait pas mangé, donc elle avait faim." },
+      { en: "Had you ever met him before?", fr: "L'avais-tu déjà rencontré avant ?" },
+      { en: "After they had left, the house was quiet.", fr: "Après leur départ, la maison était calme." }
+    ],
+    pronunciation: "« Had » est faible dans les phrases : « 'd » ; « hadn't » se dit « 'hadnt ».",
+    vocab: [
+      { en: "arrive", fr: "arriver", example: "The train arrived late.", exampleFr: "Le train est arrivé en retard.", context: "voyage" },
+      { en: "already", fr: "déjà", example: "I have already eaten.", exampleFr: "J'ai déjà mangé.", context: "temps" },
+      { en: "hungry", fr: "affamé, qui a faim", example: "I am very hungry.", exampleFr: "J'ai très faim.", context: "quotidien" },
+      { en: "quiet", fr: "calme, silencieux", example: "The house is quiet.", exampleFr: "La maison est calme.", context: "maison" },
+      { en: "leave", fr: "partir, quitter", example: "We leave at six.", exampleFr: "Nous partons à six heures.", context: "voyage" }
+    ],
+    exercises: [
+      { q: "Complète : « When I arrived, she ___ already ___. » (partir)", options: ["had / left", "has / left", "was / leaving", "did / leave"], answer: 0, explain: "L'action la plus ancienne (partir) prend had + participe passé." },
+      { q: "Complète : « I ___ never seen snow before that day. »", options: ["had", "have", "was", "did"], answer: 0, explain: "Avant un autre moment passé, on utilise had + participe passé." },
+      { q: "Quelle phrase est correcte ?", options: ["She had went home.", "She had gone home.", "She has gone home before.", "She had go home."], answer: 1, explain: "Le participe passé de « go » est « gone »." },
+      { q: "Complète la question : « ___ you ___ the film before? »", options: ["Had / seen", "Did / see", "Have / saw", "Were / seen"], answer: 0, explain: "Question au past perfect : Had + sujet + participe passé." }
+    ]
+  },
+  {
+    id: "b1-gerund-infinitive",
+    level: "B1",
+    title: "Gérondif ou infinitif : enjoy doing, want to do",
+    objective: "Savoir quel verbe est suivi d'un -ing et lequel est suivi de to.",
+    explanation: [
+      "Certains verbes sont suivis d'un verbe en -ing : enjoy, finish, avoid, mind, suggest. I enjoy reading (j'aime lire).",
+      "D'autres sont suivis de to + verbe de base : want, decide, hope, plan, need. I want to travel (je veux voyager).",
+      "Certains verbes acceptent les deux, avec un changement de sens. Remember to lock the door (ne pas oublier de fermer la porte) ; I remember locking the door (je me souviens de l'avoir fermée).",
+      "Après une préposition, on utilise toujours le -ing : Thank you for helping me (merci de m'avoir aidé)."
+    ],
+    examples: [
+      { en: "I enjoy cooking for my family.", fr: "J'aime cuisiner pour ma famille." },
+      { en: "She decided to move to Paris.", fr: "Elle a décidé de déménager à Paris." },
+      { en: "Thank you for coming.", fr: "Merci d'être venu." },
+      { en: "We finished eating at nine.", fr: "Nous avons fini de manger à neuf heures." },
+      { en: "They hope to win the match.", fr: "Ils espèrent gagner le match." }
+    ],
+    pronunciation: "« To » devant un verbe se prononce « tou » (ou « te » en vitesse). Le « -ing » reste court et léger.",
+    vocab: [
+      { en: "enjoy", fr: "aimer, apprécier", example: "I enjoy music.", exampleFr: "J'aime la musique.", context: "loisirs" },
+      { en: "decide", fr: "décider", example: "I decided to stay.", exampleFr: "J'ai décidé de rester.", context: "verbes" },
+      { en: "avoid", fr: "éviter", example: "Try to avoid sugar.", exampleFr: "Essaie d'éviter le sucre.", context: "santé" },
+      { en: "hope", fr: "espérer", example: "I hope to see you soon.", exampleFr: "J'espère te voir bientôt.", context: "verbes" },
+      { en: "suggest", fr: "suggérer", example: "She suggested going out.", exampleFr: "Elle a suggéré de sortir.", context: "communication" }
+    ],
+    exercises: [
+      { q: "Complète : « I enjoy ___ books. » (lire)", options: ["reading", "to read", "read", "reads"], answer: 0, explain: "« Enjoy » est suivi du -ing." },
+      { q: "Complète : « She decided ___ a new job. » (chercher)", options: ["to look for", "looking for", "look for", "looks for"], answer: 0, explain: "« Decide » est suivi de to + verbe." },
+      { q: "Complète : « Thank you for ___ me. » (aider)", options: ["helping", "to help", "help", "helps"], answer: 0, explain: "Après une préposition (for), on utilise le -ing." },
+      { q: "Complète : « We hope ___ you again. » (voir)", options: ["to see", "seeing", "see", "saw"], answer: 0, explain: "« Hope » est suivi de to + verbe." }
+    ]
+  },
+  {
+    id: "b1-phrasal-verbs",
+    level: "B1",
+    title: "Les verbes à particule : get up, look for, turn on",
+    objective: "Reconnaître et utiliser les verbes à deux mots les plus courants.",
+    explanation: [
+      "Un verbe à particule est un verbe suivi d'une petite préposition ou d'un adverbe, dont le sens change : look (regarder) ; look for (chercher) ; look after (s'occuper de).",
+      "Certains verbes à particule sont séparables : turn on the light / turn the light on. Si le complément est un pronom, il doit être au milieu : turn it on (pas « turn on it »).",
+      "Quelques verbes courants : get up (se lever), put on (mettre un vêtement), take off (enlever, décoller), give up (abandonner), find out (découvrir).",
+      "Il faut apprendre chaque verbe avec son sens : il n'existe pas toujours de règle logique."
+    ],
+    examples: [
+      { en: "I get up at six every morning.", fr: "Je me lève à six heures chaque matin." },
+      { en: "Can you turn the light off, please?", fr: "Peux-tu éteindre la lumière, s'il te plaît ?" },
+      { en: "I am looking for my keys.", fr: "Je cherche mes clés." },
+      { en: "Don't give up, you can do it.", fr: "N'abandonne pas, tu peux y arriver." },
+      { en: "The plane took off at noon.", fr: "L'avion a décollé à midi." }
+    ],
+    pronunciation: "Dans un verbe à particule, la particule est souvent accentuée : « look UP », « turn ON ».",
+    vocab: [
+      { en: "look for", fr: "chercher", example: "I'm looking for a job.", exampleFr: "Je cherche un travail.", context: "verbes" },
+      { en: "put on", fr: "mettre (un vêtement)", example: "Put on your coat.", exampleFr: "Mets ton manteau.", context: "vêtements" },
+      { en: "give up", fr: "abandonner", example: "Never give up.", exampleFr: "N'abandonne jamais.", context: "verbes" },
+      { en: "find out", fr: "découvrir, apprendre", example: "I found out the truth.", exampleFr: "J'ai découvert la vérité.", context: "verbes" },
+      { en: "turn off", fr: "éteindre", example: "Turn off the TV.", exampleFr: "Éteins la télé.", context: "maison" }
+    ],
+    exercises: [
+      { q: "Complète : « I am ___ my glasses. » (chercher)", options: ["looking for", "looking at", "look after", "giving up"], answer: 0, explain: "« Look for » veut dire chercher." },
+      { q: "Complète : « Please turn it ___. » (éteindre)", options: ["off", "on up", "out", "away"], answer: 0, explain: "« Turn off » veut dire éteindre. Le pronom « it » se place au milieu : turn it off." },
+      { q: "Quel verbe à particule signifie « se lever » ?", options: ["get up", "get on", "get in", "get over"], answer: 0, explain: "« Get up » veut dire se lever." },
+      { q: "Complète : « I ___ the truth yesterday. » (découvrir)", options: ["found out", "found up", "found in", "found on"], answer: 0, explain: "« Find out » veut dire découvrir, apprendre." }
+    ]
   }
 ];
