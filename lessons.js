@@ -1551,9 +1551,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « Never ___ such a mess. »", options: ["have I seen", "I have seen", "I saw", "have seen I"], answer: 0, explain: "Après « never » en début de phrase, l'auxiliaire passe avant le sujet." },
-      { q: "Complète : « Hardly ___ I arrived when it started to rain. »", options: ["had", "have", "did", "was"], answer: 0, explain: "« Hardly » + had + sujet + participe passé, puis « when »." },
-      { q: "Complète : « No sooner ___ she left than the phone rang. »", options: ["had", "did", "was", "has"], answer: 0, explain: "« No sooner » demande l'inversion au past perfect : had she left." },
-      { q: "Quelle phrase est correcte ?", options: ["Not only he won, but he also broke the record.", "Not only did he win, but he also broke the record.", "Not only he did win, but he broke the record.", "Not only won he, but he broke the record."], answer: 1, explain: "Après « not only » en début de phrase : did + sujet + verbe de base." }
+      { q: "Complète : « Hardly ___ I arrived when it started to rain. »", options: ["have", "had", "did", "was"], answer: 1, explain: "« Hardly » + had + sujet + participe passé, puis « when »." },
+      { q: "Complète : « No sooner ___ she left than the phone rang. »", options: ["did", "was", "had", "has"], answer: 2, explain: "« No sooner » demande l'inversion au past perfect : had she left." },
+      { q: "Quelle phrase est correcte ?", options: ["Not only he won, but he also broke the record.", "Not only he did win, but he broke the record.", "Not only won he, but he broke the record.", "Not only did he win, but he also broke the record."], answer: 3, explain: "Après « not only » en début de phrase : did + sujet + verbe de base." }
     ]
   },
   {
@@ -1584,9 +1584,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « It was Marie ___ won the prize. »", options: ["who", "which", "where", "what"], answer: 0, explain: "Pour une personne mise en valeur : it was ... who." },
-      { q: "Complète : « What I want ___ a quiet place to think. »", options: ["is", "are", "was to", "be"], answer: 0, explain: "Avec « what », le verbe s'accorde avec la fin de la phrase, ici singulier : is." },
-      { q: "Complète : « It was the heat ___ made him tired. »", options: ["that", "who", "where", "when"], answer: 0, explain: "Pour une chose mise en valeur : it was ... that." },
-      { q: "Quelle phrase est correcte ?", options: ["What I did was to leave early.", "What I did is leave early.", "It was to leave early what I did.", "It is leave early that I did."], answer: 0, explain: "La structure « What ... was to + verbe » ou « What ... was + verbe » met en valeur une action." }
+      { q: "Complète : « What I want ___ a quiet place to think. »", options: ["are", "is", "was to", "be"], answer: 1, explain: "Avec « what », le verbe s'accorde avec la fin de la phrase, ici singulier : is." },
+      { q: "Complète : « It was the heat ___ made him tired. »", options: ["who", "where", "that", "when"], answer: 2, explain: "Pour une chose mise en valeur : it was ... that." },
+      { q: "Quelle phrase est correcte ?", options: ["What I did is leave early.", "It was to leave early what I did.", "It is leave early that I did.", "What I did was to leave early."], answer: 3, explain: "La structure « What ... was to + verbe » ou « What ... was + verbe » met en valeur une action." }
     ]
   },
   {
@@ -1617,9 +1617,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « I suggest that he ___ a doctor. »", options: ["see", "sees", "saw", "is seeing"], answer: 0, explain: "Après « suggest that », on utilise la forme de base : see." },
-      { q: "Complète : « It is essential that she ___ informed. »", options: ["be", "is", "will be", "was"], answer: 0, explain: "Après « essential that », la forme de base : be." },
-      { q: "Complète : « They demanded that the report ___ by Friday. »", options: ["be finished", "is finished", "will be finished", "was finishing"], answer: 0, explain: "Après « demanded that », on utilise la forme de base : be finished." },
-      { q: "Quelle phrase est correcte ?", options: ["The doctor recommended that he takes a break.", "The doctor recommended that he take a break.", "The doctor recommended that he took a break.", "The doctor recommended him to takes a break."], answer: 1, explain: "Après « recommended that », on utilise la forme de base : take." }
+      { q: "Complète : « It is essential that she ___ informed. »", options: ["is", "be", "will be", "was"], answer: 1, explain: "Après « essential that », la forme de base : be." },
+      { q: "Complète : « They demanded that the report ___ by Friday. »", options: ["is finished", "will be finished", "be finished", "was finishing"], answer: 2, explain: "Après « demanded that », on utilise la forme de base : be finished." },
+      { q: "Quelle phrase est correcte ?", options: ["The doctor recommended that he takes a break.", "The doctor recommended that he took a break.", "The doctor recommended him to takes a break.", "The doctor recommended that he take a break."], answer: 3, explain: "Après « recommended that », on utilise la forme de base : take." }
     ]
   },
   {
@@ -1650,9 +1650,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « You ___ paid. I already did it. » (c'était inutile)", options: ["needn't have", "mustn't have", "couldn't have", "shouldn't"], answer: 0, explain: "« Needn't have » : ce n'était pas nécessaire, mais c'est fait." },
-      { q: "Complète : « She ___ very tired after the long flight. » (déduction sur le passé)", options: ["must have been", "must be", "must have", "can't be"], answer: 0, explain: "Déduction sur le passé : must have been + adjectif." },
-      { q: "Complète : « He ___ right about the result. » (probablement)", options: ["may well be", "may be well", "well may", "is well"], answer: 0, explain: "« May well » exprime une forte probabilité : may well be." },
-      { q: "Quelle phrase est correcte ?", options: ["You needn't have come, but you did.", "You needn't come, but you did.", "You needn't to have come.", "You needn't have came."], answer: 0, explain: "« Needn't have » + participe passé : have come." }
+      { q: "Complète : « She ___ very tired after the long flight. » (déduction sur le passé)", options: ["must be", "must have been", "must have", "can't be"], answer: 1, explain: "Déduction sur le passé : must have been + adjectif." },
+      { q: "Complète : « He ___ right about the result. » (probablement)", options: ["may be well", "well may", "may well be", "is well"], answer: 2, explain: "« May well » exprime une forte probabilité : may well be." },
+      { q: "Quelle phrase est correcte ?", options: ["You needn't come, but you did.", "You needn't to have come.", "You needn't have came.", "You needn't have come, but you did."], answer: 3, explain: "« Needn't have » + participe passé : have come." }
     ]
   },
   {
@@ -1683,9 +1683,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « ___ the report, she sent it to her boss. »", options: ["Having finished", "Finishing", "Finished to", "Has finished"], answer: 0, explain: "Une action terminée avant l'action principale : having + participe passé." },
-      { q: "Complète : « ___ home late, I found the door open. »", options: ["Arriving", "Having arrived to", "Arrive", "Arrived to"], answer: 0, explain: "Une action simultanée ou juste avant : verbe en -ing." },
-      { q: "Complète : « ___ in a hurry, the letter had many mistakes. »", options: ["Written", "Writing", "Having written", "Write"], answer: 0, explain: "Pour une forme passive réduite : participe passé seul." },
-      { q: "Quelle phrase est correcte ?", options: ["Having finished the test, the teacher left.", "Having finished the test, we left the room.", "Having finished the test, the room was empty.", "Finishing the test, the bell rang for us."], answer: 1, explain: "Le sujet de la proposition réduite doit être le même que celui de la phrase principale : nous avons terminé, donc nous sommes sortis." }
+      { q: "Complète : « ___ home late, I found the door open. »", options: ["Having arrived to", "Arriving", "Arrive", "Arrived to"], answer: 1, explain: "Une action simultanée ou juste avant : verbe en -ing." },
+      { q: "Complète : « ___ in a hurry, the letter had many mistakes. »", options: ["Writing", "Having written", "Written", "Write"], answer: 2, explain: "Pour une forme passive réduite : participe passé seul." },
+      { q: "Quelle phrase est correcte ?", options: ["Having finished the test, the teacher left.", "Having finished the test, the room was empty.", "Finishing the test, the bell rang for us.", "Having finished the test, we left the room."], answer: 3, explain: "Le sujet de la proposition réduite doit être le même que celui de la phrase principale : nous avons terminé, donc nous sommes sortis." }
     ]
   },
   {
@@ -1716,9 +1716,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète pour insister : « I ___ believe you are right. »", options: ["do", "am", "does", "did be"], answer: 0, explain: "Pour insister au présent : do + verbe de base." },
-      { q: "Complète : « It was not ___ 2010 ___ the law changed. »", options: ["until / that", "after / when", "since / that", "until / when"], answer: 0, explain: "« It was not until ... that » met en avant un moment précis." },
-      { q: "Complète l'inversion : « Not until midnight ___ we go to bed. »", options: ["did", "do", "were", "have"], answer: 0, explain: "Après « not until » en début de phrase : did + sujet + verbe de base." },
-      { q: "Quelle phrase est correcte pour insister à l'impératif ?", options: ["Do come in, please.", "Come do in, please.", "Do coming in, please.", "Come, do in please."], answer: 0, explain: "À l'impératif, « Do » + verbe de base sert à insister." }
+      { q: "Complète : « It was not ___ 2010 ___ the law changed. »", options: ["after / when", "until / that", "since / that", "until / when"], answer: 1, explain: "« It was not until ... that » met en avant un moment précis." },
+      { q: "Complète l'inversion : « Not until midnight ___ we go to bed. »", options: ["do", "were", "did", "have"], answer: 2, explain: "Après « not until » en début de phrase : did + sujet + verbe de base." },
+      { q: "Quelle phrase est correcte pour insister à l'impératif ?", options: ["Come do in, please.", "Do coming in, please.", "Come, do in please.", "Do come in, please."], answer: 3, explain: "À l'impératif, « Do » + verbe de base sert à insister." }
     ]
   },
   {
@@ -1749,9 +1749,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « By the time we got there, they ___ for an hour. »", options: ["had been waiting", "were waiting", "waited", "have been waiting"], answer: 0, explain: "Une action qui durait avant un autre moment passé : had been + -ing." },
-      { q: "Complète (décor) : « It ___ when she arrived. »", options: ["was raining", "rained", "had rained", "has been raining"], answer: 0, explain: "Le décor d'un récit se dit au past continuous : was raining." },
-      { q: "Complète (habitude passée) : « Every summer, we ___ to the coast. »", options: ["would go", "would have gone", "would went", "are going"], answer: 0, explain: "Dans un récit, « would » + verbe de base exprime une habitude passée." },
-      { q: "Quelle phrase est correcte pour un état passé ?", options: ["We used to have a house by the river.", "We would have a house by the river.", "We would had a house by the river.", "We were used to have a house."], answer: 0, explain: "Pour un état, on utilise « used to », pas « would »." }
+      { q: "Complète (décor) : « It ___ when she arrived. »", options: ["rained", "was raining", "had rained", "has been raining"], answer: 1, explain: "Le décor d'un récit se dit au past continuous : was raining." },
+      { q: "Complète (habitude passée) : « Every summer, we ___ to the coast. »", options: ["would have gone", "would went", "would go", "are going"], answer: 2, explain: "Dans un récit, « would » + verbe de base exprime une habitude passée." },
+      { q: "Quelle phrase est correcte pour un état passé ?", options: ["We would have a house by the river.", "We would had a house by the river.", "We were used to have a house.", "We used to have a house by the river."], answer: 3, explain: "Pour un état, on utilise « used to », pas « would »." }
     ]
   },
   {
@@ -1782,9 +1782,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Quelle expression signifie « dans une certaine mesure » ?", options: ["to some extent", "to all extent", "in some extend", "at some extent"], answer: 0, explain: "« To some extent » veut dire « dans une certaine mesure »." },
-      { q: "Complète : « It ___ be argued that the plan is too expensive. »", options: ["could", "must", "is", "does"], answer: 0, explain: "« It could be argued that » introduit une opinion nuancée." },
-      { q: "Complète pour un bilan équilibré : « ___, the project is worth the risk. »", options: ["On balance", "On balancing", "In balance to", "By balance"], answer: 0, explain: "« On balance » conclut en tenant compte du pour et du contre." },
-      { q: "Quelle expression exprime « à mon avis » ?", options: ["In my view", "In my vision of", "On my view to", "By my view"], answer: 0, explain: "« In my view » est la formule courante pour introduire son avis." }
+      { q: "Complète : « It ___ be argued that the plan is too expensive. »", options: ["must", "could", "is", "does"], answer: 1, explain: "« It could be argued that » introduit une opinion nuancée." },
+      { q: "Complète pour un bilan équilibré : « ___, the project is worth the risk. »", options: ["On balancing", "In balance to", "On balance", "By balance"], answer: 2, explain: "« On balance » conclut en tenant compte du pour et du contre." },
+      { q: "Quelle expression exprime « à mon avis » ?", options: ["In my vision of", "On my view to", "By my view", "In my view"], answer: 3, explain: "« In my view » est la formule courante pour introduire son avis." }
     ]
   },
   {
@@ -1815,9 +1815,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Quel mot est le plus formel pour « acheter » ?", options: ["purchase", "buy", "get", "grab"], answer: 0, explain: "« Purchase » est plus formel que « buy »." },
-      { q: "Dans un courriel officiel, quelle phrase convient le mieux ?", options: ["We would be grateful if you could assist us.", "Hey, can you help me out?", "Yo, give me a hand.", "Sorry dude, no way."], answer: 0, explain: "La formule « We would be grateful if you could assist us » est polie et formelle." },
-      { q: "Quel verbe est le plus familier ?", options: ["wrap up", "conclude", "terminate", "finalize"], answer: 0, explain: "« Wrap up » est familier, les autres sont plus formels." },
-      { q: "Quel mot convient pour un rapport officiel ?", options: ["conclude", "end it", "stop it", "finish off"], answer: 0, explain: "« Conclude » convient mieux à l'écrit formel." }
+      { q: "Dans un courriel officiel, quelle phrase convient le mieux ?", options: ["Hey, can you help me out?", "We would be grateful if you could assist us.", "Yo, give me a hand.", "Sorry dude, no way."], answer: 1, explain: "La formule « We would be grateful if you could assist us » est polie et formelle." },
+      { q: "Quel verbe est le plus familier ?", options: ["conclude", "terminate", "wrap up", "finalize"], answer: 2, explain: "« Wrap up » est familier, les autres sont plus formels." },
+      { q: "Quel mot convient pour un rapport officiel ?", options: ["end it", "stop it", "finish off", "conclude"], answer: 3, explain: "« Conclude » convient mieux à l'écrit formel." }
     ]
   },
   {
@@ -1848,9 +1848,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Que veut dire « to break the ice » ?", options: ["mettre les gens à l'aise", "casser quelque chose", "partir tôt", "avoir froid"], answer: 0, explain: "C'est un idiome : il met les gens à l'aise au début d'une rencontre." },
-      { q: "Complète : « I don't like it, but I'll have to ___ the bullet. »", options: ["bite", "eat", "take", "shoot"], answer: 0, explain: "L'idiome est « bite the bullet » : serrer les dents." },
-      { q: "Que veut dire « once in a blue moon » ?", options: ["très rarement", "tous les jours", "le soir", "en été"], answer: 0, explain: "« Once in a blue moon » veut dire très rarement." },
-      { q: "Quel idiome veut dire « coûter très cher » ?", options: ["cost an arm and a leg", "break the ice", "hit the road", "under the weather"], answer: 0, explain: "« Cost an arm and a leg » veut dire coûter très cher." }
+      { q: "Complète : « I don't like it, but I'll have to ___ the bullet. »", options: ["eat", "bite", "take", "shoot"], answer: 1, explain: "L'idiome est « bite the bullet » : serrer les dents." },
+      { q: "Que veut dire « once in a blue moon » ?", options: ["tous les jours", "le soir", "très rarement", "en été"], answer: 2, explain: "« Once in a blue moon » veut dire très rarement." },
+      { q: "Quel idiome veut dire « coûter très cher » ?", options: ["break the ice", "hit the road", "under the weather", "cost an arm and a leg"], answer: 3, explain: "« Cost an arm and a leg » veut dire coûter très cher." }
     ]
   },
   {
@@ -1881,9 +1881,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « I like coffee. ___ I. » (moi aussi)", options: ["So do", "Neither do", "Too do", "So am"], answer: 0, explain: "Pour « moi aussi » avec un verbe au présent : so do I." },
-      { q: "Complète : « I don't know. ___ I. » (moi non plus)", options: ["Neither do", "So do", "Either do", "Too don't"], answer: 0, explain: "Pour « moi non plus » : neither do I." },
-      { q: "Complète : « Is it expensive? I'm afraid ___. »", options: ["so", "it is", "yes it", "very"], answer: 0, explain: "« I'm afraid so » remplace toute la réponse." },
-      { q: "Complète : « She was late. ___ I. » (moi aussi)", options: ["So was", "So did", "So am", "So do"], answer: 0, explain: "Au passé avec « was » : so was I." }
+      { q: "Complète : « I don't know. ___ I. » (moi non plus)", options: ["So do", "Neither do", "Either do", "Too don't"], answer: 1, explain: "Pour « moi non plus » : neither do I." },
+      { q: "Complète : « Is it expensive? I'm afraid ___. »", options: ["it is", "yes it", "so", "very"], answer: 2, explain: "« I'm afraid so » remplace toute la réponse." },
+      { q: "Complète : « She was late. ___ I. » (moi aussi)", options: ["So did", "So am", "So do", "So was"], answer: 3, explain: "Au passé avec « was » : so was I." }
     ]
   },
   {
@@ -1914,9 +1914,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « I'd ___ stay at home tonight. »", options: ["rather", "better", "prefer to", "like"], answer: 0, explain: "« Would rather » exprime une préférence personnelle." },
-      { q: "Complète : « I'd rather you ___ here. » (ne pas fumer)", options: ["didn't smoke", "don't smoke", "wouldn't smoke", "not smoke"], answer: 0, explain: "Préférence pour quelqu'un d'autre : would rather + past simple." },
-      { q: "Complète : « You'd ___ leave now. »", options: ["better", "rather", "best", "more"], answer: 0, explain: "« Had better » donne un conseil fort : you'd better." },
-      { q: "Quelle phrase veut dire « tu ferais mieux de ne pas être en retard » ?", options: ["You'd better not be late.", "You'd better be not late.", "You'd rather not be late.", "You better not late."], answer: 0, explain: "La négation de « had better » se place après better : had better not." }
+      { q: "Complète : « I'd rather you ___ here. » (ne pas fumer)", options: ["don't smoke", "didn't smoke", "wouldn't smoke", "not smoke"], answer: 1, explain: "Préférence pour quelqu'un d'autre : would rather + past simple." },
+      { q: "Complète : « You'd ___ leave now. »", options: ["rather", "best", "better", "more"], answer: 2, explain: "« Had better » donne un conseil fort : you'd better." },
+      { q: "Quelle phrase veut dire « tu ferais mieux de ne pas être en retard » ?", options: ["You'd better be not late.", "You'd rather not be late.", "You better not late.", "You'd better not be late."], answer: 3, explain: "La négation de « had better » se place après better : had better not." }
     ]
   },
   {
@@ -1947,9 +1947,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Qui fait l'action « imply » ?", options: ["celui qui parle", "celui qui écoute", "personne", "les deux"], answer: 0, explain: "Le locuteur sous-entend (imply), l'auditeur déduit (infer)." },
-      { q: "Complète : « From his silence, I ___ that he was unhappy. »", options: ["inferred", "implied", "suggested him", "infered to"], answer: 0, explain: "« Infer » : l'auditeur déduit à partir de ce qu'il entend." },
-      { q: "Complète : « Are you ___ that I was wrong? »", options: ["implying", "inferring", "inferring to", "implied to"], answer: 0, explain: "Le locuteur sous-entend : implying." },
-      { q: "Quel verbe est le plus doux ?", options: ["suggest", "imply", "infer", "accuse"], answer: 0, explain: "« Suggest » est plus doux que « imply » ou « accuse »." }
+      { q: "Complète : « From his silence, I ___ that he was unhappy. »", options: ["implied", "inferred", "suggested him", "infered to"], answer: 1, explain: "« Infer » : l'auditeur déduit à partir de ce qu'il entend." },
+      { q: "Complète : « Are you ___ that I was wrong? »", options: ["inferring", "inferring to", "implying", "implied to"], answer: 2, explain: "Le locuteur sous-entend : implying." },
+      { q: "Quel verbe est le plus doux ?", options: ["imply", "infer", "accuse", "suggest"], answer: 3, explain: "« Suggest » est plus doux que « imply » ou « accuse »." }
     ]
   },
   {
@@ -1980,9 +1980,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Quelle collocation est correcte ?", options: ["make a decision", "do a decision", "take a decision of", "have a decision"], answer: 0, explain: "On dit « make a decision » (prendre une décision)." },
-      { q: "Quel adjectif va avec « rain » ?", options: ["heavy", "strong", "big", "high"], answer: 0, explain: "On dit « heavy rain » : une forte pluie." },
-      { q: "Complète : « I am ___ concerned about your health. »", options: ["deeply", "strongly", "much", "highly"], answer: 0, explain: "« Deeply concerned » est la collocation naturelle." },
-      { q: "Quel adverbe va avec « aware » ?", options: ["fully", "heavily", "strongly", "highly"], answer: 0, explain: "On dit « fully aware » : pleinement conscient." }
+      { q: "Quel adjectif va avec « rain » ?", options: ["strong", "heavy", "big", "high"], answer: 1, explain: "On dit « heavy rain » : une forte pluie." },
+      { q: "Complète : « I am ___ concerned about your health. »", options: ["strongly", "much", "deeply", "highly"], answer: 2, explain: "« Deeply concerned » est la collocation naturelle." },
+      { q: "Quel adverbe va avec « aware » ?", options: ["heavily", "strongly", "highly", "fully"], answer: 3, explain: "On dit « fully aware » : pleinement conscient." }
     ]
   },
   {
@@ -2013,9 +2013,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Que veut dire « come up with » ?", options: ["trouver une idée", "arriver avec quelqu'un", "venir en haut", "rentrer"], answer: 0, explain: "« Come up with » veut dire trouver une idée ou une solution." },
-      { q: "Complète : « I can't ___ this noise any longer. »", options: ["put up with", "put on", "put out", "put off"], answer: 0, explain: "« Put up with » veut dire supporter." },
-      { q: "Complète : « He ___ away with it. » (ne pas être puni)", options: ["got", "took", "came", "went"], answer: 0, explain: "« Get away with » veut dire échapper à une sanction." },
-      { q: "Que veut dire « run out of » ?", options: ["être à court de", "courir dehors", "partir en courant", "sortir de la maison"], answer: 0, explain: "« Run out of » veut dire être à court de quelque chose." }
+      { q: "Complète : « I can't ___ this noise any longer. »", options: ["put on", "put up with", "put out", "put off"], answer: 1, explain: "« Put up with » veut dire supporter." },
+      { q: "Complète : « He ___ away with it. » (ne pas être puni)", options: ["took", "came", "got", "went"], answer: 2, explain: "« Get away with » veut dire échapper à une sanction." },
+      { q: "Que veut dire « run out of » ?", options: ["courir dehors", "partir en courant", "sortir de la maison", "être à court de"], answer: 3, explain: "« Run out of » veut dire être à court de quelque chose." }
     ]
   },
   {
@@ -2046,9 +2046,537 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Quel nom correspond au verbe « to refuse » ?", options: ["refusal", "refuse", "refusing", "refused"], answer: 0, explain: "Le nom formel de « refuse » est « refusal »." },
-      { q: "Complète : « The ___ of the new policy will take a year. » (implementer)", options: ["implementation", "implement", "implementing", "implemented"], answer: 0, explain: "Le nom correspondant est « implementation »." },
-      { q: "Quelle phrase est la plus formelle ?", options: ["The decision was reached after lengthy discussion.", "They decided after a long chat.", "We decided after talking a lot.", "They just decided it."], answer: 0, explain: "La version nominalisée avec « reached » et « lengthy » est plus formelle." },
-      { q: "Quel nom correspond à « to achieve » ?", options: ["achievement", "achieve", "achieving", "achieved"], answer: 0, explain: "Le nom formel de « to achieve » est « achievement »." }
+      { q: "Complète : « The ___ of the new policy will take a year. » (implementer)", options: ["implement", "implementation", "implementing", "implemented"], answer: 1, explain: "Le nom correspondant est « implementation »." },
+      { q: "Quelle phrase est la plus formelle ?", options: ["They decided after a long chat.", "We decided after talking a lot.", "The decision was reached after lengthy discussion.", "They just decided it."], answer: 2, explain: "La version nominalisée avec « reached » et « lengthy » est plus formelle." },
+      { q: "Quel nom correspond à « to achieve » ?", options: ["achieve", "achieving", "achieved", "achievement"], answer: 3, explain: "Le nom formel de « to achieve » est « achievement »." }
+    ]
+  },
+  {
+    id: "b2-future-continuous-perfect",
+    level: "B2",
+    title: "Le futur continu et le futur antérieur",
+    objective: "Parler d'une action en cours dans le futur, ou d'une action finie avant un moment futur.",
+    explanation: [
+      "Le futur continu se forme avec will be + verbe en -ing. Il décrit une action en cours à un moment futur : This time tomorrow I will be flying to Paris (demain à cette heure-ci, je volerai vers Paris).",
+      "Le futur antérieur se forme avec will have + participe passé. Il décrit une action qui sera finie avant un moment futur : By 2030, I will have finished my studies (d'ici 2030, j'aurai fini mes études).",
+      "On utilise souvent by (d'ici) avec le futur antérieur, et at this time / this time tomorrow avec le futur continu.",
+      "Ces deux temps ne sont pas des projets : ils décrivent ce qui se passera naturellement ou ce qui sera déjà fait."
+    ],
+    examples: [
+      { en: "This time tomorrow I will be flying to Paris.", fr: "Demain à cette heure-ci, je volerai vers Paris." },
+      { en: "By 2030, I will have finished my studies.", fr: "D'ici 2030, j'aurai fini mes études." },
+      { en: "Don't call at eight, we will be eating dinner.", fr: "N'appelle pas à huit heures, nous serons en train de dîner." },
+      { en: "By the time you arrive, we will have eaten.", fr: "Quand tu arriveras, nous aurons déjà mangé." },
+      { en: "She will be working at the hospital next year.", fr: "L'année prochaine, elle travaillera à l'hôpital." }
+    ],
+    pronunciation: "« Will have » se dit souvent « wil'v » : le « h » de « have » est à peine audible.",
+    vocab: [
+      { en: "by", fr: "d'ici, au plus tard", example: "Finish it by Friday.", exampleFr: "Termine-le d'ici vendredi.", context: "temps" },
+      { en: "this time tomorrow", fr: "demain à cette heure-ci", example: "This time tomorrow I'll be on holiday.", exampleFr: "Demain à cette heure-ci, je serai en vacances.", context: "temps" },
+      { en: "eat", fr: "manger (passé : ate)", example: "We ate at home.", exampleFr: "Nous avons mangé à la maison.", context: "quotidien" },
+      { en: "hospital", fr: "hôpital", example: "She works at the hospital.", exampleFr: "Elle travaille à l'hôpital.", context: "travail" },
+      { en: "studies", fr: "études", example: "My studies are almost finished.", exampleFr: "Mes études sont presque terminées.", context: "études" }
+    ],
+    exercises: [
+      { q: "Complète : « This time next week, I ___ on the beach. » (être allongé)", options: ["will be lying", "will lie", "will have lain", "am lying"], answer: 0, explain: "Une action en cours à un moment futur : will be + -ing." },
+      { q: "Complète : « By next year, she ___ her degree. »", options: ["will be finishing", "will have finished", "will finish", "finished"], answer: 1, explain: "Une action terminée avant un moment futur : will have + participe passé." },
+      { q: "Complète : « At 9 pm, we ___ dinner. »", options: ["will have", "have", "will be having", "had"], answer: 2, explain: "Une action en cours à 21 h dans le futur : will be + -ing." },
+      { q: "Quelle phrase correspond à « d'ici lundi, j'aurai fini le travail » ?", options: ["By Monday, I will finish the work.", "By Monday, I will be finished the work.", "Until Monday, I will have finish the work.", "By Monday, I will have finished the work."], answer: 3, explain: "« By » + moment, avec will have + participe passé." }
+    ]
+  },
+  {
+    id: "b2-whose-whom",
+    level: "B2",
+    title: "Relatives avancées : whose, whom, with which",
+    objective: "Relier deux informations en précisant à qui appartient quelque chose, ou avec qui on agit.",
+    explanation: [
+      "Whose indique l'appartenance : The woman whose car was stolen called the police (la femme dont la voiture a été volée a appelé la police).",
+      "Whom remplace une personne complément, surtout après une préposition : The man to whom I spoke was very helpful (l'homme à qui j'ai parlé a été très serviable). Dans la langue courante, on dit plutôt « the man I spoke to ».",
+      "On peut mettre une préposition avant which ou whom : The friend with whom I travelled is now a doctor (l'ami avec qui j'ai voyagé est maintenant médecin).",
+      "Dans une relative déterminative, on ne met jamais de virgule. Avec une virgule, on ajoute une information supplémentaire : My brother, who lives in Paris, is a doctor."
+    ],
+    examples: [
+      { en: "The woman whose car was stolen called the police.", fr: "La femme dont la voiture a été volée a appelé la police." },
+      { en: "The man to whom I spoke was very helpful.", fr: "L'homme à qui j'ai parlé était très serviable." },
+      { en: "The friend with whom I travelled is now a doctor.", fr: "L'ami avec qui j'ai voyagé est maintenant médecin." },
+      { en: "My brother, who lives in Paris, is coming on Friday.", fr: "Mon frère, qui vit à Paris, arrive vendredi." },
+      { en: "The company whose profits doubled last year is expanding.", fr: "L'entreprise dont les bénéfices ont doublé l'année dernière se développe." }
+    ],
+    pronunciation: "« Whose » se prononce « houz ». Dans une relative avec virgule, fais une petite pause avant et après « who ».",
+    vocab: [
+      { en: "steal", fr: "voler (passé : stole)", example: "My bag was stolen.", exampleFr: "Mon sac a été volé.", context: "quotidien" },
+      { en: "helpful", fr: "serviable, utile", example: "The staff were very helpful.", exampleFr: "Le personnel était très serviable.", context: "qualités" },
+      { en: "travel", fr: "voyager", example: "We travelled to Spain.", exampleFr: "Nous avons voyagé en Espagne.", context: "voyage" },
+      { en: "profit", fr: "bénéfice", example: "The profit rose this year.", exampleFr: "Le bénéfice a augmenté cette année.", context: "économie" },
+      { en: "expand", fr: "se développer, s'agrandir", example: "The firm wants to expand.", exampleFr: "L'entreprise veut se développer.", context: "économie" }
+    ],
+    exercises: [
+      { q: "Complète : « The student ___ essay won the prize is my cousin. » (possession)", options: ["whose", "who", "which", "whom"], answer: 0, explain: "« Whose » indique l'appartenance : l'essai de l'étudiant." },
+      { q: "Complète : « The woman to ___ I wrote is my aunt. »", options: ["who", "whom", "whose", "which"], answer: 1, explain: "Après une préposition, pour une personne : whom." },
+      { q: "Complète : « The job ___ I applied is very interesting. »", options: ["for who", "for whose", "for which", "which for"], answer: 2, explain: "Une préposition peut se placer avant « which » : for which." },
+      { q: "Quelle phrase est correcte ?", options: ["My brother who, lives in Paris, is a doctor.", "My brother, whose lives in Paris, is a doctor.", "My brother who lives in Paris, is a doctor.", "My brother, who lives in Paris, is a doctor."], answer: 3, explain: "Avec une virgule, l'information est ajoutée entre deux virgules." }
+    ]
+  },
+  {
+    id: "b2-stop-remember-try",
+    level: "B2",
+    title: "Verbes suivis de -ing ou de to : stop, remember, try",
+    objective: "Savoir si un verbe suivi d'un -ing ou d'un to change de sens.",
+    explanation: [
+      "Stop doing = arrêter une activité : I stopped smoking (j'ai arrêté de fumer). Stop to do = s'arrêter pour faire quelque chose : I stopped to buy bread (je me suis arrêté pour acheter du pain).",
+      "Remember doing = se souvenir d'avoir fait : I remember locking the door (je me souviens avoir fermé la porte). Remember to do = penser à faire : Remember to lock the door (pense à fermer la porte).",
+      "Try doing = essayer comme expérience : Try adding more salt (essaie d'ajouter plus de sel). Try to do = faire un effort pour réussir : I tried to open the window (j'ai essayé d'ouvrir la fenêtre, mais je n'ai pas réussi forcément).",
+      "Regret to say = je regrette de dire (formule formelle). Regret doing = regretter ce qu'on a fait."
+    ],
+    examples: [
+      { en: "I stopped smoking last year.", fr: "J'ai arrêté de fumer l'année dernière." },
+      { en: "I stopped to buy some bread on the way home.", fr: "Je me suis arrêté pour acheter du pain en rentrant." },
+      { en: "I remember locking the door, but I'm not sure.", fr: "Je me souviens avoir fermé la porte, mais je n'en suis pas sûr." },
+      { en: "Remember to bring your passport tomorrow.", fr: "N'oublie pas d'apporter ton passeport demain." },
+      { en: "I tried to call you, but your phone was off.", fr: "J'ai essayé de t'appeler, mais ton téléphone était éteint." }
+    ],
+    pronunciation: "Dans « stopped to », le « d » de « stopped » est souvent à peine prononcé : « stopt tou ».",
+    vocab: [
+      { en: "stop", fr: "arrêter, s'arrêter", example: "Stop talking, please.", exampleFr: "Arrête de parler, s'il te plaît.", context: "verbes" },
+      { en: "remember", fr: "se souvenir, penser à", example: "I don't remember his name.", exampleFr: "Je ne me souviens pas de son nom.", context: "verbes" },
+      { en: "try", fr: "essayer", example: "Try the soup, it's delicious.", exampleFr: "Goûte la soupe, elle est délicieuse.", context: "verbes" },
+      { en: "lock", fr: "fermer à clé", example: "Lock the car.", exampleFr: "Ferme la voiture à clé.", context: "maison" },
+      { en: "regret", fr: "regretter", example: "I regret my decision.", exampleFr: "Je regrette ma décision.", context: "émotions" }
+    ],
+    exercises: [
+      { q: "Complète : « I stopped ___ coffee because it kept me awake. » (arrêter)", options: ["drinking", "to drink", "drink", "drank"], answer: 0, explain: "« Stop doing » : arrêter une activité." },
+      { q: "Complète : « Please remember ___ the lights before leaving. » (penser à)", options: ["turning off", "to turn off", "turn off", "turned off"], answer: 1, explain: "« Remember to do » : penser à faire quelque chose." },
+      { q: "Complète : « I remember ___ this song when I was a child. » (souvenir)", options: ["to hear", "hear", "hearing", "heard"], answer: 2, explain: "« Remember doing » : se souvenir d'avoir fait quelque chose." },
+      { q: "Quelle phrase veut dire « j'ai essayé de réparer la voiture » ?", options: ["I tried fixing the car as a test.", "I try to fix the car yesterday.", "I tried fix the car.", "I tried to fix the car."], answer: 3, explain: "« Try to do » : faire un effort pour réussir." }
+    ]
+  },
+  {
+    id: "b2-passive-modals",
+    level: "B2",
+    title: "Le passif avec les modaux : must be done, might be cancelled",
+    objective: "Dire qu'une chose doit, peut ou devrait être faite, sans dire qui la fait.",
+    explanation: [
+      "On forme le passif avec un modal : modal + be + participe passé. The results should be announced soon (les résultats devraient être annoncés bientôt).",
+      "Avec un modal du passé : modal + have been + participe passé. The work must have been done by now (le travail a dû être fait maintenant).",
+      "Les modaux de possibilité sont très utiles : The match might be cancelled because of the rain (le match pourrait être annulé à cause de la pluie).",
+      "Pour une demande, on dit souvent : It can be fixed quickly (ça peut être réparé vite), ou Can it be done by Friday? (est-ce que ça peut être fait d'ici vendredi ?)."
+    ],
+    examples: [
+      { en: "The results should be announced next week.", fr: "Les résultats devraient être annoncés la semaine prochaine." },
+      { en: "The work must have been done by now.", fr: "Le travail a dû être fait maintenant." },
+      { en: "The match might be cancelled because of the rain.", fr: "Le match pourrait être annulé à cause de la pluie." },
+      { en: "Can this be finished by Friday?", fr: "Est-ce que ceci peut être terminé d'ici vendredi ?" },
+      { en: "The letter should have been sent yesterday.", fr: "La lettre aurait dû être envoyée hier." }
+    ],
+    pronunciation: "Dans « should be announced », « should » se dit « choud ». « Be » est faible : « bi ».",
+    vocab: [
+      { en: "announce", fr: "annoncer", example: "They announced the winner.", exampleFr: "Ils ont annoncé le gagnant.", context: "actualité" },
+      { en: "cancel", fr: "annuler", example: "The flight was cancelled.", exampleFr: "Le vol a été annulé.", context: "voyage" },
+      { en: "by now", fr: "maintenant, à ce stade", example: "By now, everyone knows the news.", exampleFr: "À présent, tout le monde connaît la nouvelle.", context: "temps" },
+      { en: "fix", fr: "réparer", example: "Can you fix the door?", exampleFr: "Peux-tu réparer la porte ?", context: "maison" },
+      { en: "result", fr: "résultat", example: "The exam results are out.", exampleFr: "Les résultats de l'examen sont publiés.", context: "études" }
+    ],
+    exercises: [
+      { q: "Complète : « The package ___ delivered tomorrow. » (peut-être)", options: ["might be", "might", "might to be", "will might"], answer: 0, explain: "Modal + be + participe passé : might be delivered." },
+      { q: "Complète : « The report must ___ written by now. » (déduction passée)", options: ["be", "have been", "have be", "been"], answer: 1, explain: "Modal du passé au passif : must have been + participe passé." },
+      { q: "Complète : « The project should ___ finished last month. » (regret)", options: ["be", "been", "have been", "have be"], answer: 2, explain: "Regret passé au passif : should have been + participe passé." },
+      { q: "Quelle phrase est correcte pour « ça peut être réparé vite » ?", options: ["It can fixed quickly.", "It can to be fixed quickly.", "It is can fixed quickly.", "It can be fixed quickly."], answer: 3, explain: "Modal + be + participe passé : can be fixed." }
+    ]
+  },
+  {
+    id: "b2-inversion-conditionals",
+    level: "B2",
+    title: "Les conditionnelles sans if : Had I known, Should you need",
+    objective: "Dire une condition de façon plus soutenue, en inversant le sujet et l'auxiliaire.",
+    explanation: [
+      "On peut supprimer if en inversant l'auxiliaire et le sujet. Had I known (si j'avais su) remplace If I had known : Had I known, I would have come (si j'avais su, je serais venu).",
+      "Should you need help (si jamais tu as besoin d'aide) remplace If you need help. Cette forme est plus soutenue, souvent utilisée dans les lettres et les consignes.",
+      "Were I rich (si j'étais riche) remplace If I were rich. Dans une conditionnelle irréelle, on garde would dans la conséquence.",
+      "Ces structures sont courantes à l'écrit ; à l'oral, on garde plutôt if."
+    ],
+    examples: [
+      { en: "Had I known about the delay, I would have come earlier.", fr: "Si j'avais su le retard, je serais venu plus tôt." },
+      { en: "Should you need any help, please call me.", fr: "Si jamais tu as besoin d'aide, appelle-moi." },
+      { en: "Were I you, I would accept the offer.", fr: "À ta place, j'accepterais l'offre." },
+      { en: "Had they arrived earlier, they would have seen the show.", fr: "S'ils étaient arrivés plus tôt, ils auraient vu le spectacle." },
+      { en: "Should the price rise, we will reconsider.", fr: "Si le prix augmentait, nous réexaminerons la question." }
+    ],
+    pronunciation: "Dans « Had I known », « had » se dit « 'd » très court. Le ton monte légèrement sur « known ».",
+    vocab: [
+      { en: "offer", fr: "offre", example: "I received a good offer.", exampleFr: "J'ai reçu une bonne offre.", context: "travail" },
+      { en: "delay", fr: "retard", example: "There was a delay at the airport.", exampleFr: "Il y a eu un retard à l'aéroport.", context: "voyage" },
+      { en: "reconsider", fr: "reconsidérer, revoir sa décision", example: "We will reconsider the plan.", exampleFr: "Nous reconsidérerons le plan.", context: "travail" },
+      { en: "show", fr: "spectacle", example: "The show starts at eight.", exampleFr: "Le spectacle commence à vingt heures.", context: "culture" },
+      { en: "earlier", fr: "plus tôt", example: "Come earlier, please.", exampleFr: "Viens plus tôt, s'il te plaît.", context: "temps" }
+    ],
+    exercises: [
+      { q: "Complète (sans if) : « ___ I known, I would have helped. »", options: ["Had", "Have", "Would", "Did"], answer: 0, explain: "Pour une condition au passé sans if : Had + sujet + participe passé." },
+      { q: "Complète (sans if) : « ___ you need help, call me. »", options: ["Would", "Should", "Could", "Did"], answer: 1, explain: "Pour une condition réelle sans if : Should + sujet + verbe de base." },
+      { q: "Complète (sans if) : « ___ I you, I would accept it. »", options: ["Was", "Am", "Were", "Would"], answer: 2, explain: "Pour une condition irréelle sans if : Were + sujet." },
+      { q: "Quelle phrase est correcte ?", options: ["Had I knew, I would have come.", "Had I known, I would come.", "Have I known, I would have come.", "Had I known, I would have come."], answer: 3, explain: "Had + sujet + participe passé, puis would have + participe passé." }
+    ]
+  },
+  {
+    id: "b2-get-used-to",
+    level: "B2",
+    title: "S'habituer : get used to, be used to, used to",
+    objective: "Faire la différence entre une habitude passée, un état actuel et un processus d'adaptation.",
+    explanation: [
+      "Used to + verbe de base : une habitude ou un état passé qui n'existe plus : I used to live in a village (j'habitais dans un village).",
+      "Be used to + -ing : être habitué à quelque chose, maintenant : I am used to waking up early (je suis habitué à me lever tôt).",
+      "Get used to + -ing : s'habituer, c'est un processus en cours : I'm getting used to living abroad (je m'habitue à vivre à l'étranger).",
+      "Ne pas confondre : je suis habitué (état) ; je m'habitue (processus). La forme est la même après to : to + -ing."
+    ],
+    examples: [
+      { en: "I used to live in a small village.", fr: "J'habitais dans un petit village." },
+      { en: "I am used to waking up early now.", fr: "Je suis maintenant habitué à me lever tôt." },
+      { en: "I'm getting used to living abroad.", fr: "Je m'habitue à vivre à l'étranger." },
+      { en: "It took me a while to get used to the noise.", fr: "Il m'a fallu un certain temps pour m'habituer au bruit." },
+      { en: "She is not used to speaking in public.", fr: "Elle n'est pas habituée à parler en public." }
+    ],
+    pronunciation: "« Used to » (habitude) se dit « youst tou ». « Used to » (habitué) se dit « youzd tou » : le « s » devient « z ».",
+    vocab: [
+      { en: "abroad", fr: "à l'étranger", example: "She studies abroad.", exampleFr: "Elle étudie à l'étranger.", context: "voyage" },
+      { en: "noise", fr: "bruit", example: "The noise was loud.", exampleFr: "Le bruit était fort.", context: "quotidien" },
+      { en: "a while", fr: "un certain temps", example: "Wait a while.", exampleFr: "Attends un moment.", context: "temps" },
+      { en: "in public", fr: "en public", example: "Don't speak loudly in public.", exampleFr: "Ne parle pas fort en public.", context: "société" },
+      { en: "take time", fr: "prendre du temps", example: "It takes time to learn.", exampleFr: "Apprendre prend du temps.", context: "temps" }
+    ],
+    exercises: [
+      { q: "Complète (processus) : « I'm slowly ___ living here. »", options: ["getting used to", "used to", "am used to", "get used"], answer: 0, explain: "« Get used to » + -ing : un processus d'adaptation en cours." },
+      { q: "Complète (état) : « I am ___ early. »", options: ["used to wake up", "used to waking up", "get used to wake", "used to wakes"], answer: 1, explain: "« Be used to » + -ing : être habitué." },
+      { q: "Complète (habitude passée) : « We ___ in a small town. »", options: ["are used to live", "get used live", "used to live", "used live"], answer: 2, explain: "« Used to » + verbe de base : une habitude passée." },
+      { q: "Quelle phrase est correcte pour « je m'habitue à la nouvelle école » ?", options: ["I'm used to the new school yet.", "I used to the new school.", "I get used the new school.", "I'm getting used to the new school."], answer: 3, explain: "« Get used to » + -ing (ou un nom) : s'habituer à." }
+    ]
+  },
+  {
+    id: "c1-advanced-inversion",
+    level: "C1",
+    title: "Inversions avancées : little did, only when, so angry was he",
+    objective: "Renforcer une phrase à l'écrit ou dans un discours, avec des inversions plus littéraires.",
+    explanation: [
+      "Little did she know ... (elle ne savait pas du tout ...) : on inverse le sujet et l'auxiliaire après little, not for a moment, under no circumstances : Little did she know that the test was tomorrow.",
+      "Only when / only after / only then placés en début de phrase demandent une inversion : Only when the lights went out did we realise the storm had started (ce n'est que quand les lumières se sont éteintes que nous avons compris que l'orage avait commencé).",
+      "So / such ... that en début de phrase : So angry was he that he left the room (il était si en colère qu'il a quitté la pièce). L'adjectif passe avant le verbe be.",
+      "Ces structures sont surtout écrites et littéraires. Elles donnent du style, mais une seule par texte suffit souvent."
+    ],
+    examples: [
+      { en: "Little did she know that the test was tomorrow.", fr: "Elle ne se doutait pas que l'examen était pour demain." },
+      { en: "Only when the lights went out did we realise the storm had started.", fr: "Ce n'est que quand les lumières se sont éteintes que nous avons compris que l'orage avait commencé." },
+      { en: "So angry was he that he left the room without a word.", fr: "Il était si en colère qu'il a quitté la pièce sans un mot." },
+      { en: "Under no circumstances should you open this door.", fr: "En aucun cas tu ne dois ouvrir cette porte." },
+      { en: "Not for a moment did I doubt her honesty.", fr: "Je n'ai pas douté une seconde de sa sincérité." }
+    ],
+    pronunciation: "Dans les inversions, la voix monte doucement sur le mot en début de phrase : « LIT-tle did she know ».",
+    vocab: [
+      { en: "realise", fr: "réaliser, se rendre compte", example: "I didn't realise the time.", exampleFr: "Je ne me suis pas rendu compte de l'heure.", context: "verbes" },
+      { en: "storm", fr: "orage, tempête", example: "A storm is coming.", exampleFr: "Un orage approche.", context: "météo" },
+      { en: "doubt", fr: "douter", example: "I doubt he will come.", exampleFr: "Je doute qu'il vienne.", context: "opinions" },
+      { en: "honesty", fr: "sincérité, honnêteté", example: "I respect her honesty.", exampleFr: "Je respecte son honnêteté.", context: "qualités" },
+      { en: "circumstances", fr: "circonstances", example: "Under these circumstances, we must wait.", exampleFr: "Dans ces circonstances, nous devons attendre.", context: "formel" }
+    ],
+    exercises: [
+      { q: "Complète : « Little ___ she know about the surprise. »", options: ["did", "does", "was", "had"], answer: 0, explain: "Après « little » en début de phrase : did + sujet + verbe de base." },
+      { q: "Complète : « Only when ___ we realise the mistake. »", options: ["do", "did", "were", "have"], answer: 1, explain: "Après « only when » en début de phrase : did + sujet." },
+      { q: "Complète : « So tired ___ she that she fell asleep. »", options: ["did", "is", "was", "were"], answer: 2, explain: "Avec « so + adjectif », on inverse : so tired was she." },
+      { q: "Quelle phrase est correcte ?", options: ["Under no circumstances you should open the door.", "Under no circumstances you open the door.", "Under no circumstances should open you the door.", "Under no circumstances should you open the door."], answer: 3, explain: "Après « under no circumstances » : should + sujet + verbe de base." }
+    ]
+  },
+  {
+    id: "c1-contrast-whereas",
+    level: "C1",
+    title: "Comparer et opposer : whereas, while, in contrast",
+    objective: "Mettre en parallèle deux idées pour argumenter ou comparer.",
+    explanation: [
+      "Whereas et while introduisent un contraste entre deux idées : Whereas the first option is cheaper, the second is more reliable (alors que la première option est moins chère, la seconde est plus fiable).",
+      "In contrast ou by contrast commencent une nouvelle phrase : The city is noisy. In contrast, the village is calm (la ville est bruyante ; en revanche, le village est calme).",
+      "Un contraste sans marqueur fort peut aussi se faire avec un tiret ou un point-virgule ; c'est plus élégant à l'écrit.",
+      "Évite de répéter « but » : utilise whereas, while ou on the other hand pour varier ton texte."
+    ],
+    examples: [
+      { en: "Whereas the first option is cheaper, the second is more reliable.", fr: "Alors que la première option est moins chère, la seconde est plus fiable." },
+      { en: "While some people prefer the city, others love the countryside.", fr: "Si certains préfèrent la ville, d'autres adorent la campagne." },
+      { en: "The city is noisy. In contrast, the village is peaceful.", fr: "La ville est bruyante. En revanche, le village est paisible." },
+      { en: "On the one hand, it is expensive; on the other hand, it lasts longer.", fr: "D'un côté, c'est cher ; de l'autre, ça dure plus longtemps." },
+      { en: "Whereas he speaks slowly, she talks very fast.", fr: "Alors qu'il parle lentement, elle parle très vite." }
+    ],
+    pronunciation: "« Whereas » se dit « wer-AZ » : l'accent tombe sur la deuxième syllabe. Dans « on the one hand », insiste sur « one ».",
+    vocab: [
+      { en: "reliable", fr: "fiable", example: "This car is very reliable.", exampleFr: "Cette voiture est très fiable.", context: "qualités" },
+      { en: "countryside", fr: "campagne", example: "We love the countryside.", exampleFr: "Nous adorons la campagne.", context: "lieux" },
+      { en: "peaceful", fr: "paisible", example: "The garden is peaceful.", exampleFr: "Le jardin est paisible.", context: "lieux" },
+      { en: "last", fr: "durer", example: "The battery lasts all day.", exampleFr: "La batterie dure toute la journée.", context: "verbes" },
+      { en: "slowly", fr: "lentement", example: "Speak slowly, please.", exampleFr: "Parle lentement, s'il te plaît.", context: "manière" }
+    ],
+    exercises: [
+      { q: "Complète : « ___ the first plan is cheap, the second is safer. »", options: ["Whereas", "Therefore", "Despite", "Moreover"], answer: 0, explain: "« Whereas » introduit un contraste entre deux idées." },
+      { q: "Quelle expression signifie « en revanche » ?", options: ["in addition", "in contrast", "in conclusion", "in fact"], answer: 1, explain: "« In contrast » signifie en revanche." },
+      { q: "Complète : « On the one hand, it is expensive; ___ hand, it lasts longer. »", options: ["on another", "in the other", "on the other", "at the other"], answer: 2, explain: "La structure est « on the one hand ... on the other hand »." },
+      { q: "Quelle phrase est correcte ?", options: ["While some like the city, but others prefer the countryside.", "Whereas some like the city, but others prefer the countryside.", "Whilst some likes the city, others prefer the countryside.", "While some like the city, others prefer the countryside."], answer: 3, explain: "« While » ou « whereas » suffit : on ne met pas « but » en plus." }
+    ]
+  },
+  {
+    id: "c1-nominal-clauses",
+    level: "C1",
+    title: "Les propositions nominales : what surprised me, whether he comes",
+    objective: "Utiliser une proposition entière comme sujet ou complément d'une phrase.",
+    explanation: [
+      "Une proposition nominale joue le rôle d'un nom. Elle commence souvent par what, whether, how ou that : What surprised me was how quickly he adapted (ce qui m'a surpris, c'est la rapidité avec laquelle il s'est adapté).",
+      "Whether ou if + verbe : Whether he comes or not doesn't matter (qu'il vienne ou non n'a pas d'importance). En sujet, on préfère whether.",
+      "That + verbe comme sujet : That she had lied was obvious (qu'elle ait menti était évident). On dit plus souvent It was obvious that she had lied.",
+      "Ces structures permettent de rendre une phrase plus fluide et plus précise, surtout à l'écrit."
+    ],
+    examples: [
+      { en: "What surprised me was how quickly he adapted.", fr: "Ce qui m'a surpris, c'est la rapidité avec laquelle il s'est adapté." },
+      { en: "Whether he comes or not doesn't matter to me.", fr: "Qu'il vienne ou non ne m'importe pas." },
+      { en: "That she had lied was obvious to everyone.", fr: "Qu'elle ait menti était évident pour tout le monde." },
+      { en: "I don't know how long the meeting will last.", fr: "Je ne sais pas combien de temps durera la réunion." },
+      { en: "What we need is more time.", fr: "Ce dont nous avons besoin, c'est de plus de temps." }
+    ],
+    pronunciation: "« Whether » se dit « we-zer » : le « th » est doux et sonore. Dans « What surprised me », le « me » est court.",
+    vocab: [
+      { en: "adapt", fr: "s'adapter", example: "Children adapt quickly.", exampleFr: "Les enfants s'adaptent vite.", context: "verbes" },
+      { en: "matter", fr: "importer, compter", example: "It doesn't matter.", exampleFr: "Ça n'a pas d'importance.", context: "opinions" },
+      { en: "obvious", fr: "évident", example: "The answer is obvious.", exampleFr: "La réponse est évidente.", context: "qualités" },
+      { en: "lie", fr: "mentir (passé : lied)", example: "Don't lie to me.", exampleFr: "Ne me mens pas.", context: "relations" },
+      { en: "last", fr: "durer", example: "The meeting lasted two hours.", exampleFr: "La réunion a duré deux heures.", context: "temps" }
+    ],
+    exercises: [
+      { q: "Complète : « ___ he comes or not doesn't matter. »", options: ["Whether", "Weather", "Which", "Where"], answer: 0, explain: "« Whether » introduit une proposition nominale : qu'il vienne ou non." },
+      { q: "Complète : « What surprised me ___ how quickly he left. »", options: ["were", "was", "is to", "did"], answer: 1, explain: "La proposition sujet avec « what » prend un verbe au singulier : was." },
+      { q: "Complète : « ___ she had lied was obvious. »", options: ["What", "Whether", "That", "Which"], answer: 2, explain: "« That » introduit une proposition sujet." },
+      { q: "Quelle phrase est correcte ?", options: ["I don't know how long will the meeting last.", "I don't know how long the meeting last.", "I don't know long how the meeting lasts.", "I don't know how long the meeting will last."], answer: 3, explain: "Dans une proposition nominale, pas d'inversion : how long the meeting will last." }
+    ]
+  },
+  {
+    id: "c1-future-in-the-past",
+    level: "C1",
+    title: "Le futur dans le passé : was going to, was about to, was to",
+    objective: "Raconter ce qui allait arriver, ou ce qui était prévu, à partir d'un moment passé.",
+    explanation: [
+      "Was going to + verbe de base exprime un projet dans le passé qui n'a pas forcément eu lieu : I was going to call you, but I forgot (j'allais t'appeler, mais j'ai oublié).",
+      "Was about to + verbe de base exprime une action sur le point de commencer : We were about to leave when the phone rang (nous étions sur le point de partir quand le téléphone a sonné).",
+      "Was to + verbe de base exprime un destin ou une obligation prévue : She was to become a famous writer (elle allait devenir une écrivaine célèbre).",
+      "Would dans un récit peut aussi exprimer le futur dans le passé : He said he would be leaving the next day (il a dit qu'il partirait le lendemain)."
+    ],
+    examples: [
+      { en: "I was going to call you, but I forgot.", fr: "J'allais t'appeler, mais j'ai oublié." },
+      { en: "We were about to leave when the phone rang.", fr: "Nous étions sur le point de partir quand le téléphone a sonné." },
+      { en: "She was to become a famous writer.", fr: "Elle allait devenir une écrivaine célèbre." },
+      { en: "He said he would be leaving the next day.", fr: "Il a dit qu'il partirait le lendemain." },
+      { en: "The meeting was about to begin when the lights went out.", fr: "La réunion allait commencer quand les lumières se sont éteintes." }
+    ],
+    pronunciation: "« Was going to » se dit souvent « wuz gonna ». « About to » se dit « abaout tou ».",
+    vocab: [
+      { en: "forget", fr: "oublier (passé : forgot)", example: "I forgot my keys.", exampleFr: "J'ai oublié mes clés.", context: "quotidien" },
+      { en: "ring", fr: "sonner (passé : rang)", example: "The phone is ringing.", exampleFr: "Le téléphone sonne.", context: "quotidien" },
+      { en: "famous", fr: "célèbre", example: "He is a famous actor.", exampleFr: "C'est un acteur célèbre.", context: "culture" },
+      { en: "next day", fr: "le lendemain", example: "The next day, it was sunny.", exampleFr: "Le lendemain, il faisait beau.", context: "temps" },
+      { en: "begin", fr: "commencer (passé : began)", example: "The film begins at eight.", exampleFr: "Le film commence à vingt heures.", context: "temps" }
+    ],
+    exercises: [
+      { q: "Complète : « I ___ call you, but I forgot. » (un projet non réalisé)", options: ["was going to", "went to", "am going to", "had to"], answer: 0, explain: "« Was going to » exprime un projet passé qui n'a pas eu lieu." },
+      { q: "Complète : « We ___ leave when the phone rang. » (sur le point de)", options: ["were going to be", "were about to", "had about to", "about"], answer: 1, explain: "« Was / were about to » : sur le point de." },
+      { q: "Complète : « She ___ become a doctor. » (destin)", options: ["was about", "was going", "was to", "had to"], answer: 2, explain: "« Was to » exprime un destin ou une prévision au passé." },
+      { q: "Quelle phrase correspond à « il a dit qu'il partirait demain » ?", options: ["He said he will leave tomorrow.", "He said he leaves tomorrow.", "He said he was leave tomorrow.", "He said he would leave tomorrow."], answer: 3, explain: "Dans un récit, « will » devient « would »." }
+    ]
+  },
+  {
+    id: "c1-cohesion",
+    level: "C1",
+    title: "Relier un texte : furthermore, consequently, nevertheless",
+    objective: "Organiser des idées en paragraphes clairs, comme dans un essai ou un rapport.",
+    explanation: [
+      "Pour ajouter une idée : furthermore, moreover, in addition (de plus, en outre). Pour une conséquence : consequently, as a result, therefore (par conséquent).",
+      "Pour une opposition : nevertheless, nonetheless, even so (néanmoins, malgré tout). Pour une précision : in other words, that is to say (autrement dit).",
+      "Ces mots sont placés en début de phrase, suivis d'une virgule : Nevertheless, the plan was approved (néanmoins, le plan a été approuvé).",
+      "Pour un texte fluide, varie les connecteurs et évite de répéter « also » ou « so » plusieurs fois dans un même paragraphe."
+    ],
+    examples: [
+      { en: "Furthermore, the project saves time and money.", fr: "De plus, le projet fait gagner du temps et de l'argent." },
+      { en: "Consequently, the team had to work overtime.", fr: "Par conséquent, l'équipe a dû faire des heures supplémentaires." },
+      { en: "Nevertheless, the plan was approved by the board.", fr: "Néanmoins, le plan a été approuvé par le conseil." },
+      { en: "In other words, we need to act now.", fr: "Autrement dit, nous devons agir maintenant." },
+      { en: "The costs were high; even so, the results were excellent.", fr: "Les coûts étaient élevés ; malgré tout, les résultats étaient excellents." }
+    ],
+    pronunciation: "« Nevertheless » se dit « nev-er-thé-LESS » : l'accent tombe sur la dernière syllabe « less ».",
+    vocab: [
+      { en: "approve", fr: "approuver", example: "The manager approved the plan.", exampleFr: "Le directeur a approuvé le plan.", context: "travail" },
+      { en: "board", fr: "conseil d'administration", example: "The board meets on Monday.", exampleFr: "Le conseil se réunit lundi.", context: "travail" },
+      { en: "overtime", fr: "heures supplémentaires", example: "He works overtime on Fridays.", exampleFr: "Il fait des heures supplémentaires le vendredi.", context: "travail" },
+      { en: "save", fr: "économiser, faire gagner", example: "This method saves time.", exampleFr: "Cette méthode fait gagner du temps.", context: "travail" },
+      { en: "act", fr: "agir", example: "We must act quickly.", exampleFr: "Nous devons agir vite.", context: "verbes" }
+    ],
+    exercises: [
+      { q: "Quel connecteur signifie « par conséquent » ?", options: ["consequently", "nevertheless", "furthermore", "however"], answer: 0, explain: "« Consequently » exprime une conséquence." },
+      { q: "Quel connecteur signifie « néanmoins » ?", options: ["furthermore", "nevertheless", "therefore", "in addition"], answer: 1, explain: "« Nevertheless » introduit une opposition." },
+      { q: "Quel connecteur signifie « autrement dit » ?", options: ["in addition", "on the other hand", "in other words", "as a result"], answer: 2, explain: "« In other words » reformule une idée." },
+      { q: "Quelle phrase est correcte ?", options: ["Furthermore the project saves time.", "Furthermore, the project, saves time.", "Furthermore, saves time the project.", "Furthermore, the project saves time."], answer: 3, explain: "Le connecteur est suivi d'une virgule, puis d'une phrase normale." }
+    ]
+  },
+  {
+    id: "c2-word-formation",
+    level: "C2",
+    title: "Former des mots : préfixes et suffixes",
+    objective: "Deviner et créer des mots à partir de leurs préfixes et suffixes, pour enrichir son vocabulaire.",
+    explanation: [
+      "Les préfixes changent le sens : un- ou in- (contraire) : unfair (injuste), inaccurate (inexact). Dis- : disagree (être en désaccord). Re- : rewrite (réécrire). Mis- : misunderstand (mal comprendre).",
+      "Les suffixes changent la nature du mot : -ness fait un nom : kindness (gentillesse). -ment fait un nom : development (développement). -ize fait un verbe : modernize (moderniser). -ful fait un adjectif : careful (prudent).",
+      "Certains suffixes sont propres à un domaine : -ity (qualité, nom) : responsibility (responsabilité) ; -able (possibilité) : reliable (fiable).",
+      "Repérer le suffixe d'un mot inconnu permet souvent de deviner sa catégorie grammaticale et son sens général."
+    ],
+    examples: [
+      { en: "The results were inaccurate, so we checked again.", fr: "Les résultats étaient inexacts, alors nous avons revérifié." },
+      { en: "Her kindness surprised everyone at the party.", fr: "Sa gentillesse a surpris tout le monde à la fête." },
+      { en: "The government plans to modernize the airport.", fr: "Le gouvernement prévoit de moderniser l'aéroport." },
+      { en: "Responsibility for the project belongs to the manager.", fr: "La responsabilité du projet revient au directeur." },
+      { en: "I misunderstood the instructions.", fr: "J'ai mal compris les instructions." }
+    ],
+    pronunciation: "Les suffixes en -ity et -ize ont l'accent sur la syllabe juste avant : « responsIBility », « MODernize ».",
+    vocab: [
+      { en: "inaccurate", fr: "inexact", example: "The map is inaccurate.", exampleFr: "La carte est inexacte.", context: "formation" },
+      { en: "kindness", fr: "gentillesse", example: "Thank you for your kindness.", exampleFr: "Merci pour ta gentillesse.", context: "qualités" },
+      { en: "modernize", fr: "moderniser", example: "They want to modernize the system.", exampleFr: "Ils veulent moderniser le système.", context: "formation" },
+      { en: "responsibility", fr: "responsabilité", example: "It is my responsibility.", exampleFr: "C'est de ma responsabilité.", context: "formation" },
+      { en: "misunderstand", fr: "mal comprendre", example: "Don't misunderstand me.", exampleFr: "Ne me comprends pas mal.", context: "formation" }
+    ],
+    exercises: [
+      { q: "Quel mot signifie « inexact » ?", options: ["inaccurate", "disaccurate", "unaccurately", "accurately"], answer: 0, explain: "Le préfixe « in- » exprime le contraire : inaccurate." },
+      { q: "Quel suffixe forme un nom à partir de « kind » ?", options: ["-ize", "-ness", "-ful", "-able"], answer: 1, explain: "« Kind » devient « kindness ». Le suffixe -ness forme un nom." },
+      { q: "Quel verbe vient de « modern » ?", options: ["modernity", "modernful", "modernize", "modernable"], answer: 2, explain: "Le suffixe -ize forme un verbe : modernize." },
+      { q: "Quel mot signifie « mal comprendre » ?", options: ["undermisunderstand", "understand wrong", "disunderstand", "misunderstand"], answer: 3, explain: "Le préfixe « mis- » signifie « mal » : misunderstand." }
+    ]
+  },
+  {
+    id: "c2-formal-inversion",
+    level: "C2",
+    title: "Tournures formelles : were it not for, be that as it may, come what may",
+    objective: "Reconnaître et employer des expressions soutenues, rencontrées dans les textes et les discours.",
+    explanation: [
+      "Were it not for ... (sans ...) remplace if it were not for : Were it not for your help, we would have failed (sans ton aide, nous aurions échoué).",
+      "Be that as it may (quoi qu'il en soit) introduit une idée qui contredit ou nuance ce qui vient d'être dit : Be that as it may, we must continue.",
+      "Come what may (advienne que pourra) exprime une détermination totale : I will finish this project, come what may.",
+      "Ces tournures sont très formelles. À l'oral, on les réserve à un discours, un débat ou un texte soigné."
+    ],
+    examples: [
+      { en: "Were it not for your help, we would have failed.", fr: "Sans ton aide, nous aurions échoué." },
+      { en: "Be that as it may, we must continue the work.", fr: "Quoi qu'il en soit, nous devons poursuivre le travail." },
+      { en: "I will finish this project, come what may.", fr: "Je terminerai ce projet, advienne que pourra." },
+      { en: "Were the price lower, more people would buy it.", fr: "Si le prix était plus bas, davantage de gens l'achèteraient." },
+      { en: "Be that as it may, the decision has been made.", fr: "Quoi qu'il en soit, la décision a été prise." }
+    ],
+    pronunciation: "« Were it not for » se dit « wer it not for » : le « t » de « not » est presque muet. Le rythme est lent et posé.",
+    vocab: [
+      { en: "fail", fr: "échouer", example: "The plan failed.", exampleFr: "Le plan a échoué.", context: "verbes" },
+      { en: "continue", fr: "continuer", example: "Please continue the work.", exampleFr: "Continuez le travail, s'il vous plaît.", context: "verbes" },
+      { en: "decision", fr: "décision", example: "It was a difficult decision.", exampleFr: "C'était une décision difficile.", context: "travail" },
+      { en: "lower", fr: "plus bas", example: "The lower price helps.", exampleFr: "Le prix plus bas aide.", context: "économie" },
+      { en: "finish", fr: "terminer", example: "I will finish the report.", exampleFr: "Je terminerai le rapport.", context: "travail" }
+    ],
+    exercises: [
+      { q: "Quelle tournure signifie « sans ton aide » ?", options: ["Were it not for your help", "Were not your help", "Without you were help", "If were not help"], answer: 0, explain: "« Were it not for » est la forme soutenue de « if it were not for »." },
+      { q: "Quelle expression signifie « quoi qu'il en soit » ?", options: ["Come what may", "Be that as it may", "As it may be", "Be it may"], answer: 1, explain: "« Be that as it may » introduit une nuance." },
+      { q: "Quelle expression signifie « advienne que pourra » ?", options: ["be that as it may", "come as may", "come what may", "what may come"], answer: 2, explain: "« Come what may » exprime une détermination totale." },
+      { q: "Complète : « ___ the price lower, more people would buy it. »", options: ["Was", "Had", "Did", "Were"], answer: 3, explain: "Une conditionnelle sans if : were + sujet + complément." }
+    ]
+  },
+  {
+    id: "c2-degree-adverbs",
+    level: "C2",
+    title: "Nuancer l'intensité : quite, rather, pretty, fairly",
+    objective: "Choisir le bon degré (faible, moyen ou fort) pour qualifier une chose, sans être trop direct.",
+    explanation: [
+      "Fairly et pretty sont plutôt faibles en anglais britannique : The film was fairly good (le film était plutôt bien) ; pretty bad peut vouloir dire assez mauvais.",
+      "Quite est moyen à fort : It's quite difficult (c'est assez difficile, parfois très difficile). Avec un adjectif gradable, quite marque une nuance.",
+      "Rather est souvent négatif ou étonné : It's rather expensive (c'est plutôt cher). Avec un adjectif positif, rather peut surprendre : It was rather good (c'était étonnamment bien).",
+      "Pour une forte intensité : extremely, completely, absolutely, highly : It's absolutely essential (c'est absolument essentiel)."
+    ],
+    examples: [
+      { en: "The film was fairly good, but not excellent.", fr: "Le film était plutôt bon, mais pas excellent." },
+      { en: "It's quite difficult to explain.", fr: "C'est assez difficile à expliquer." },
+      { en: "The hotel was rather expensive for what we got.", fr: "L'hôtel était plutôt cher pour ce qu'on a eu." },
+      { en: "It's absolutely essential that you attend.", fr: "Il est absolument indispensable que tu viennes." },
+      { en: "The result was pretty disappointing.", fr: "Le résultat était assez décevant." }
+    ],
+    pronunciation: "Les adverbes d'intensité sont souvent peu accentués : « QUITE », « RAther », « PREtty ». Insiste sur l'adjectif qui suit.",
+    vocab: [
+      { en: "fairly", fr: "plutôt, assez", example: "It is fairly easy.", exampleFr: "C'est plutôt facile.", context: "intensité" },
+      { en: "rather", fr: "plutôt (souvent négatif)", example: "It's rather cold today.", exampleFr: "Il fait plutôt froid aujourd'hui.", context: "intensité" },
+      { en: "absolutely", fr: "absolument", example: "I absolutely agree.", exampleFr: "Je suis tout à fait d'accord.", context: "intensité" },
+      { en: "disappointing", fr: "décevant", example: "The match was disappointing.", exampleFr: "Le match était décevant.", context: "émotions" },
+      { en: "essential", fr: "indispensable", example: "Water is essential.", exampleFr: "L'eau est indispensable.", context: "qualités" }
+    ],
+    exercises: [
+      { q: "Quel adverbe marque une intensité faible ?", options: ["fairly", "absolutely", "extremely", "completely"], answer: 0, explain: "« Fairly » est plutôt faible : plutôt, assez." },
+      { q: "Quel adverbe signifie « absolument » ?", options: ["rather", "absolutely", "fairly", "quite less"], answer: 1, explain: "« Absolutely » marque une forte intensité." },
+      { q: "Complète : « It's ___ expensive for a student. » (plutôt, avec une nuance négative)", options: ["absolutely", "completely", "rather", "highly"], answer: 2, explain: "« Rather » est souvent utilisé avec une nuance négative : plutôt cher." },
+      { q: "Quelle phrase est correcte ?", options: ["It's absolutely essential you to come.", "It's absolutely essentially come.", "It's absolute essential that you come.", "It's absolutely essential that you come."], answer: 3, explain: "« Absolutely » modifie l'adjectif « essential » : absolutely essential." }
+    ]
+  },
+  {
+    id: "c2-business-collocations",
+    level: "C2",
+    title: "Vocabulaire professionnel : reach a consensus, meet a deadline",
+    objective: "Parler de travail, de projets et de décisions avec les expressions d'un milieu professionnel.",
+    explanation: [
+      "Reach a consensus = parvenir à un accord commun : After hours of debate, the team reached a consensus (après des heures de débat, l'équipe a trouvé un accord).",
+      "Meet a deadline = respecter une échéance : We must meet the deadline on Friday (nous devons respecter l'échéance de vendredi). Miss a deadline = manquer une échéance.",
+      "Launch a product = lancer un produit : The company will launch a new product next year (l'entreprise lancera un nouveau produit l'année prochaine).",
+      "Fall short of expectations = ne pas être à la hauteur des attentes : Sales fell short of expectations (les ventes ont été en deçà des attentes)."
+    ],
+    examples: [
+      { en: "After hours of debate, the team reached a consensus.", fr: "Après des heures de débat, l'équipe a trouvé un accord." },
+      { en: "We must meet the deadline on Friday.", fr: "Nous devons respecter l'échéance de vendredi." },
+      { en: "The company will launch a new product next year.", fr: "L'entreprise lancera un nouveau produit l'année prochaine." },
+      { en: "Sales fell short of expectations this quarter.", fr: "Les ventes ont été en deçà des attentes ce trimestre." },
+      { en: "We need to allocate more resources to this project.", fr: "Nous devons affecter davantage de ressources à ce projet." }
+    ],
+    pronunciation: "« Consensus » se dit « kon-SEN-sus ». « Deadline » se dit « DED-lain ».",
+    vocab: [
+      { en: "consensus", fr: "consensus, accord commun", example: "We need a consensus.", exampleFr: "Nous avons besoin d'un accord commun.", context: "travail" },
+      { en: "deadline", fr: "échéance, date limite", example: "The deadline is tomorrow.", exampleFr: "La date limite est demain.", context: "travail" },
+      { en: "launch", fr: "lancer", example: "They launched the app.", exampleFr: "Ils ont lancé l'application.", context: "travail" },
+      { en: "expectation", fr: "attente", example: "The results met our expectations.", exampleFr: "Les résultats ont répondu à nos attentes.", context: "travail" },
+      { en: "allocate", fr: "affecter, répartir", example: "The budget was allocated to research.", exampleFr: "Le budget a été affecté à la recherche.", context: "travail" }
+    ],
+    exercises: [
+      { q: "Complète : « The team finally reached a ___. »", options: ["consensus", "consent of", "agreement of", "answer"], answer: 0, explain: "« Reach a consensus » : parvenir à un accord commun." },
+      { q: "Complète : « We must ___ the deadline. »", options: ["reach", "meet", "make", "do"], answer: 1, explain: "« Meet a deadline » : respecter une échéance." },
+      { q: "Complète : « Sales ___ short of expectations. »", options: ["went", "made", "fell", "took"], answer: 2, explain: "« Fall short of expectations » : ne pas être à la hauteur." },
+      { q: "Quelle expression signifie « lancer un produit » ?", options: ["start a product", "push a product", "throw a product", "launch a product"], answer: 3, explain: "« Launch a product » est la collocation courante." }
+    ]
+  },
+  {
+    id: "c2-idioms-two",
+    level: "C2",
+    title: "Idiomes supplémentaires : under the weather, the ball is in your court",
+    objective: "Enrichir son vocabulaire imagé pour comprendre les conversations naturelles.",
+    explanation: [
+      "Under the weather = ne pas se sentir bien : I'm feeling under the weather today (je ne me sens pas bien aujourd'hui).",
+      "The ball is in your court = c'est à toi de décider ou d'agir : I've made my offer, so the ball is in your court (j'ai fait mon offre, c'est à toi maintenant).",
+      "Let the cat out of the bag = révéler un secret par erreur : She let the cat out of the bag about the surprise party (elle a révélé la fête surprise sans le vouloir).",
+      "Hit the books = se mettre à réviser sérieusement : I have exams next week, so I have to hit the books (j'ai des examens la semaine prochaine, il faut que je me mette à réviser)."
+    ],
+    examples: [
+      { en: "I'm feeling under the weather, so I'll stay in bed.", fr: "Je ne me sens pas bien, je vais rester au lit." },
+      { en: "I've made my offer, so the ball is in your court.", fr: "J'ai fait mon offre, c'est à toi de jouer maintenant." },
+      { en: "She let the cat out of the bag about the party.", fr: "Elle a révélé la fête sans le vouloir." },
+      { en: "I have exams next week, so I need to hit the books.", fr: "J'ai des examens la semaine prochaine, je dois me mettre à réviser." },
+      { en: "He's been under the weather since Monday.", fr: "Il ne va pas bien depuis lundi." }
+    ],
+    pronunciation: "Dans les idiomes, les mots se lient : « under the weather » se dit « UN-der-the-WE-ther ».",
+    vocab: [
+      { en: "offer", fr: "offre, proposition", example: "I made an offer.", exampleFr: "J'ai fait une offre.", context: "travail" },
+      { en: "secret", fr: "secret", example: "Keep it a secret.", exampleFr: "Garde-le secret.", context: "relations" },
+      { en: "exam", fr: "examen", example: "The exam is on Monday.", exampleFr: "L'examen a lieu lundi.", context: "études" },
+      { en: "feel", fr: "se sentir", example: "I feel tired.", exampleFr: "Je me sens fatigué.", context: "santé" },
+      { en: "surprise", fr: "surprise", example: "It was a nice surprise.", exampleFr: "C'était une belle surprise.", context: "relations" }
+    ],
+    exercises: [
+      { q: "Que veut dire « under the weather » ?", options: ["ne pas se sentir bien", "être sous la pluie", "faire du sport", "être en retard"], answer: 0, explain: "C'est un idiome : ne pas se sentir bien." },
+      { q: "Que veut dire « the ball is in your court » ?", options: ["tu as perdu", "c'est à toi d'agir", "tu joues au tennis", "il fait beau"], answer: 1, explain: "L'idiome signifie que c'est à la personne d'agir ou de décider." },
+      { q: "Que veut dire « let the cat out of the bag » ?", options: ["sortir un animal", "perdre un sac", "révéler un secret", "fermer une porte"], answer: 2, explain: "L'idiome signifie révéler un secret, souvent par erreur." },
+      { q: "Que veut dire « hit the books » ?", options: ["frapper quelqu'un", "acheter des livres", "partir en vacances", "se mettre à réviser"], answer: 3, explain: "L'idiome signifie se mettre sérieusement à réviser." }
     ]
   }
 ];
