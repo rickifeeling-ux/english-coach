@@ -1,7 +1,7 @@
 // Service worker d'English Coach : permet l'installation et l'ouverture hors ligne.
 // Stratégie : réseau d'abord (pour toujours avoir la dernière version), cache en secours.
-var CACHE = 'english-coach-v1';
-var FILES = ['./', 'index.html', 'lessons.js', 'manifest.json', 'icon-192.png', 'icon-512.png'];
+var CACHE = 'english-coach-v2';
+var FILES = ['./', 'index.html', 'lessons.js', 'tests.js', 'manifest.json', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', function (event) {
   event.waitUntil(

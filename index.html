@@ -247,14 +247,16 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
 </nav>
 
 <script src="lessons.js"></script>
+<script src="tests.js"></script>
 <script>
 (function () {
   var LESSONS = window.LESSONS || [];
+  var LEVEL_TESTS = window.LEVEL_TESTS || {};
   var KEY = 'ec_data_v1';
   var INTERVALS = [1, 3, 7, 14, 30];
   var PASS = 0.75;
   var LETTERS = ['A', 'B', 'C', 'D', 'E'];
-  var data = { done: {}, vocab: {}, errors: {}, chat: { msgs: [], level: 'A1', slow: false, auto: true }, fixes: [], placement: null };
+  var data = { done: {}, vocab: {}, errors: {}, chat: { msgs: [], level: 'A1', slow: false, auto: true }, fixes: [], placement: null, levelPassed: {} };
   var S = { tab: 'home', lesson: null, step: 'intro', qi: 0, score: 0, picked: null, review: null, pl: null };
   var app = document.getElementById('app');
   var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -392,6 +394,7 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
         };
         data.fixes = Array.isArray(d.fixes) ? d.fixes.slice(-50) : [];
         data.placement = d.placement && d.placement.level ? d.placement : null;
+        data.levelPassed = d.levelPassed && typeof d.levelPassed === 'object' ? d.levelPassed : {};
       }
     } catch (e) {}
   }
@@ -416,7 +419,7 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
     return Object.keys(data.vocab).filter(function (w) { return data.vocab[w].next <= t; });
   }
   function nextLessonIndex() {
-    for (var i = 0; i < LESSONS.length; i++) { if (!data.done[LESSONS[i].id]) return i; }
+    for (var i = 0; i < LESSONS.length; i++) { if (!data.done[LESSONS[i].id] && lessonOpen(LESSONS[i])) return i; }
     return -1;
   }
   function doneCount() {
@@ -457,16 +460,20 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
     } else if (n >= 0) {
       h += '<h2>' + (done ? 'Continue comme ça' : 'Bienvenue') + '</h2><p>Prochaine leçon : ' + esc(LESSONS[n].title) + '</p>';
     } else {
-      h += '<h2>Bravo !</h2><p>Toutes les leçons actuelles sont validées. D\'autres arrivent bientôt.</p>';
+      h += done < total ? '<h2>Continue</h2><p>Passe le test d\'un niveau pour débloquer la suite.</p>' : '<h2>Bravo !</h2><p>Toutes les leçons actuelles sont validées.</p>';
     }
     h += '</div>' + ring(total ? done / total : 0, 88, 9, done + '/' + total, 'leçons') + '</div>';
     if (n >= 0) h += '<button class="btn light block" data-a="openLesson" data-i="' + n + '">' + (done ? 'Continuer' : 'Commencer') + ' ' + ic('chev') + '</button>';
     h += '</section>';
     h += '<div class="stats"><div class="stat"><span>Mots dans le carnet</span><b>' + words + '</b></div><div class="stat"><span>À réviser</span><b>' + due + '</b></div></div>';
-    var pr = data.placement;
-    h += '<div class="card"><div class="st"><span class="dot">' + ic('star') + '</span>Test de niveau</div>' +
-      (pr ? '<p class="muted">Ton niveau de départ : <b>' + esc(LEVEL_LABEL[pr.level]) + '</b> (' + pr.score + ' / ' + pr.total + ').</p>' : '<p class="muted">Réponds à 12 questions pour savoir par où commencer.</p>') +
-      '<button class="btn soft block" data-a="startPl">' + (pr ? 'Refaire le test' : 'Faire le test') + '</button></div>';
+    h += '<div class="card"><div class="st"><span class="dot">' + ic('star') + '</span>Niveaux</div>';
+    h += '<p class="muted">Réussis le test d\'un niveau (75 %) pour débloquer le suivant. Si tu te sens plus fort, tu peux passer directement le test d\'un niveau supérieur.</p>';
+    LEVEL_ORDER.forEach(function (lv) {
+      var st = data.levelPassed[lv] ? 'Réussi' : (levelOpen(lv) ? 'Ouvert' : 'Verrouillé');
+      h += '<div class="vr" style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span><b>' + lv + '</b> · ' + st + '</span>' +
+        (LEVEL_TESTS[lv] ? '<button class="btn soft" data-a="startTest" data-l="' + lv + '">Test</button>' : '<span class="muted">Bientôt</span>') + '</div>';
+    });
+    h += '</div>';
     h += '<div class="card"><div class="st"><span class="dot">' + ic('chat') + '</span>Parler avec le professeur</div>' +
       '<p class="muted">Écris ou parle en anglais : le professeur IA répond et corrige tes phrases en français.</p>' +
       '<button class="btn block" data-a="goChat">' + ic('chat') + ' Ouvrir la conversation</button></div>';
@@ -491,7 +498,13 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
     var h = '<div class="page-h"><h2>Leçons</h2><p>' + (total ? 'Niveau ' + lvls.join(' et ') + ' · ' + done + ' sur ' + total + ' validée(s)' : 'Aucune leçon disponible') + '</p></div>';
     if (!total) return h + noLessons();
     LESSONS.forEach(function (L, i) {
-      var d = data.done[L.id];
+      var d = data.done[L.id], open = lessonOpen(L);
+      if (!open) {
+        h += '<div class="card lc" style="opacity:.55"><span class="num">' + (i + 1) + '</span>' +
+          '<span class="lc-b"><span class="chip">' + esc(L.level) + ' · Verrouillé</span>' +
+          '<h3>' + esc(L.title) + '</h3><p>' + esc(L.objective) + '</p></span></div>';
+        return;
+      }
       h += '<button class="card lc" data-a="openLesson" data-i="' + i + '">' +
         '<span class="num' + (d ? ' done' : '') + '">' + (d ? ic('check') : (i + 1)) + '</span>' +
         '<span class="lc-b"><span class="chip' + (d ? ' ok' : '') + '">' + esc(L.level) + (d ? ' · Validée ' + d.score + '/' + d.total : '') + '</span>' +
@@ -545,81 +558,86 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
     return h;
   }
 
-  // ---------- Test de niveau ----------
-  var PL_QUESTIONS = [
-    { q: "I ___ a student.", options: ["am", "is", "are", "be"], answer: 0, explain: "Avec « I », on utilise « am »." },
-    { q: "She ___ from Gabon.", options: ["am", "is", "are", "be"], answer: 1, explain: "Avec « she », on utilise « is »." },
-    { q: "They ___ at home.", options: ["is", "am", "are", "be"], answer: 2, explain: "Avec « they », on utilise « are »." },
-    { q: "He ___ a car.", options: ["have", "has", "is", "haves"], answer: 1, explain: "Avec « he », on utilise « has »." },
-    { q: "We ___ coffee every morning.", options: ["drinks", "drink", "drinking", "are drink"], answer: 1, explain: "Avec « we », le verbe reste à sa forme de base." },
-    { q: "She ___ tennis on Sunday.", options: ["play", "plays", "playing", "playes"], answer: 1, explain: "Avec « she », on ajoute un « s » : plays." },
-    { q: "I ___ like fish.", options: ["doesn't", "don't", "isn't", "not"], answer: 1, explain: "Avec « I », la négation est « don't »." },
-    { q: "___ you speak English?", options: ["Does", "Do", "Is", "Are"], answer: 1, explain: "Avec « you », la question commence par « Do »." },
-    { q: "I ___ swim.", options: ["can", "cans", "can to", "am can"], answer: 0, explain: "« Can » + verbe de base : I can swim." },
-    { q: "Yesterday I ___ to school.", options: ["go", "went", "goed", "going"], answer: 1, explain: "Au passé, « go » devient « went »." },
-    { q: "I am going ___ travel next week.", options: ["to", "for", "at", "on"], answer: 0, explain: "« Be going to » + verbe : I am going to travel." },
-    { q: "This book is ___ than that one.", options: ["more interesting", "interestinger", "most interesting", "interesting more"], answer: 0, explain: "Pour comparer, on dit « more » + adjectif : more interesting." }
-  ];
-  var PL_TEXT = {
-    'pre-A1': "Tu pars de zéro, et c'est très bien. Commence par la première leçon : elle pose les bases.",
-    'A1': "Tu connais déjà une partie des bases. Les leçons A1 vont consolider ce que tu sais et combler les trous.",
-    'A2': "Tu as un bon départ. Commence par les leçons A2 (passé simple, futur, comparatifs), et revois les A1 si besoin."
-  };
-  function plLevel(score) { return score >= 9 ? 'A2' : (score >= 5 ? 'A1' : 'pre-A1'); }
+  // ---------- Tests de niveau ----------
+  // Réussir le test d'un niveau (75 %) débloque le niveau suivant et les niveaux inférieurs.
+  // Un test peut être passé directement, sans avoir fait les leçons du niveau.
+  var LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+  function unlockedIdx() {
+    var m = 0;
+    Object.keys(data.levelPassed).forEach(function (k) {
+      var i = LEVEL_ORDER.indexOf(k);
+      if (i !== -1 && i + 1 > m) m = i + 1;
+    });
+    return Math.min(m, LEVEL_ORDER.length - 1);
+  }
+  function levelOpen(lv) { var i = LEVEL_ORDER.indexOf(lv); return i !== -1 && i <= unlockedIdx(); }
+  function lessonOpen(L) { return levelOpen(L.level); }
+  function levelLessons(lv) { return LESSONS.filter(function (x) { return x.level === lv; }); }
 
-  function placement(a, i) {
+  function testAction(a, i, lv) {
     var p = S.pl;
-    if (a === 'startPl') S.pl = { qi: 0, score: 0, picked: null, finished: false };
-    else if (a === 'plClose') S.pl = null;
-    else if (a === 'plLessons') { S.pl = null; S.tab = 'lessons'; S.lesson = null; S.step = 'intro'; }
-    else if (a === 'plPick') {
+    if (a === 'startTest') { if (!LEVEL_TESTS[lv]) return; S.pl = { level: lv, qi: 0, score: 0, picked: null, finished: false }; }
+    else if (a === 'testClose') S.pl = null;
+    else if (a === 'testLessons') { S.pl = null; S.tab = 'lessons'; S.lesson = null; S.step = 'intro'; }
+    else if (a === 'testPick') {
       if (!p || p.finished || p.picked !== null) return;
       p.picked = i;
-      if (i === PL_QUESTIONS[p.qi].answer) p.score++;
+      if (i === LEVEL_TESTS[p.level][p.qi].a) p.score++;
     }
-    else if (a === 'plNext') {
+    else if (a === 'testNext') {
       if (!p || p.picked === null) return;
-      if (p.qi + 1 < PL_QUESTIONS.length) { p.qi++; p.picked = null; }
+      var total = LEVEL_TESTS[p.level].length;
+      if (p.qi + 1 < total) { p.qi++; p.picked = null; }
       else {
         p.finished = true;
-        var lv = plLevel(p.score);
-        data.placement = { level: lv, score: p.score, total: PL_QUESTIONS.length, date: todayStr() };
-        if (CHAT_LEVELS.indexOf(lv) !== -1) data.chat.level = lv;
+        if (p.score / total >= PASS) {
+          var old = data.levelPassed[p.level];
+          if (!old || p.score >= old.score) data.levelPassed[p.level] = { score: p.score, total: total, date: todayStr() };
+        }
         save();
       }
     }
     render(); window.scrollTo(0, 0);
   }
 
-  function vPlacement() {
-    var p = S.pl, h = '<div class="page-h"><h2>Test de niveau</h2><p>Douze questions pour savoir par où commencer. Le test se passe entièrement sur ton téléphone.</p></div>';
+  function vTest() {
+    var p = S.pl, T = LEVEL_TESTS[p.level], total = T.length, h = '';
+    h += '<div class="page-h"><h2>Test ' + esc(p.level) + '</h2><p>' + total + ' questions. Il faut 75 % de bonnes réponses pour débloquer le niveau suivant.</p></div>';
     if (p.finished) {
-      var r = data.placement, lv = r.level;
-      h += '<div class="card center">' + ring(r.score / r.total, 150, 14, r.score + '/' + r.total, '').replace('<div class="rt">', '<div class="rt" style="font-size:1.5rem">');
+      var ok = p.score / total >= PASS, next = LEVEL_ORDER[LEVEL_ORDER.indexOf(p.level) + 1];
+      h += '<div class="card center">' + ring(p.score / total, 150, 14, p.score + '/' + total, '').replace('<div class="rt">', '<div class="rt" style="font-size:1.5rem">');
       h += '<p class="muted" style="margin:0 0 6px">bonnes réponses</p>';
-      h += '<div class="res-t ok">Niveau de départ : ' + esc(LEVEL_LABEL[lv]) + '</div>';
-      h += '<p class="muted">' + esc(PL_TEXT[lv]) + '</p>';
-      h += '<button class="btn block" data-a="plLessons">Commencer les leçons ' + ic('chev') + '</button>';
-      h += '<button class="btn soft block" data-a="startPl">Refaire le test</button>';
-      h += '<button class="btn soft block" data-a="plClose">Retour à l\'accueil</button></div>';
+      if (ok) {
+        h += '<div class="res-t ok">Niveau ' + esc(p.level) + ' réussi !</div>';
+        h += '<p class="muted">' + (next ? 'Le niveau ' + esc(next) + ' est débloqué.' : 'Tu as terminé le dernier niveau.') + '</p>';
+        h += '<button class="btn block" data-a="testLessons">Voir les leçons ' + ic('chev') + '</button>';
+      } else {
+        var rest = levelLessons(p.level).filter(function (x) { return !data.done[x.id]; });
+        h += '<div class="res-t warn">Pas encore</div>';
+        h += '<p class="muted">Il faut au moins 75 % pour passer au niveau suivant.' + (rest.length ? ' Relis ces leçons :' : '') + '</p>';
+        rest.forEach(function (x) { h += '<p class="muted" style="margin:0">· ' + esc(x.title) + '</p>'; });
+        h += '<button class="btn block" data-a="startTest" data-l="' + esc(p.level) + '">Repasser le test</button>';
+        h += '<button class="btn soft block" data-a="testLessons">Voir les leçons</button>';
+      }
+      h += '<button class="btn soft block" data-a="testClose">Retour à l\'accueil</button></div>';
       return h;
     }
-    var q = PL_QUESTIONS[p.qi];
-    h += '<div class="card"><div class="qh"><span>Question ' + (p.qi + 1) + ' / ' + PL_QUESTIONS.length + '</span><span>Test de niveau</span></div>';
-    h += '<div class="bar"><div style="width:' + ((p.qi + (p.picked !== null ? 1 : 0)) / PL_QUESTIONS.length * 100) + '%"></div></div>';
+    var q = T[p.qi];
+    h += '<div class="card"><div class="qh"><span>Question ' + (p.qi + 1) + ' / ' + total + '</span><span>Test ' + esc(p.level) + '</span></div>';
+    h += '<div class="bar"><div style="width:' + ((p.qi + (p.picked !== null ? 1 : 0)) / total * 100) + '%"></div></div>';
     h += '<div class="qq">' + esc(q.q) + '</div>';
-    q.options.forEach(function (o, k) {
+    q.o.forEach(function (o, k) {
       var c = 'opt';
-      if (p.picked !== null) { if (k === q.answer) c += ' right'; else if (k === p.picked) c += ' wrong'; }
-      h += '<button class="' + c + '" data-a="plPick" data-i="' + k + '"' + (p.picked !== null ? ' disabled' : '') + '><span class="lt">' + LETTERS[k] + '</span><span class="tx">' + esc(o) + '</span></button>';
+      if (p.picked !== null) { if (k === q.a) c += ' right'; else if (k === p.picked) c += ' wrong'; }
+      h += '<button class="' + c + '" data-a="testPick" data-i="' + k + '"' + (p.picked !== null ? ' disabled' : '') + '><span class="lt">' + LETTERS[k] + '</span><span class="tx">' + esc(o) + '</span></button>';
     });
     if (p.picked !== null) {
-      var good = p.picked === q.answer;
-      h += '<div class="fb ' + (good ? 'ok' : 'err') + '">' + ic(good ? 'check' : 'x') + '<div><b>' + (good ? 'Correct !' : 'Pas tout à fait.') + '</b>' + esc(q.explain) + '</div></div>';
-      h += '<button class="btn block" data-a="plNext">' + (p.qi + 1 < PL_QUESTIONS.length ? 'Question suivante' : 'Voir mon niveau') + ' ' + ic('chev') + '</button>';
+      var good = p.picked === q.a;
+      h += '<div class="fb ' + (good ? 'ok' : 'err') + '">' + ic(good ? 'check' : 'x') + '<div><b>' + (good ? 'Correct !' : 'Pas tout à fait.') + '</b>' + esc(q.e) + '</div></div>';
+      h += '<button class="btn block" data-a="testNext">' + (p.qi + 1 < total ? 'Question suivante' : 'Voir mon résultat') + ' ' + ic('chev') + '</button>';
     }
     h += '</div>';
-    h += '<button class="btn soft block" data-a="plClose">Quitter le test</button>';
+    h += '<button class="btn soft block" data-a="testClose">Quitter le test</button>';
     return h;
   }
 
@@ -910,7 +928,7 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
   // ---------- Affichage ----------
   function render() {
     var h, key = S.tab + '|' + S.lesson + '|' + S.step + '|' + (S.step === 'quiz' ? S.qi : '') + '|' + (S.review ? 'r' + S.review.i : '');
-    if (S.pl) h = vPlacement();
+    if (S.pl) h = vTest();
     else if (S.tab === 'home') h = vHome();
     else if (S.tab === 'lessons') {
       if (S.lesson === null) h = vLessons();
@@ -966,10 +984,10 @@ body.chatmode{padding-bottom:calc(var(--nav-h,64px) + 96px + env(safe-area-inset
     var b = e.target.closest('[data-a]');
     if (!b) return;
     var a = b.getAttribute('data-a'), i = parseInt(b.getAttribute('data-i'), 10), L;
-    if (a === 'startPl' || a === 'plPick' || a === 'plNext' || a === 'plClose' || a === 'plLessons') { placement(a, i); return; }
+    if (a === 'startTest' || a === 'testPick' || a === 'testNext' || a === 'testClose' || a === 'testLessons') { testAction(a, i, b.getAttribute('data-l')); return; }
     if (a === 'authIn' || a === 'authUp' || a === 'authOut') { doAuth(a); return; }
 
-    if (a === 'openLesson') { S.tab = 'lessons'; S.lesson = i; S.step = 'intro'; render(); window.scrollTo(0, 0); }
+    if (a === 'openLesson') { if (!lessonOpen(LESSONS[i])) return; S.tab = 'lessons'; S.lesson = i; S.step = 'intro'; render(); window.scrollTo(0, 0); }
     else if (a === 'backLessons') { S.lesson = null; S.step = 'intro'; S.tab = 'lessons'; render(); window.scrollTo(0, 0); }
     else if (a === 'listenEx') {
       var m = document.getElementById('m' + i);
