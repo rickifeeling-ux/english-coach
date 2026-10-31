@@ -25,10 +25,10 @@ window.LESSONS = [
       { en: "name", fr: "nom, prénom", example: "My name is Paul.", exampleFr: "Je m'appelle Paul.", context: "présentation" }
     ],
     exercises: [
-      { q: "Comment dit-on « Enchanté(e) » ?", options: ["Good night", "Nice to meet you", "See you", "Thank you"], answer: 1, explain: "« Nice to meet you » s'utilise à la première rencontre." },
-      { q: "Complète : « My ___ is Anna. »", options: ["name", "from", "morning", "please"], answer: 0, explain: "« My name is… » sert à donner son prénom." },
+      { q: "Comment dit-on « Enchanté(e) » ?", options: ["Nice to meet you", "Good night", "See you", "Thank you"], answer: 0, explain: "« Nice to meet you » s'utilise à la première rencontre." },
+      { q: "Complète : « My ___ is Anna. »", options: ["from", "name", "morning", "please"], answer: 1, explain: "« My name is… » sert à donner son prénom." },
       { q: "Que signifie « What is your name? »", options: ["D'où viens-tu ?", "Comment vas-tu ?", "Comment t'appelles-tu ?", "Quel âge as-tu ?"], answer: 2, explain: "« What is your name? » = « Comment t'appelles-tu ? »." },
-      { q: "Quelle expression utilise-t-on le matin ?", options: ["Good morning", "Good night", "Goodbye", "Please"], answer: 0, explain: "« Good morning » = bonjour (le matin). « Good night » se dit avant de dormir." }
+      { q: "Quelle expression utilise-t-on le matin ?", options: ["Good night", "Goodbye", "Please", "Good morning"], answer: 3, explain: "« Good morning » = bonjour (le matin). « Good night » se dit avant de dormir." }
     ]
   },
   {
@@ -60,7 +60,7 @@ window.LESSONS = [
       { q: "Complète : « I ___ a student. »", options: ["am", "is", "are", "be"], answer: 0, explain: "Avec « I », on utilise « am »." },
       { q: "Complète : « She ___ my friend. »", options: ["am", "is", "are", "be"], answer: 1, explain: "Avec he / she / it, on utilise « is »." },
       { q: "Complète : « We ___ happy. »", options: ["is", "am", "are", "be"], answer: 2, explain: "Avec we / you / they, on utilise « are »." },
-      { q: "Quelle phrase est correcte ?", options: ["He are at home.", "He is at home.", "He am at home.", "He be at home."], answer: 1, explain: "« He is at home. » est la seule forme correcte." }
+      { q: "Quelle phrase est correcte ?", options: ["He are at home.", "He am at home.", "He be at home.", "He is at home."], answer: 3, explain: "« He is at home. » est la seule forme correcte." }
     ]
   },
   {
@@ -90,9 +90,9 @@ window.LESSONS = [
       { en: "sister", fr: "sœur", example: "She is my sister.", exampleFr: "Elle est ma sœur.", context: "famille" }
     ],
     exercises: [
-      { q: "Quel pronom utilise-t-on pour parler d'une femme ?", options: ["He", "She", "It", "They"], answer: 1, explain: "« She » désigne une femme ou une fille." },
-      { q: "Complète : « ___ is a big house. » (une maison)", options: ["He", "She", "It", "We"], answer: 2, explain: "Pour une chose, on utilise « it »." },
-      { q: "« Marc et moi, nous sommes amis. » Quel pronom remplace « Marc et moi » ?", options: ["They", "We", "You", "He"], answer: 1, explain: "« Marc et moi » = nous = « we »." },
+      { q: "Quel pronom utilise-t-on pour parler d'une femme ?", options: ["She", "He", "It", "They"], answer: 0, explain: "« She » désigne une femme ou une fille." },
+      { q: "Complète : « ___ is a big house. » (une maison)", options: ["He", "It", "She", "We"], answer: 1, explain: "Pour une chose, on utilise « it »." },
+      { q: "« Marc et moi, nous sommes amis. » Quel pronom remplace « Marc et moi » ?", options: ["They", "You", "We", "He"], answer: 2, explain: "« Marc et moi » = nous = « we »." },
       { q: "« Anna et Paul sont à la maison. » Quel pronom remplace « Anna et Paul » ?", options: ["He", "She", "We", "They"], answer: 3, explain: "Plusieurs personnes dont on parle = « they »." }
     ]
   },
@@ -126,7 +126,7 @@ window.LESSONS = [
       { q: "Complète : « I ___ a phone. »", options: ["have", "has", "am", "haves"], answer: 0, explain: "Avec « I », on utilise « have »." },
       { q: "Complète : « She ___ two sisters. »", options: ["have", "has", "is", "having"], answer: 1, explain: "Avec he / she / it, on utilise « has »." },
       { q: "Complète : « They ___ a big house. »", options: ["has", "is", "have", "haves"], answer: 2, explain: "Avec they, on utilise « have »." },
-      { q: "Comment dit-on « J'ai 25 ans » ?", options: ["I have 25 years.", "I am 25 years old.", "I has 25 years.", "I am have 25."], answer: 1, explain: "Pour l'âge, l'anglais utilise « to be » : « I am 25 years old »." }
+      { q: "Comment dit-on « J'ai 25 ans » ?", options: ["I have 25 years.", "I has 25 years.", "I am have 25.", "I am 25 years old."], answer: 3, explain: "Pour l'âge, l'anglais utilise « to be » : « I am 25 years old »." }
     ]
   },
   {
@@ -156,10 +156,10 @@ window.LESSONS = [
       { en: "play", fr: "jouer", example: "They play football.", exampleFr: "Ils jouent au football.", context: "loisirs" }
     ],
     exercises: [
-      { q: "Complète : « She ___ English. »", options: ["speak", "speaks", "speaking", "speakes"], answer: 1, explain: "Avec she, on ajoute un « s » : speaks." },
-      { q: "Complète : « They ___ football on Sunday. »", options: ["plays", "playing", "play", "playes"], answer: 2, explain: "Avec they, le verbe garde sa forme de base : play." },
-      { q: "Complète : « He ___ TV every evening. »", options: ["watch", "watchs", "watching", "watches"], answer: 3, explain: "Après « ch », on ajoute « es » : watches." },
-      { q: "Quelle phrase est correcte ?", options: ["He work in a bank.", "He works in a bank.", "He working in a bank.", "He is work in a bank."], answer: 1, explain: "Avec he, le verbe prend un « s » : works." }
+      { q: "Complète : « She ___ English. »", options: ["speaks", "speak", "speaking", "speakes"], answer: 0, explain: "Avec she, on ajoute un « s » : speaks." },
+      { q: "Complète : « They ___ football on Sunday. »", options: ["plays", "play", "playing", "playes"], answer: 1, explain: "Avec they, le verbe garde sa forme de base : play." },
+      { q: "Complète : « He ___ TV every evening. »", options: ["watch", "watchs", "watches", "watching"], answer: 2, explain: "Après « ch », on ajoute « es » : watches." },
+      { q: "Quelle phrase est correcte ?", options: ["He work in a bank.", "He working in a bank.", "He is work in a bank.", "He works in a bank."], answer: 3, explain: "Avec he, le verbe prend un « s » : works." }
     ]
   },
   {
@@ -190,10 +190,10 @@ window.LESSONS = [
       { en: "Spanish", fr: "espagnol (la langue)", example: "They speak Spanish.", exampleFr: "Ils parlent espagnol.", context: "langues" }
     ],
     exercises: [
-      { q: "Complète : « I ___ like coffee. »", options: ["doesn't", "don't", "isn't", "not"], answer: 1, explain: "Avec I, on utilise « don't »." },
+      { q: "Complète : « I ___ like coffee. »", options: ["don't", "doesn't", "isn't", "not"], answer: 0, explain: "Avec I, on utilise « don't »." },
       { q: "Complète : « She ___ work on Monday. »", options: ["don't", "doesn't", "isn't", "no"], answer: 1, explain: "Avec she, on utilise « doesn't »." },
-      { q: "Quelle phrase est correcte ?", options: ["He doesn't works here.", "He doesn't work here.", "He don't work here.", "He not work here."], answer: 1, explain: "Après « doesn't », le verbe garde sa forme de base, sans « s »." },
-      { q: "Comment dit-on « Je ne suis pas fatigué » ?", options: ["I don't tired.", "I am not tired.", "I not am tired.", "I doesn't tired."], answer: 1, explain: "Avec « to be », on dit « am not » sans don't ni doesn't." }
+      { q: "Quelle phrase est correcte ?", options: ["He doesn't works here.", "He don't work here.", "He doesn't work here.", "He not work here."], answer: 2, explain: "Après « doesn't », le verbe garde sa forme de base, sans « s »." },
+      { q: "Comment dit-on « Je ne suis pas fatigué » ?", options: ["I don't tired.", "I not am tired.", "I doesn't tired.", "I am not tired."], answer: 3, explain: "Avec « to be », on dit « am not » sans don't ni doesn't." }
     ]
   },
   {
@@ -224,10 +224,10 @@ window.LESSONS = [
       { en: "no", fr: "non", example: "No, I don't.", exampleFr: "Non, je ne le fais pas.", context: "réponses" }
     ],
     exercises: [
-      { q: "Complète : « ___ you speak English? »", options: ["Does", "Do", "Is", "Are"], answer: 1, explain: "Avec you, on utilise « Do » pour une question." },
+      { q: "Complète : « ___ you speak English? »", options: ["Do", "Does", "Is", "Are"], answer: 0, explain: "Avec you, on utilise « Do » pour une question." },
       { q: "Complète : « ___ she work here? »", options: ["Do", "Does", "Is", "Are"], answer: 1, explain: "Avec she, on utilise « Does » pour une question." },
-      { q: "Quelle question est correcte ?", options: ["Does they live here?", "Do they live here?", "Do they lives here?", "They do live here?"], answer: 1, explain: "Avec they, on utilise « Do » et le verbe reste à sa forme de base." },
-      { q: "Comment répond-on « Does he play football? » si c'est oui ?", options: ["Yes, he does.", "Yes, he is.", "Yes, he plays.", "Yes, he do."], answer: 0, explain: "On répond avec « Yes, he does. » en reprenant l'auxiliaire." }
+      { q: "Quelle question est correcte ?", options: ["Does they live here?", "Do they lives here?", "Do they live here?", "They do live here?"], answer: 2, explain: "Avec they, on utilise « Do » et le verbe reste à sa forme de base." },
+      { q: "Comment répond-on « Does he play football? » si c'est oui ?", options: ["Yes, he is.", "Yes, he plays.", "Yes, he do.", "Yes, he does."], answer: 3, explain: "On répond avec « Yes, he does. » en reprenant l'auxiliaire." }
     ]
   },
   {
@@ -257,10 +257,10 @@ window.LESSONS = [
       { en: "book", fr: "livre", example: "I read a book.", exampleFr: "Je lis un livre.", context: "objets" }
     ],
     exercises: [
-      { q: "Complète : « I have ___ apple. »", options: ["a", "an", "the", "some"], answer: 1, explain: "Devant un son voyelle (apple), on utilise « an »." },
-      { q: "Complète : « ___ car is red. » (la voiture dont on parle)", options: ["A", "An", "The", "One"], answer: 2, explain: "Pour une chose précise et connue, on utilise « the »." },
-      { q: "Complète : « She is ___ teacher. »", options: ["a", "an", "the", "an the"], answer: 0, explain: "Devant un son consonne (teacher), on utilise « a »." },
-      { q: "Comment dit-on « J'aime les pommes » ?", options: ["I like the apples.", "I like apples.", "I like an apples.", "I like a apples."], answer: 1, explain: "Pour parler de quelque chose en général au pluriel, on ne met pas d'article." }
+      { q: "Complète : « I have ___ apple. »", options: ["an", "a", "the", "some"], answer: 0, explain: "Devant un son voyelle (apple), on utilise « an »." },
+      { q: "Complète : « ___ car is red. » (la voiture dont on parle)", options: ["A", "The", "An", "One"], answer: 1, explain: "Pour une chose précise et connue, on utilise « the »." },
+      { q: "Complète : « She is ___ teacher. »", options: ["an", "the", "a", "an the"], answer: 2, explain: "Devant un son consonne (teacher), on utilise « a »." },
+      { q: "Comment dit-on « J'aime les pommes » ?", options: ["I like the apples.", "I like an apples.", "I like a apples.", "I like apples."], answer: 3, explain: "Pour parler de quelque chose en général au pluriel, on ne met pas d'article." }
     ]
   },
   {
@@ -291,8 +291,8 @@ window.LESSONS = [
     exercises: [
       { q: "Complète : « I ___ swim. » (je sais nager)", options: ["can", "cans", "can to", "am can"], answer: 0, explain: "Avec « can », on met le verbe à sa forme de base, sans « to »." },
       { q: "Complète : « She ___ cook well. » (elle ne cuisine pas bien)", options: ["can", "can't", "cans", "is can"], answer: 1, explain: "La négation de « can » est « can't »." },
-      { q: "Quelle phrase est correcte ?", options: ["He can swims.", "He can swim.", "He cans swim.", "He can to swim."], answer: 1, explain: "Après « can », le verbe reste à sa forme de base : swim." },
-      { q: "Comment dit-on « Tu peux m'aider ? »", options: ["Can you help me?", "You can help me?", "Are you can help me?", "Can you helps me?"], answer: 0, explain: "Pour une question avec « can », on met « Can » en début de phrase." }
+      { q: "Quelle phrase est correcte ?", options: ["He can swims.", "He cans swim.", "He can swim.", "He can to swim."], answer: 2, explain: "Après « can », le verbe reste à sa forme de base : swim." },
+      { q: "Comment dit-on « Tu peux m'aider ? »", options: ["You can help me?", "Are you can help me?", "Can you helps me?", "Can you help me?"], answer: 3, explain: "Pour une question avec « can », on met « Can » en début de phrase." }
     ]
   },
 {
@@ -322,10 +322,10 @@ window.LESSONS = [
       { en: "person", fr: "personne (pluriel : people)", example: "Many people live here.", exampleFr: "Beaucoup de gens vivent ici.", context: "personnes" }
     ],
     exercises: [
-      { q: "Quel est le pluriel de « book » ?", options: ["bookes", "books", "book", "bookies"], answer: 1, explain: "Pour la plupart des noms, on ajoute simplement « s »." },
-      { q: "Quel est le pluriel de « child » ?", options: ["childs", "childes", "children", "childrens"], answer: 2, explain: "« Child » est irrégulier : son pluriel est « children »." },
-      { q: "Quel est le pluriel de « city » ?", options: ["citys", "cities", "citeis", "cityes"], answer: 1, explain: "Consonne + y : le « y » devient « ies »." },
-      { q: "Quelle phrase est correcte ?", options: ["I have two friend.", "I have two friends.", "I have two friendes.", "I have two friends'."], answer: 1, explain: "Avec « two », le nom prend un « s » : friends." }
+      { q: "Quel est le pluriel de « book » ?", options: ["books", "bookes", "book", "bookies"], answer: 0, explain: "Pour la plupart des noms, on ajoute simplement « s »." },
+      { q: "Quel est le pluriel de « child » ?", options: ["childs", "children", "childes", "childrens"], answer: 1, explain: "« Child » est irrégulier : son pluriel est « children »." },
+      { q: "Quel est le pluriel de « city » ?", options: ["citys", "citeis", "cities", "cityes"], answer: 2, explain: "Consonne + y : le « y » devient « ies »." },
+      { q: "Quelle phrase est correcte ?", options: ["I have two friend.", "I have two friendes.", "I have two friends'.", "I have two friends."], answer: 3, explain: "Avec « two », le nom prend un « s » : friends." }
     ]
   },
   {
@@ -357,8 +357,8 @@ window.LESSONS = [
     exercises: [
       { q: "Complète : « There ___ a bank near here. »", options: ["is", "are", "am", "be"], answer: 0, explain: "Avec un seul élément, on utilise « is »." },
       { q: "Complète : « There ___ two chairs. »", options: ["is", "are", "am", "be"], answer: 1, explain: "Avec plusieurs éléments, on utilise « are »." },
-      { q: "Complète : « Is ___ a shop here? »", options: ["there", "it", "they", "this"], answer: 0, explain: "La question commence par « Is there ». " },
-      { q: "Quelle phrase veut dire « Il n'y a pas d'eau » ?", options: ["There not water.", "There isn't any water.", "There is no waters.", "There isn't waters."], answer: 1, explain: "On dit « There isn't any water » : « any » est utilisé avec les noms non comptables dans les phrases négatives." }
+      { q: "Complète : « Is ___ a shop here? »", options: ["it", "they", "there", "this"], answer: 2, explain: "La question commence par « Is there ». " },
+      { q: "Quelle phrase veut dire « Il n'y a pas d'eau » ?", options: ["There not water.", "There is no waters.", "There isn't waters.", "There isn't any water."], answer: 3, explain: "On dit « There isn't any water » : « any » est utilisé avec les noms non comptables dans les phrases négatives." }
     ]
   },
   {
@@ -391,8 +391,8 @@ window.LESSONS = [
     exercises: [
       { q: "Complète : « I love ___ family. » (ma famille)", options: ["my", "your", "his", "our"], answer: 0, explain: "Pour « I », on utilise « my »." },
       { q: "Complète : « She is at school with ___ friend. » (son amie à elle)", options: ["his", "her", "our", "their"], answer: 1, explain: "C'est une femme qui possède : on utilise « her »." },
-      { q: "Complète : « They are at ___ house. » (leur maison)", options: ["our", "their", "your", "my"], answer: 1, explain: "Pour « they », on utilise « their »." },
-      { q: "Quelle phrase veut dire « Ta voiture est rouge » ?", options: ["Your car is red.", "You car is red.", "Yours car is red.", "Your is car red."], answer: 0, explain: "« Your car » : le possessif se place avant le nom." }
+      { q: "Complète : « They are at ___ house. » (leur maison)", options: ["our", "your", "their", "my"], answer: 2, explain: "Pour « they », on utilise « their »." },
+      { q: "Quelle phrase veut dire « Ta voiture est rouge » ?", options: ["You car is red.", "Yours car is red.", "Your is car red.", "Your car is red."], answer: 3, explain: "« Your car » : le possessif se place avant le nom." }
     ]
   },
   {
@@ -423,10 +423,10 @@ window.LESSONS = [
       { en: "church", fr: "église", example: "The church is next to the school.", exampleFr: "L'église est à côté de l'école.", context: "lieux" }
     ],
     exercises: [
-      { q: "Complète : « The book is ___ the table. » (sur la table)", options: ["in", "on", "at", "under"], answer: 1, explain: "Il y a contact avec la table : on utilise « on »." },
-      { q: "Complète : « I am ___ home. » (à la maison)", options: ["in", "on", "at", "under"], answer: 2, explain: "Pour « home », on dit « at home »." },
-      { q: "Complète : « The cat is ___ the bed. » (sous le lit)", options: ["under", "on", "at", "in"], answer: 0, explain: "« Under » veut dire « sous »." },
-      { q: "Quelle phrase veut dire « Le magasin est à côté de la pharmacie » ?", options: ["The shop is next to the pharmacy.", "The shop is the pharmacy next.", "The shop is at pharmacy next.", "The shop is under the pharmacy."], answer: 0, explain: "« Next to » veut dire « à côté de »." }
+      { q: "Complète : « The book is ___ the table. » (sur la table)", options: ["on", "in", "at", "under"], answer: 0, explain: "Il y a contact avec la table : on utilise « on »." },
+      { q: "Complète : « I am ___ home. » (à la maison)", options: ["in", "at", "on", "under"], answer: 1, explain: "Pour « home », on dit « at home »." },
+      { q: "Complète : « The cat is ___ the bed. » (sous le lit)", options: ["on", "at", "under", "in"], answer: 2, explain: "« Under » veut dire « sous »." },
+      { q: "Quelle phrase veut dire « Le magasin est à côté de la pharmacie » ?", options: ["The shop is the pharmacy next.", "The shop is at pharmacy next.", "The shop is under the pharmacy.", "The shop is next to the pharmacy."], answer: 3, explain: "« Next to » veut dire « à côté de »." }
     ]
   },
   {
@@ -457,10 +457,10 @@ window.LESSONS = [
       { en: "o'clock", fr: "heure pile", example: "It is 3 o'clock.", exampleFr: "Il est 3 heures.", context: "heure" }
     ],
     exercises: [
-      { q: "Complète : « I wake up ___ 6 o'clock. »", options: ["in", "on", "at", "by"], answer: 2, explain: "Pour une heure précise, on utilise « at »." },
+      { q: "Complète : « I wake up ___ 6 o'clock. »", options: ["at", "in", "on", "by"], answer: 0, explain: "Pour une heure précise, on utilise « at »." },
       { q: "Complète : « We go to church ___ Sunday. »", options: ["at", "on", "in", "to"], answer: 1, explain: "Pour un jour, on utilise « on »." },
       { q: "Complète : « She works ___ the morning. »", options: ["at", "on", "in", "for"], answer: 2, explain: "Pour une partie de la journée, on utilise « in »." },
-      { q: "Complète : « They travel ___ December. »", options: ["on", "at", "in", "for"], answer: 2, explain: "Pour un mois, on utilise « in »." }
+      { q: "Complète : « They travel ___ December. »", options: ["on", "at", "for", "in"], answer: 3, explain: "Pour un mois, on utilise « in »." }
     ]
   },
   {
@@ -492,8 +492,8 @@ window.LESSONS = [
     exercises: [
       { q: "Comment dit-on « une grande maison » ?", options: ["a big house", "a bigs house", "a bigger house", "a bigly house"], answer: 0, explain: "L'adjectif « big » ne change pas : a big house." },
       { q: "Quelle phrase est correcte ?", options: ["I have a car new.", "I have a new car.", "I have new a car.", "I have a new cars."], answer: 1, explain: "L'adjectif se place avant le nom : a new car." },
-      { q: "Comment dit-on « Elle est très belle » ?", options: ["She is very beautiful.", "She is beautiful very.", "She very is beautiful.", "She is more beautiful."], answer: 0, explain: "« Very » se place avant l'adjectif : very beautiful." },
-      { q: "Complète : « The car is ___. » (rouge)", options: ["red", "redly", "reds", "reddish"], answer: 0, explain: "Après « is », on met l'adjectif tel quel : red." }
+      { q: "Comment dit-on « Elle est très belle » ?", options: ["She is beautiful very.", "She very is beautiful.", "She is very beautiful.", "She is more beautiful."], answer: 2, explain: "« Very » se place avant l'adjectif : very beautiful." },
+      { q: "Complète : « The car is ___. » (rouge)", options: ["redly", "reds", "reddish", "red"], answer: 3, explain: "Après « is », on met l'adjectif tel quel : red." }
     ]
   },
   {
@@ -526,8 +526,8 @@ window.LESSONS = [
     exercises: [
       { q: "Complète : « ___ do you live? »", options: ["Where", "Who", "What", "Yes"], answer: 0, explain: "On demande un lieu avec « Where »." },
       { q: "Complète : « ___ is your teacher? »", options: ["Where", "Who", "When", "Yes"], answer: 1, explain: "On demande une personne avec « Who »." },
-      { q: "Complète : « Where ___ she work? »", options: ["do", "does", "is", "are"], answer: 1, explain: "Avec she, on utilise « does » dans la question." },
-      { q: "Comment dit-on « Combien ça coûte ? »", options: ["How much is it?", "How many is it?", "What much is it?", "Where is it?"], answer: 0, explain: "Pour un prix, on dit « How much ». " }
+      { q: "Complète : « Where ___ she work? »", options: ["do", "is", "does", "are"], answer: 2, explain: "Avec she, on utilise « does » dans la question." },
+      { q: "Comment dit-on « Combien ça coûte ? »", options: ["How many is it?", "What much is it?", "Where is it?", "How much is it?"], answer: 3, explain: "Pour un prix, on dit « How much ». " }
     ]
   },
   {
@@ -558,10 +558,10 @@ window.LESSONS = [
       { en: "last week", fr: "la semaine dernière", example: "We were busy last week.", exampleFr: "Nous étions occupés la semaine dernière.", context: "temps" }
     ],
     exercises: [
-      { q: "Complète : « Yesterday I ___ tired. »", options: ["am", "was", "were", "be"], answer: 1, explain: "Au passé, avec « I », on utilise « was »." },
+      { q: "Complète : « Yesterday I ___ tired. »", options: ["was", "am", "were", "be"], answer: 0, explain: "Au passé, avec « I », on utilise « was »." },
       { q: "Complète : « They ___ at school last week. »", options: ["was", "were", "is", "are"], answer: 1, explain: "Avec « they », on utilise « were »." },
       { q: "Complète : « She ___ not at home. »", options: ["were", "weren't", "wasn't", "isn't"], answer: 2, explain: "Avec « she », la négation au passé est « wasn't »." },
-      { q: "Quelle question est correcte ?", options: ["Was you happy?", "Were you happy?", "Are you were happy?", "Did you were happy?"], answer: 1, explain: "Avec « you », on utilise « were » au passé." }
+      { q: "Quelle question est correcte ?", options: ["Was you happy?", "Are you were happy?", "Did you were happy?", "Were you happy?"], answer: 3, explain: "Avec « you », on utilise « were » au passé." }
     ]
   },
 {
@@ -591,10 +591,10 @@ window.LESSONS = [
       { en: "party", fr: "fête", example: "The party was fun.", exampleFr: "La fête était amusante.", context: "loisirs" }
     ],
     exercises: [
-      { q: "Complète : « Yesterday I ___ late. » (work)", options: ["work", "worked", "working", "works"], answer: 1, explain: "Au passé, un verbe régulier prend « -ed » : worked." },
+      { q: "Complète : « Yesterday I ___ late. » (work)", options: ["worked", "work", "working", "works"], answer: 0, explain: "Au passé, un verbe régulier prend « -ed » : worked." },
       { q: "Complète : « She ___ to school yesterday. » (go)", options: ["goed", "went", "gone", "goes"], answer: 1, explain: "« Go » est irrégulier : le passé est « went »." },
       { q: "Complète : « They ___ a new car last month. » (buy)", options: ["buyed", "buy", "bought", "buying"], answer: 2, explain: "« Buy » est irrégulier : le passé est « bought »." },
-      { q: "Quelle phrase est correcte ?", options: ["I play football yesterday.", "I played football yesterday.", "I playing football yesterday.", "I plays football yesterday."], answer: 1, explain: "Avec un marqueur de passé comme « yesterday », on utilise le passé : played." }
+      { q: "Quelle phrase est correcte ?", options: ["I play football yesterday.", "I playing football yesterday.", "I plays football yesterday.", "I played football yesterday."], answer: 3, explain: "Avec un marqueur de passé comme « yesterday », on utilise le passé : played." }
     ]
   },
   {
@@ -626,9 +626,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « I ___ go to work yesterday. »", options: ["didn't", "don't", "wasn't", "not"], answer: 0, explain: "Au passé, la négation est « didn't »." },
-      { q: "Complète : « ___ you see the doctor? »", options: ["Did", "Do", "Were", "Does"], answer: 0, explain: "La question au passé commence par « Did »." },
-      { q: "Complète : « She didn't ___ the message. » (répondre)", options: ["answered", "answer", "answers", "answering"], answer: 1, explain: "Après « didn't », le verbe garde sa forme de base : answer." },
-      { q: "Complète la réponse : « Did they arrive? — Yes, they ___. »", options: ["do", "did", "were", "made"], answer: 1, explain: "On répond en reprenant « did » : Yes, they did." }
+      { q: "Complète : « ___ you see the doctor? »", options: ["Do", "Did", "Were", "Does"], answer: 1, explain: "La question au passé commence par « Did »." },
+      { q: "Complète : « She didn't ___ the message. » (répondre)", options: ["answered", "answers", "answer", "answering"], answer: 2, explain: "Après « didn't », le verbe garde sa forme de base : answer." },
+      { q: "Complète la réponse : « Did they arrive? — Yes, they ___. »", options: ["do", "were", "made", "did"], answer: 3, explain: "On répond en reprenant « did » : Yes, they did." }
     ]
   },
   {
@@ -660,8 +660,8 @@ window.LESSONS = [
     exercises: [
       { q: "Complète : « I ___ going to travel next week. »", options: ["am", "is", "are", "be"], answer: 0, explain: "Avec « I », on utilise « am going to »." },
       { q: "Complète : « She ___ going to start a new job. »", options: ["am", "is", "are", "be"], answer: 1, explain: "Avec « she », on utilise « is going to »." },
-      { q: "Complète : « We are ___ going to the party. » (pas)", options: ["no", "not", "none", "nothing"], answer: 1, explain: "La négation se place après le verbe être : are not going." },
-      { q: "Complète : « It is ___ to rain. » (il va pleuvoir)", options: ["going", "go", "went", "goes"], answer: 0, explain: "Le futur se forme avec « going to » : It is going to rain." }
+      { q: "Complète : « We are ___ going to the party. » (pas)", options: ["no", "none", "not", "nothing"], answer: 2, explain: "La négation se place après le verbe être : are not going." },
+      { q: "Complète : « It is ___ to rain. » (il va pleuvoir)", options: ["go", "went", "goes", "going"], answer: 3, explain: "Le futur se forme avec « going to » : It is going to rain." }
     ]
   },
   {
@@ -692,9 +692,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Comment dit-on « plus rapide » (fast) ?", options: ["faster", "more fast", "fastest", "most fast"], answer: 0, explain: "Un adjectif court prend « -er » : faster." },
-      { q: "Complète : « This bag is ___ than that one. » (plus cher)", options: ["more expensive", "expensiver", "most expensive", "expensive more"], answer: 0, explain: "Un adjectif long prend « more » : more expensive." },
-      { q: "Complète : « My English is ___ now. » (meilleur)", options: ["good", "better", "best", "more good"], answer: 1, explain: "« Good » devient « better » au comparatif." },
-      { q: "Quelle phrase est correcte ?", options: ["She is more tall than me.", "She is taller than me.", "She is tallest than me.", "She is taller that me."], answer: 1, explain: "« Tall » est court : taller than." }
+      { q: "Complète : « This bag is ___ than that one. » (plus cher)", options: ["expensiver", "more expensive", "most expensive", "expensive more"], answer: 1, explain: "Un adjectif long prend « more » : more expensive." },
+      { q: "Complète : « My English is ___ now. » (meilleur)", options: ["good", "best", "better", "more good"], answer: 2, explain: "« Good » devient « better » au comparatif." },
+      { q: "Quelle phrase est correcte ?", options: ["She is more tall than me.", "She is tallest than me.", "She is taller that me.", "She is taller than me."], answer: 3, explain: "« Tall » est court : taller than." }
     ]
   },
   {
@@ -724,10 +724,10 @@ window.LESSONS = [
       { en: "write", fr: "écrire", example: "I am writing an email.", exampleFr: "Je suis en train d'écrire un e-mail.", context: "travail" }
     ],
     exercises: [
-      { q: "Complète : « I am ___ now. » (travailler)", options: ["work", "working", "works", "worked"], answer: 1, explain: "Avec « am », on utilise le verbe en « -ing » : working." },
-      { q: "Complète : « She ___ dinner right now. » (préparer)", options: ["is cooking", "cooks", "cook", "cooked"], answer: 0, explain: "Une action en cours se dit avec « is » + « -ing »." },
+      { q: "Complète : « I am ___ now. » (travailler)", options: ["working", "work", "works", "worked"], answer: 0, explain: "Avec « am », on utilise le verbe en « -ing » : working." },
+      { q: "Complète : « She ___ dinner right now. » (préparer)", options: ["cooks", "is cooking", "cook", "cooked"], answer: 1, explain: "Une action en cours se dit avec « is » + « -ing »." },
       { q: "Complète : « Are they ___ football? » (jouer)", options: ["play", "played", "playing", "plays"], answer: 2, explain: "Pour une action en cours, on met le verbe en « -ing »." },
-      { q: "Quelle phrase est correcte ?", options: ["I am work now.", "I am working now.", "I working now am.", "I works now."], answer: 1, explain: "On dit « I am working now » : sujet + am + verbe en -ing." }
+      { q: "Quelle phrase est correcte ?", options: ["I am work now.", "I working now am.", "I works now.", "I am working now."], answer: 3, explain: "On dit « I am working now » : sujet + am + verbe en -ing." }
     ]
   },
   {
@@ -760,8 +760,8 @@ window.LESSONS = [
     exercises: [
       { q: "Complète : « You ___ wear a seatbelt. » (obligation)", options: ["must", "musts", "musted", "mustting"], answer: 0, explain: "« Must » ne change jamais : must." },
       { q: "Complète : « She ___ study tonight. » (elle doit)", options: ["have to", "has to", "have", "is"], answer: 1, explain: "Avec « she », on utilise « has to »." },
-      { q: "Complète : « You ___ park here. » (c'est interdit)", options: ["mustn't", "don't have to", "can't have to", "musted"], answer: 0, explain: "« Mustn't » exprime une interdiction." },
-      { q: "Complète : « You ___ come. » (ce n'est pas obligatoire)", options: ["don't have to", "mustn't", "musts", "can't"], answer: 0, explain: "« Don't have to » veut dire que ce n'est pas nécessaire." }
+      { q: "Complète : « You ___ park here. » (c'est interdit)", options: ["don't have to", "can't have to", "mustn't", "musted"], answer: 2, explain: "« Mustn't » exprime une interdiction." },
+      { q: "Complète : « You ___ come. » (ce n'est pas obligatoire)", options: ["mustn't", "musts", "can't", "don't have to"], answer: 3, explain: "« Don't have to » veut dire que ce n'est pas nécessaire." }
     ]
   },
   {
@@ -794,7 +794,7 @@ window.LESSONS = [
       { q: "Complète : « I ___ never been to Paris. »", options: ["have", "has", "am", "did"], answer: 0, explain: "Avec « I », on utilise « have ». " },
       { q: "Complète : « She ___ already eaten. »", options: ["have", "has", "is", "was"], answer: 1, explain: "Avec « she », on utilise « has ». " },
       { q: "Complète : « Have you ___ this film? » (seen)", options: ["see", "saw", "seen", "seeing"], answer: 2, explain: "Le participe passé de « see » est « seen »." },
-      { q: "Complète : « We have lived here ___ 2019. »", options: ["since", "for", "ago", "during"], answer: 0, explain: "« Since » s'utilise avec un moment précis, comme une année." }
+      { q: "Complète : « We have lived here ___ 2019. »", options: ["for", "ago", "during", "since"], answer: 3, explain: "« Since » s'utilise avec un moment précis, comme une année." }
     ]
   },
   {
@@ -825,9 +825,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « At 8 pm I ___ dinner. » (cuisiner)", options: ["was cooking", "cooked", "cook", "am cooking"], answer: 0, explain: "Une action en cours dans le passé : was + -ing." },
-      { q: "Complète : « They ___ TV when the power went out. »", options: ["were watching", "watched", "watch", "watching"], answer: 0, explain: "Avec « they », on utilise « were » + -ing." },
-      { q: "Quelle phrase est correcte ?", options: ["She was go to school.", "She was going to school.", "She was goes to school.", "She is going to school yesterday."], answer: 1, explain: "Le passé continu : was + going." },
-      { q: "Complète : « What ___ you doing at noon? »", options: ["are", "did", "were", "was"], answer: 2, explain: "Avec « you », on utilise « were »." }
+      { q: "Complète : « They ___ TV when the power went out. »", options: ["watched", "were watching", "watch", "watching"], answer: 1, explain: "Avec « they », on utilise « were » + -ing." },
+      { q: "Quelle phrase est correcte ?", options: ["She was go to school.", "She was goes to school.", "She was going to school.", "She is going to school yesterday."], answer: 2, explain: "Le passé continu : was + going." },
+      { q: "Complète : « What ___ you doing at noon? »", options: ["are", "did", "was", "were"], answer: 3, explain: "Avec « you », on utilise « were »." }
     ]
   },
   {
@@ -858,9 +858,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « I ___ call you tomorrow. »", options: ["will", "am will", "wills", "willing"], answer: 0, explain: "Avec « will », on utilise la forme de base du verbe." },
-      { q: "Complète : « Will you ___ the door? » (ouvrir)", options: ["open", "opening", "opens", "to open"], answer: 0, explain: "Après « will », le verbe reste à sa forme de base : open." },
-      { q: "Complète : « It ___ rain tomorrow, I think. »", options: ["will", "is will", "wills", "rains will"], answer: 0, explain: "Pour une prédiction, on utilise « will »." },
-      { q: "Quelle phrase est correcte ?", options: ["I will go.", "I will to go.", "I will going.", "I will goes."], answer: 0, explain: "Après « will », pas de « to » : I will go." }
+      { q: "Complète : « Will you ___ the door? » (ouvrir)", options: ["opening", "open", "opens", "to open"], answer: 1, explain: "Après « will », le verbe reste à sa forme de base : open." },
+      { q: "Complète : « It ___ rain tomorrow, I think. »", options: ["is will", "wills", "will", "rains will"], answer: 2, explain: "Pour une prédiction, on utilise « will »." },
+      { q: "Quelle phrase est correcte ?", options: ["I will to go.", "I will going.", "I will goes.", "I will go."], answer: 3, explain: "Après « will », pas de « to » : I will go." }
     ]
   },
   {
@@ -891,9 +891,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « If you ___ late, I will be angry. »", options: ["are", "will be", "be", "were"], answer: 0, explain: "Après « if », on utilise le présent : are." },
-      { q: "Complète : « If it ___ sunny tomorrow, we will go to the beach. »", options: ["is", "will be", "sunny", "was"], answer: 0, explain: "Après « if », on utilise le présent : is." },
-      { q: "Complète : « If he ___ hard, he will succeed. » (travailler)", options: ["works", "will work", "working", "worked"], answer: 0, explain: "Après « if », le présent : works." },
-      { q: "Quelle phrase est correcte ?", options: ["If I will see him, I will tell him.", "If I see him, I will tell him.", "If I see him, I tell him will.", "If I will see him, I tell him."], answer: 1, explain: "Après « if », pas de « will » : if I see." }
+      { q: "Complète : « If it ___ sunny tomorrow, we will go to the beach. »", options: ["will be", "is", "sunny", "was"], answer: 1, explain: "Après « if », on utilise le présent : is." },
+      { q: "Complète : « If he ___ hard, he will succeed. » (travailler)", options: ["will work", "working", "works", "worked"], answer: 2, explain: "Après « if », le présent : works." },
+      { q: "Quelle phrase est correcte ?", options: ["If I will see him, I will tell him.", "If I see him, I tell him will.", "If I will see him, I tell him.", "If I see him, I will tell him."], answer: 3, explain: "Après « if », pas de « will » : if I see." }
     ]
   },
   {
@@ -924,9 +924,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « You ___ see a doctor. » (conseil)", options: ["should", "shoulds", "shoulding", "should to"], answer: 0, explain: "« Should » sert à donner un conseil." },
-      { q: "Complète : « It ___ rain later. » (peut-être)", options: ["might", "mights", "might to", "mighted"], answer: 0, explain: "« Might » exprime une possibilité." },
-      { q: "Complète la demande polie : « ___ you help me? »", options: ["Could", "Coulded", "Can to", "Shoulds"], answer: 0, explain: "« Could » rend la demande plus polie." },
-      { q: "Complète : « I ___ swim when I was five. »", options: ["could", "can to", "coulded", "cans"], answer: 0, explain: "Pour une capacité au passé, on utilise « could »." }
+      { q: "Complète : « It ___ rain later. » (peut-être)", options: ["mights", "might", "might to", "mighted"], answer: 1, explain: "« Might » exprime une possibilité." },
+      { q: "Complète la demande polie : « ___ you help me? »", options: ["Coulded", "Can to", "Could", "Shoulds"], answer: 2, explain: "« Could » rend la demande plus polie." },
+      { q: "Complète : « I ___ swim when I was five. »", options: ["can to", "coulded", "cans", "could"], answer: 3, explain: "Pour une capacité au passé, on utilise « could »." }
     ]
   },
   {
@@ -958,8 +958,8 @@ window.LESSONS = [
     exercises: [
       { q: "Quel est le passé de « take » ?", options: ["took", "taken", "taked", "takes"], answer: 0, explain: "« Take » est irrégulier : passé « took »." },
       { q: "Quel est le participe passé de « see » ?", options: ["saw", "seen", "seed", "see"], answer: 1, explain: "Le participe passé de « see » est « seen »." },
-      { q: "Présent avec « she » : « do » devient…", options: ["do", "does", "doing", "did"], answer: 1, explain: "Avec he, she, it, on ajoute « es » : does." },
-      { q: "Quel est le passé de « make » ?", options: ["made", "maked", "make", "making"], answer: 0, explain: "« Make » est irrégulier : passé « made »." }
+      { q: "Présent avec « she » : « do » devient…", options: ["do", "doing", "does", "did"], answer: 2, explain: "Avec he, she, it, on ajoute « es » : does." },
+      { q: "Quel est le passé de « make » ?", options: ["maked", "make", "making", "made"], answer: 3, explain: "« Make » est irrégulier : passé « made »." }
     ]
   },
   {
@@ -990,9 +990,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « I ___ English for three years. » (apprendre)", options: ["have been learning", "am learning", "learned", "was learning"], answer: 0, explain: "Une action qui dure depuis trois ans : have been + -ing." },
-      { q: "Complète : « It ___ since Monday. » (pleuvoir)", options: ["has been raining", "rains", "was raining", "has rained since"], answer: 0, explain: "« Since » + moment précis, avec has been + -ing." },
-      { q: "Quelle phrase est correcte ?", options: ["I have been knowing him for years.", "I have known him for years.", "I am knowing him for years.", "I have knowing him for years."], answer: 1, explain: "« Know » est un verbe d'état : on utilise le present perfect simple." },
-      { q: "Complète : « You look tired. What ___ you ___? » (faire)", options: ["have / been doing", "did / do", "are / doing", "were / doing"], answer: 0, explain: "On demande ce qui a causé la fatigue : have you been doing ?" }
+      { q: "Complète : « It ___ since Monday. » (pleuvoir)", options: ["rains", "has been raining", "was raining", "has rained since"], answer: 1, explain: "« Since » + moment précis, avec has been + -ing." },
+      { q: "Quelle phrase est correcte ?", options: ["I have been knowing him for years.", "I am knowing him for years.", "I have known him for years.", "I have knowing him for years."], answer: 2, explain: "« Know » est un verbe d'état : on utilise le present perfect simple." },
+      { q: "Complète : « You look tired. What ___ you ___? » (faire)", options: ["did / do", "are / doing", "were / doing", "have / been doing"], answer: 3, explain: "On demande ce qui a causé la fatigue : have you been doing ?" }
     ]
   },
   {
@@ -1023,9 +1023,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « I ___ live in Paris. » (habitude passée)", options: ["used to", "use to", "am used to", "used"], answer: 0, explain: "« Used to » décrit un état ou une habitude qui n'existe plus." },
-      { q: "Complète : « She ___ be very shy. »", options: ["used to", "is used", "use to", "is using"], answer: 0, explain: "« Used to » suivi du verbe de base : used to be." },
-      { q: "Complète : « I am ___ early. » (habitué à)", options: ["used to waking up", "used to wake up", "use to wake up", "used waking"], answer: 0, explain: "« Be used to » + -ing signifie « être habitué à »." },
-      { q: "Complète la négation : « We ___ go out on Sundays. »", options: ["didn't use to", "didn't used to", "not used", "don't used to"], answer: 0, explain: "Au négatif : didn't use to (sans « d » à « use »)." }
+      { q: "Complète : « She ___ be very shy. »", options: ["is used", "used to", "use to", "is using"], answer: 1, explain: "« Used to » suivi du verbe de base : used to be." },
+      { q: "Complète : « I am ___ early. » (habitué à)", options: ["used to wake up", "use to wake up", "used to waking up", "used waking"], answer: 2, explain: "« Be used to » + -ing signifie « être habitué à »." },
+      { q: "Complète la négation : « We ___ go out on Sundays. »", options: ["didn't used to", "not used", "don't used to", "didn't use to"], answer: 3, explain: "Au négatif : didn't use to (sans « d » à « use »)." }
     ]
   },
   {
@@ -1056,9 +1056,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « If I ___ a bird, I would fly. » (être)", options: ["were", "was", "am", "will be"], answer: 0, explain: "Dans une conditionnelle irréelle, on dit « if I were »." },
-      { q: "Complète : « If she ___ more money, she would buy a car. »", options: ["had", "has", "will have", "have"], answer: 0, explain: "Après « if », on utilise le passé simple : had." },
-      { q: "Complète : « I ___ you if I knew the answer. » (aider)", options: ["would help", "will help", "helped", "help"], answer: 0, explain: "La conséquence utilise « would » + verbe de base." },
-      { q: "Quelle phrase est correcte ?", options: ["If I would have time, I would call you.", "If I had time, I would call you.", "If I have time, I would call you.", "If I had time, I will call you."], answer: 1, explain: "Pas de « would » après « if », et la conséquence utilise « would »." }
+      { q: "Complète : « If she ___ more money, she would buy a car. »", options: ["has", "had", "will have", "have"], answer: 1, explain: "Après « if », on utilise le passé simple : had." },
+      { q: "Complète : « I ___ you if I knew the answer. » (aider)", options: ["will help", "helped", "would help", "help"], answer: 2, explain: "La conséquence utilise « would » + verbe de base." },
+      { q: "Quelle phrase est correcte ?", options: ["If I would have time, I would call you.", "If I have time, I would call you.", "If I had time, I will call you.", "If I had time, I would call you."], answer: 3, explain: "Pas de « would » après « if », et la conséquence utilise « would »." }
     ]
   },
   {
@@ -1089,9 +1089,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « English ___ in many countries. » (parler)", options: ["is spoken", "speaks", "is speak", "spoken"], answer: 0, explain: "Présent passif : is + participe passé (spoken)." },
-      { q: "Complète : « The letter ___ yesterday. » (écrire)", options: ["was written", "was write", "wrote", "is written"], answer: 0, explain: "Passé passif : was + participe passé (written)." },
-      { q: "Quel est le participe passé de « build » ?", options: ["built", "builded", "build", "building"], answer: 0, explain: "« Build » est irrégulier : built." },
-      { q: "Transforme : « They sell bread here. » → « Bread ___ here. »", options: ["is sold", "is sell", "sells", "was sold"], answer: 0, explain: "Présent passif : is sold, car « bread » est au singulier." }
+      { q: "Complète : « The letter ___ yesterday. » (écrire)", options: ["was write", "was written", "wrote", "is written"], answer: 1, explain: "Passé passif : was + participe passé (written)." },
+      { q: "Quel est le participe passé de « build » ?", options: ["builded", "build", "built", "building"], answer: 2, explain: "« Build » est irrégulier : built." },
+      { q: "Transforme : « They sell bread here. » → « Bread ___ here. »", options: ["is sell", "sells", "was sold", "is sold"], answer: 3, explain: "Présent passif : is sold, car « bread » est au singulier." }
     ]
   },
   {
@@ -1122,9 +1122,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « The girl ___ called me is my friend. » (une personne)", options: ["who", "which", "where", "what"], answer: 0, explain: "Pour une personne, on utilise « who »." },
-      { q: "Complète : « This is the shop ___ I bought the shoes. » (un lieu)", options: ["where", "who", "which", "when"], answer: 0, explain: "Pour un lieu, on utilise « where »." },
-      { q: "Complète : « The dog ___ barks all night is mine. » (un animal)", options: ["which", "who", "where", "whose"], answer: 0, explain: "Pour un animal ou une chose, on utilise « which » ou « that »." },
-      { q: "Quelle phrase est correcte ?", options: ["The man who I met is nice.", "The man I met who is nice.", "The man who is nice I met.", "The man which lives here is nice."], answer: 0, explain: "« Who » introduit la relative. Ici, « I met » est déjà la relative, donc « The man who I met » est la forme la plus naturelle." }
+      { q: "Complète : « This is the shop ___ I bought the shoes. » (un lieu)", options: ["who", "where", "which", "when"], answer: 1, explain: "Pour un lieu, on utilise « where »." },
+      { q: "Complète : « The dog ___ barks all night is mine. » (un animal)", options: ["who", "where", "which", "whose"], answer: 2, explain: "Pour un animal ou une chose, on utilise « which » ou « that »." },
+      { q: "Quelle phrase est correcte ?", options: ["The man I met who is nice.", "The man who is nice I met.", "The man which lives here is nice.", "The man who I met is nice."], answer: 3, explain: "« Who » introduit la relative. Ici, « I met » est déjà la relative, donc « The man who I met » est la forme la plus naturelle." }
     ]
   },
   {
@@ -1155,9 +1155,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Direct : « I am happy. » → Indirect : « She said she ___ happy. »", options: ["was", "is", "am", "were"], answer: 0, explain: "Le present simple recule au past simple : was." },
-      { q: "Direct : « I will come. » → « He said he ___ come. »", options: ["would", "will", "can", "is going"], answer: 0, explain: "Will devient would dans le discours indirect." },
-      { q: "Complète : « He ___ me he was tired. »", options: ["told", "said me", "say", "tells"], answer: 0, explain: "Avec une personne cible (me), on utilise « told »." },
-      { q: "Direct : « I called yesterday. » → « She said she ___ the day before. »", options: ["had called", "called", "has called", "calls"], answer: 0, explain: "Le past simple recule au past perfect : had called." }
+      { q: "Direct : « I will come. » → « He said he ___ come. »", options: ["will", "would", "can", "is going"], answer: 1, explain: "Will devient would dans le discours indirect." },
+      { q: "Complète : « He ___ me he was tired. »", options: ["said me", "say", "told", "tells"], answer: 2, explain: "Avec une personne cible (me), on utilise « told »." },
+      { q: "Direct : « I called yesterday. » → « She said she ___ the day before. »", options: ["called", "has called", "calls", "had called"], answer: 3, explain: "Le past simple recule au past perfect : had called." }
     ]
   },
   {
@@ -1188,9 +1188,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « When I arrived, she ___ already ___. » (partir)", options: ["had / left", "has / left", "was / leaving", "did / leave"], answer: 0, explain: "L'action la plus ancienne (partir) prend had + participe passé." },
-      { q: "Complète : « I ___ never seen snow before that day. »", options: ["had", "have", "was", "did"], answer: 0, explain: "Avant un autre moment passé, on utilise had + participe passé." },
-      { q: "Quelle phrase est correcte ?", options: ["She had went home.", "She had gone home.", "She has gone home before.", "She had go home."], answer: 1, explain: "Le participe passé de « go » est « gone »." },
-      { q: "Complète la question : « ___ you ___ the film before? »", options: ["Had / seen", "Did / see", "Have / saw", "Were / seen"], answer: 0, explain: "Question au past perfect : Had + sujet + participe passé." }
+      { q: "Complète : « I ___ never seen snow before that day. »", options: ["have", "had", "was", "did"], answer: 1, explain: "Avant un autre moment passé, on utilise had + participe passé." },
+      { q: "Quelle phrase est correcte ?", options: ["She had went home.", "She has gone home before.", "She had gone home.", "She had go home."], answer: 2, explain: "Le participe passé de « go » est « gone »." },
+      { q: "Complète la question : « ___ you ___ the film before? »", options: ["Did / see", "Have / saw", "Were / seen", "Had / seen"], answer: 3, explain: "Question au past perfect : Had + sujet + participe passé." }
     ]
   },
   {
@@ -1221,9 +1221,9 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « I enjoy ___ books. » (lire)", options: ["reading", "to read", "read", "reads"], answer: 0, explain: "« Enjoy » est suivi du -ing." },
-      { q: "Complète : « She decided ___ a new job. » (chercher)", options: ["to look for", "looking for", "look for", "looks for"], answer: 0, explain: "« Decide » est suivi de to + verbe." },
-      { q: "Complète : « Thank you for ___ me. » (aider)", options: ["helping", "to help", "help", "helps"], answer: 0, explain: "Après une préposition (for), on utilise le -ing." },
-      { q: "Complète : « We hope ___ you again. » (voir)", options: ["to see", "seeing", "see", "saw"], answer: 0, explain: "« Hope » est suivi de to + verbe." }
+      { q: "Complète : « She decided ___ a new job. » (chercher)", options: ["looking for", "to look for", "look for", "looks for"], answer: 1, explain: "« Decide » est suivi de to + verbe." },
+      { q: "Complète : « Thank you for ___ me. » (aider)", options: ["to help", "help", "helping", "helps"], answer: 2, explain: "Après une préposition (for), on utilise le -ing." },
+      { q: "Complète : « We hope ___ you again. » (voir)", options: ["seeing", "see", "saw", "to see"], answer: 3, explain: "« Hope » est suivi de to + verbe." }
     ]
   },
   {
@@ -1254,9 +1254,273 @@ window.LESSONS = [
     ],
     exercises: [
       { q: "Complète : « I am ___ my glasses. » (chercher)", options: ["looking for", "looking at", "look after", "giving up"], answer: 0, explain: "« Look for » veut dire chercher." },
-      { q: "Complète : « Please turn it ___. » (éteindre)", options: ["off", "on up", "out", "away"], answer: 0, explain: "« Turn off » veut dire éteindre. Le pronom « it » se place au milieu : turn it off." },
-      { q: "Quel verbe à particule signifie « se lever » ?", options: ["get up", "get on", "get in", "get over"], answer: 0, explain: "« Get up » veut dire se lever." },
-      { q: "Complète : « I ___ the truth yesterday. » (découvrir)", options: ["found out", "found up", "found in", "found on"], answer: 0, explain: "« Find out » veut dire découvrir, apprendre." }
+      { q: "Complète : « Please turn it ___. » (éteindre)", options: ["on up", "off", "out", "away"], answer: 1, explain: "« Turn off » veut dire éteindre. Le pronom « it » se place au milieu : turn it off." },
+      { q: "Quel verbe à particule signifie « se lever » ?", options: ["get on", "get in", "get up", "get over"], answer: 2, explain: "« Get up » veut dire se lever." },
+      { q: "Complète : « I ___ the truth yesterday. » (découvrir)", options: ["found up", "found in", "found on", "found out"], answer: 3, explain: "« Find out » veut dire découvrir, apprendre." }
+    ]
+  },
+  {
+    id: "b2-third-conditional",
+    level: "B2",
+    title: "La troisième conditionnelle : regretter le passé",
+    objective: "Parler d'une situation passée qui ne s'est pas réalisée, et de ses conséquences.",
+    explanation: [
+      "Structure : if + past perfect (had + participe passé), would have + participe passé : If I had studied, I would have passed (si j'avais étudié, j'aurais réussi).",
+      "Elle parle d'un passé qui ne peut plus changer. Elle exprime un regret ou un reproche.",
+      "Ne pas confondre avec la deuxième conditionnelle, qui parle d'une situation imaginaire au présent : If I had time, I would travel.",
+      "Pour la négation : If I hadn't left late, I wouldn't have missed the bus (si je n'étais pas parti en retard, je n'aurais pas raté le bus)."
+    ],
+    examples: [
+      { en: "If I had studied harder, I would have passed the exam.", fr: "Si j'avais davantage étudié, j'aurais réussi l'examen." },
+      { en: "If she had called me, I would have helped her.", fr: "Si elle m'avait appelé, je l'aurais aidée." },
+      { en: "We would have arrived on time if the train hadn't been late.", fr: "Nous serions arrivés à l'heure si le train n'avait pas eu de retard." },
+      { en: "If you had told me, I wouldn't have bought it.", fr: "Si tu me l'avais dit, je ne l'aurais pas acheté." },
+      { en: "What would you have done if you had lost your job?", fr: "Qu'aurais-tu fait si tu avais perdu ton travail ?" }
+    ],
+    pronunciation: "« Would have » se dit souvent « wud'v ». Dans « had studied », le « had » est faible : « 'd ».",
+    vocab: [
+      { en: "regret", fr: "regretter", example: "I regret not calling her.", exampleFr: "Je regrette de ne pas l'avoir appelée.", context: "émotions" },
+      { en: "miss", fr: "rater, manquer", example: "I missed the bus this morning.", exampleFr: "J'ai raté le bus ce matin.", context: "transport" },
+      { en: "on time", fr: "à l'heure", example: "The train was on time.", exampleFr: "Le train était à l'heure.", context: "transport" },
+      { en: "pass an exam", fr: "réussir un examen", example: "She passed her driving test.", exampleFr: "Elle a réussi son permis de conduire.", context: "école" },
+      { en: "job", fr: "emploi, travail", example: "I found a new job.", exampleFr: "J'ai trouvé un nouvel emploi.", context: "travail" }
+    ],
+    exercises: [
+      { q: "Complète : « If I ___ earlier, I would have caught the bus. »", options: ["had left", "left", "would leave", "have left"], answer: 0, explain: "La condition au passé : had + participe passé." },
+      { q: "Complète : « She would have come if you ___ invited her. »", options: ["have", "had", "would", "were"], answer: 1, explain: "Après « if », au passé : had invited." },
+      { q: "Complète : « If we had known, we ___ sooner. »", options: ["would come", "came", "would have come", "had come"], answer: 2, explain: "La conséquence passée : would have + participe passé." },
+      { q: "Quelle phrase est correcte ?", options: ["If I had known, I would know.", "If I knew, I would have helped.", "If I had know, I would have helped.", "If I had known, I would have helped."], answer: 3, explain: "Condition au past perfect, conséquence en would have + participe passé." }
+    ]
+  },
+  {
+    id: "b2-mixed-conditionals",
+    level: "B2",
+    title: "Les conditionnelles mixtes",
+    objective: "Relier une condition passée à un résultat présent, ou l'inverse.",
+    explanation: [
+      "Première forme : une condition passée et un résultat présent. If I had studied medicine, I would be a doctor now (si j'avais fait médecine, je serais médecin aujourd'hui).",
+      "Deuxième forme : une condition présente et un résultat passé. If I were more patient, I would have waited for you (si j'étais plus patient, je t'aurais attendu).",
+      "Le sens dépend de la situation réelle : on choisit la forme selon le moment de la condition et celui du résultat.",
+      "Ces phrases sont très utiles pour parler de regrets ou de choix : They would be happier now if they had moved to the city."
+    ],
+    examples: [
+      { en: "If I had studied medicine, I would be a doctor now.", fr: "Si j'avais fait médecine, je serais médecin aujourd'hui." },
+      { en: "If I were more patient, I would have waited for you.", fr: "Si j'étais plus patient, je t'aurais attendu." },
+      { en: "She would be richer if she had taken that job.", fr: "Elle serait plus riche si elle avait accepté ce travail." },
+      { en: "If he weren't so shy, he would have spoken to her.", fr: "S'il n'était pas si timide, il lui aurait parlé." },
+      { en: "We would be at home now if we had caught the earlier flight.", fr: "Nous serions à la maison maintenant si nous avions pris le vol plus tôt." }
+    ],
+    pronunciation: "Dans « would be » et « would have », le « would » est faible : « wud ». Insiste sur les mots « now » et « if ».",
+    vocab: [
+      { en: "patient", fr: "patient", example: "Be patient, please.", exampleFr: "Sois patient, s'il te plaît.", context: "émotions" },
+      { en: "shy", fr: "timide", example: "He is shy with new people.", exampleFr: "Il est timide avec les gens qu'il ne connaît pas.", context: "personnalité" },
+      { en: "flight", fr: "vol (avion)", example: "The flight leaves at noon.", exampleFr: "Le vol part à midi.", context: "voyage" },
+      { en: "medicine", fr: "médecine", example: "She studies medicine.", exampleFr: "Elle fait des études de médecine.", context: "études" },
+      { en: "move", fr: "déménager", example: "We moved to Libreville in 2020.", exampleFr: "Nous avons déménagé à Libreville en 2020.", context: "vie" }
+    ],
+    exercises: [
+      { q: "Complète : « If I had worked harder, I ___ rich now. »", options: ["would be", "would have been", "was", "had been"], answer: 0, explain: "Condition passée, résultat présent : would be." },
+      { q: "Complète : « If I were brave, I ___ him yesterday. »", options: ["would tell", "would have told", "told", "had told"], answer: 1, explain: "Condition présente, résultat passé : would have told." },
+      { q: "Complète : « She ___ happier if she had accepted the offer. »", options: ["would have been", "is", "would be", "had been"], answer: 2, explain: "Résultat présent, condition passée : would be." },
+      { q: "Quelle phrase est correcte ?", options: ["If I had gone, I am happy now.", "If I went, I would be happy now.", "If I go, I would be happy now.", "If I had gone, I would be happy now."], answer: 3, explain: "Condition passée (had gone), résultat présent (would be)." }
+    ]
+  },
+  {
+    id: "b2-modal-deduction",
+    level: "B2",
+    title: "Déduire : must be, might be, can't be",
+    objective: "Dire à quel point on est sûr d'une déduction, au présent et au passé.",
+    explanation: [
+      "On est presque certain : must be. She's been studying all day, she must be tired (elle étudie depuis la journée, elle doit être fatiguée).",
+      "On pense que c'est possible : might be, may be, could be. He might be at home (il est peut-être chez lui).",
+      "On est sûr que c'est impossible : can't be. That can't be true (ça ne peut pas être vrai). Ne dis pas « mustn't be » pour une déduction.",
+      "Pour une déduction sur le passé : must have, might have, can't have + participe passé. She can't have seen me (elle n'a pas pu me voir)."
+    ],
+    examples: [
+      { en: "He must be tired after the long flight.", fr: "Il doit être fatigué après ce long vol." },
+      { en: "They might be late because of the traffic.", fr: "Ils sont peut-être en retard à cause de la circulation." },
+      { en: "That can't be right, check it again.", fr: "Ça ne peut pas être juste, revérifie." },
+      { en: "She must have forgotten the meeting.", fr: "Elle a dû oublier la réunion." },
+      { en: "The shop can't have closed yet, it's only six.", fr: "Le magasin ne peut pas être déjà fermé, il n'est que six heures." }
+    ],
+    pronunciation: "« Must be » se dit « mosbi ». « Can't » se prononce « kant » : bien accentuer le « t » final pour la négation.",
+    vocab: [
+      { en: "flight", fr: "vol (avion)", example: "The flight was delayed.", exampleFr: "Le vol a été retardé.", context: "voyage" },
+      { en: "traffic", fr: "circulation (routière)", example: "There is a lot of traffic.", exampleFr: "Il y a beaucoup de circulation.", context: "transport" },
+      { en: "forget", fr: "oublier (passé : forgot)", example: "I forgot my keys.", exampleFr: "J'ai oublié mes clés.", context: "quotidien" },
+      { en: "check", fr: "vérifier", example: "Please check your answers.", exampleFr: "Vérifie tes réponses, s'il te plaît.", context: "études" },
+      { en: "delayed", fr: "retardé", example: "The train is delayed.", exampleFr: "Le train a du retard.", context: "transport" }
+    ],
+    exercises: [
+      { q: "Complète : « She has been running all day. She ___ tired. » (presque sûr)", options: ["must be", "can't be", "must have be", "might to be"], answer: 0, explain: "« Must be » exprime une déduction presque certaine." },
+      { q: "Complète : « He ___ at home. I'm not sure. » (possibilité)", options: ["must be", "might be", "can't be", "must have"], answer: 1, explain: "« Might be » exprime une possibilité." },
+      { q: "Complète : « That ___ true! It's impossible. »", options: ["mustn't be", "might be", "can't be", "must to be"], answer: 2, explain: "« Can't be » exprime une impossibilité." },
+      { q: "Complète au passé : « She ___ forgotten the meeting. » (presque sûr)", options: ["must be", "can't be", "might be", "must have"], answer: 3, explain: "Déduction sur le passé : must have + participe passé." }
+    ]
+  },
+  {
+    id: "b2-past-modals",
+    level: "B2",
+    title: "Regretter et critiquer : should have, could have",
+    objective: "Parler de ce qu'on aurait dû faire, ou de ce qui était possible dans le passé.",
+    explanation: [
+      "Should have + participe passé exprime un regret ou un reproche : I should have called you (j'aurais dû t'appeler).",
+      "Shouldn't have exprime un regret sur quelque chose de déjà fait : You shouldn't have bought that (tu n'aurais pas dû acheter ça).",
+      "Could have + participe passé dit qu'une chose était possible, mais ne s'est pas faite : We could have taken the bus (on aurait pu prendre le bus).",
+      "Ne pas confondre avec must have (déduction) : She must have left (elle est sûrement partie, déduction) ; She should have left (elle aurait dû partir, regret)."
+    ],
+    examples: [
+      { en: "I should have called you earlier.", fr: "J'aurais dû t'appeler plus tôt." },
+      { en: "You shouldn't have waited so long.", fr: "Tu n'aurais pas dû attendre si longtemps." },
+      { en: "We could have won the match if we had played better.", fr: "Nous aurions pu gagner le match si nous avions mieux joué." },
+      { en: "He could have helped us, but he didn't.", fr: "Il aurait pu nous aider, mais il ne l'a pas fait." },
+      { en: "She should have studied more for the test.", fr: "Elle aurait dû mieux réviser pour le test." }
+    ],
+    pronunciation: "« Should have » se dit « choudav ». « Could have » se dit « koudav ». Les deux « have » sont faibles.",
+    vocab: [
+      { en: "wait", fr: "attendre", example: "Please wait a moment.", exampleFr: "Attends un instant, s'il te plaît.", context: "quotidien" },
+      { en: "match", fr: "match", example: "We watched the football match.", exampleFr: "Nous avons regardé le match de football.", context: "sport" },
+      { en: "test", fr: "test, examen", example: "The English test is on Friday.", exampleFr: "Le test d'anglais a lieu vendredi.", context: "études" },
+      { en: "earlier", fr: "plus tôt", example: "Come earlier tomorrow.", exampleFr: "Viens plus tôt demain.", context: "temps" },
+      { en: "study", fr: "étudier, réviser", example: "I study every evening.", exampleFr: "J'étudie chaque soir.", context: "études" }
+    ],
+    exercises: [
+      { q: "Complète : « I ___ told you the truth. » (regret)", options: ["should have", "should", "must have", "could to"], answer: 0, explain: "« Should have » exprime un regret : j'aurais dû." },
+      { q: "Complète : « You ___ bought that car. It was too expensive. » (reproche)", options: ["mustn't have", "shouldn't have", "couldn't", "might have"], answer: 1, explain: "« Shouldn't have » exprime un reproche sur un acte passé." },
+      { q: "Complète : « We ___ taken the train, but we drove. » (possibilité non réalisée)", options: ["must have", "can have", "could have", "should be"], answer: 2, explain: "« Could have » exprime une possibilité passée non réalisée." },
+      { q: "Quelle phrase est correcte pour « il aurait dû venir » ?", options: ["He should came.", "He should to come.", "He must came.", "He should have come."], answer: 3, explain: "« Should have » + participe passé : should have come." }
+    ]
+  },
+  {
+    id: "b2-wish",
+    level: "B2",
+    title: "Exprimer un regret : I wish",
+    objective: "Dire ce qu'on aimerait qui soit différent, dans le présent ou dans le passé.",
+    explanation: [
+      "Pour un regret dans le présent, on utilise wish + past simple : I wish I knew the answer (j'aimerais connaître la réponse). Ici, « knew » ne parle pas du passé.",
+      "Pour un regret dans le passé, on utilise wish + past perfect : I wish I had studied more (j'aurais aimé avoir plus étudié).",
+      "Avec be, on dit souvent « I wish I were » : I wish I were taller (j'aimerais être plus grand).",
+      "Pour un agacement sur le comportement de quelqu'un, on utilise wish + would : I wish you would listen (j'aimerais que tu écoutes)."
+    ],
+    examples: [
+      { en: "I wish I knew how to swim.", fr: "J'aimerais savoir nager." },
+      { en: "I wish I had studied more when I was younger.", fr: "J'aurais aimé avoir plus étudié quand j'étais plus jeune." },
+      { en: "She wishes she were living closer to her family.", fr: "Elle aimerait vivre plus près de sa famille." },
+      { en: "I wish you would stop talking during the film.", fr: "J'aimerais que tu arrêtes de parler pendant le film." },
+      { en: "We wish we had booked the hotel earlier.", fr: "Nous aurions aimé avoir réservé l'hôtel plus tôt." }
+    ],
+    pronunciation: "« Wish » se prononce « ouich ». « I wish I were » : le « were » est faible, « wer ».",
+    vocab: [
+      { en: "wish", fr: "souhaiter, aimer que", example: "I wish you good luck.", exampleFr: "Je te souhaite bonne chance.", context: "verbes" },
+      { en: "closer", fr: "plus proche", example: "Live closer to school.", exampleFr: "Habite plus près de l'école.", context: "lieux" },
+      { en: "book", fr: "réserver", example: "I booked a room for tonight.", exampleFr: "J'ai réservé une chambre pour ce soir.", context: "voyage" },
+      { en: "stop", fr: "arrêter", example: "Please stop shouting.", exampleFr: "Arrête de crier, s'il te plaît.", context: "quotidien" },
+      { en: "younger", fr: "plus jeune", example: "She is younger than me.", exampleFr: "Elle est plus jeune que moi.", context: "personnes" }
+    ],
+    exercises: [
+      { q: "Complète (regret présent) : « I wish I ___ the answer. »", options: ["knew", "know", "have known", "would know"], answer: 0, explain: "Pour un regret présent : wish + past simple." },
+      { q: "Complète (regret passé) : « I wish I ___ earlier. »", options: ["left", "had left", "would leave", "leave"], answer: 1, explain: "Pour un regret passé : wish + past perfect." },
+      { q: "Complète (agacement) : « I wish you ___ so loudly. »", options: ["stop", "stopped", "would stop", "had stopped"], answer: 2, explain: "Pour un agacement sur un comportement : wish + would." },
+      { q: "Quelle phrase est correcte ?", options: ["I wish I was there yesterday.", "I wish I am there yesterday.", "I wish I would be there yesterday.", "I wish I had been there yesterday."], answer: 3, explain: "Un regret sur le passé se dit avec wish + had been." }
+    ]
+  },
+  {
+    id: "b2-causative",
+    level: "B2",
+    title: "Faire faire quelque chose : have something done",
+    objective: "Dire qu'on fait faire une action par quelqu'un d'autre.",
+    explanation: [
+      "Structure : have / get + objet + participe passé : I had my hair cut (je me suis fait couper les cheveux). Ce n'est pas moi qui fais l'action.",
+      "On utilise souvent have pour un service que l'on paie ou que l'on demande : We're having the car repaired on Monday (la voiture sera réparée lundi).",
+      "Get est plus familier : I need to get my passport renewed (je dois faire renouveler mon passeport).",
+      "On peut dire aussi have someone do something : She had a technician fix the computer (elle a fait réparer l'ordinateur par un technicien)."
+    ],
+    examples: [
+      { en: "I had my hair cut yesterday.", fr: "Je me suis fait couper les cheveux hier." },
+      { en: "We're having the house painted next month.", fr: "Nous faisons peindre la maison le mois prochain." },
+      { en: "She got her phone repaired at the shop.", fr: "Elle a fait réparer son téléphone à la boutique." },
+      { en: "I need to get my passport renewed.", fr: "Je dois faire renouveler mon passeport." },
+      { en: "He had an electrician check the wiring.", fr: "Il a fait vérifier l'installation électrique par un électricien." }
+    ],
+    pronunciation: "« Had my » se dit « 'd 'maï ». « Get » et « got » sont prononcés avec un son court et net.",
+    vocab: [
+      { en: "repair", fr: "réparer", example: "The mechanic repaired the car.", exampleFr: "Le mécanicien a réparé la voiture.", context: "maison" },
+      { en: "paint", fr: "peindre", example: "They painted the walls white.", exampleFr: "Ils ont peint les murs en blanc.", context: "maison" },
+      { en: "renew", fr: "renouveler", example: "I renewed my membership.", exampleFr: "J'ai renouvelé mon adhésion.", context: "administratif" },
+      { en: "electrician", fr: "électricien", example: "We called an electrician.", exampleFr: "Nous avons appelé un électricien.", context: "maison" },
+      { en: "technician", fr: "technicien", example: "The technician checked the computer.", exampleFr: "Le technicien a vérifié l'ordinateur.", context: "travail" }
+    ],
+    exercises: [
+      { q: "Complète : « I had my car ___ yesterday. » (réparer)", options: ["repaired", "repair", "repairing", "to repair"], answer: 0, explain: "Structure have + objet + participe passé : repaired." },
+      { q: "Complète : « We are ___ the house painted. » (faire peindre)", options: ["making", "having", "doing", "getting to"], answer: 1, explain: "On dit « have something done » : we are having the house painted." },
+      { q: "Complète : « I need to ___ my passport renewed. » (faire renouveler)", options: ["take", "do", "get", "make to"], answer: 2, explain: "« Get something done » signifie faire faire quelque chose." },
+      { q: "Quelle phrase veut dire « je me suis fait couper les cheveux » ?", options: ["I had cut my hair.", "I cut my hair myself.", "I had hair cutting.", "I had my hair cut."], answer: 3, explain: "Have + objet + participe passé : I had my hair cut." }
+    ]
+  },
+  {
+    id: "b2-reported-questions",
+    level: "B2",
+    title: "Rapporter une question ou un ordre",
+    objective: "Répéter une question ou une demande de quelqu'un d'autre.",
+    explanation: [
+      "Dans une question rapportée, on ne fait pas d'inversion sujet-verbe, et on ne met pas de point d'interrogation : « Where do you live? » devient « She asked me where I lived ».",
+      "Pour une question fermée (oui / non), on utilise if ou whether : « Do you like tea? » devient « He asked if I liked tea ».",
+      "Pour un ordre ou une demande, on utilise told / asked + to : « Close the door! » devient « She told me to close the door ».",
+      "Les temps reculent comme dans le discours indirect : present → past, past → past perfect."
+    ],
+    examples: [
+      { en: "She asked me where I lived.", fr: "Elle m'a demandé où j'habitais." },
+      { en: "He asked if I liked tea.", fr: "Il m'a demandé si j'aimais le thé." },
+      { en: "The teacher told us to open our books.", fr: "Le professeur nous a dit d'ouvrir nos livres." },
+      { en: "I asked her whether she had finished.", fr: "Je lui ai demandé si elle avait fini." },
+      { en: "They asked me not to be late.", fr: "Ils m'ont demandé de ne pas être en retard." }
+    ],
+    pronunciation: "Dans « asked if », le « if » est faible. « Whether » se prononce « weth-er ».",
+    vocab: [
+      { en: "ask", fr: "demander (une question)", example: "Can I ask you something?", exampleFr: "Puis-je te poser une question ?", context: "communication" },
+      { en: "close", fr: "fermer", example: "Please close the window.", exampleFr: "Ferme la fenêtre, s'il te plaît.", context: "maison" },
+      { en: "whether", fr: "si (question fermée)", example: "I don't know whether he will come.", exampleFr: "Je ne sais pas s'il viendra.", context: "communication" },
+      { en: "on time", fr: "à l'heure", example: "Be on time tomorrow.", exampleFr: "Sois à l'heure demain.", context: "temps" },
+      { en: "book", fr: "livre", example: "I am reading a good book.", exampleFr: "Je lis un bon livre.", context: "lecture" }
+    ],
+    exercises: [
+      { q: "Direct : « Where do you live? » → « She asked me where I ___. »", options: ["lived", "live", "do live", "was living to"], answer: 0, explain: "Pas d'inversion, et le temps recule : lived." },
+      { q: "Direct : « Do you like tea? » → « He asked me ___ I liked tea. »", options: ["that", "if", "what", "when"], answer: 1, explain: "Une question fermée rapportée commence par if ou whether." },
+      { q: "Direct : « Open the door! » → « She told me ___ the door. »", options: ["open", "opening", "to open", "opened"], answer: 2, explain: "Un ordre rapporté : told + objet + to + verbe." },
+      { q: "Quelle phrase est correcte ?", options: ["He asked me where was the station.", "He asked me where is the station.", "He asked where the station is me.", "He asked me where the station was."], answer: 3, explain: "Pas d'inversion dans une question rapportée : where the station was." }
+    ]
+  },
+  {
+    id: "b2-linking-words",
+    level: "B2",
+    title: "Relier ses idées : although, despite, however",
+    objective: "Exprimer le contraste et la conséquence pour argumenter.",
+    explanation: [
+      "Although et even though veulent dire « bien que » et sont suivis d'une phrase complète : Although it was raining, we went out (bien qu'il pleuve, nous sommes sortis).",
+      "Despite et in spite of veulent dire « malgré » et sont suivis d'un nom ou d'un -ing : Despite the rain, we went out. Despite being tired, she kept working.",
+      "However (cependant) et therefore (donc) commencent une nouvelle phrase, souvent avec une virgule : It was expensive. However, it was worth it.",
+      "Pour la conséquence, as a result (par conséquent) ou so : She studied hard, so she passed. Ne mets pas « but » avec « although » : on dit « although ... , ... » ou « ... but ... »."
+    ],
+    examples: [
+      { en: "Although it was late, we kept talking.", fr: "Bien qu'il soit tard, nous avons continué à discuter." },
+      { en: "Despite the rain, we enjoyed the trip.", fr: "Malgré la pluie, nous avons apprécié le voyage." },
+      { en: "The plan was risky. However, we decided to try.", fr: "Le plan était risqué. Cependant, nous avons décidé d'essayer." },
+      { en: "He worked all night. As a result, he was exhausted.", fr: "Il a travaillé toute la nuit. Par conséquent, il était épuisé." },
+      { en: "Despite being tired, she finished the race.", fr: "Malgré sa fatigue, elle a terminé la course." }
+    ],
+    pronunciation: "« Although » se dit « ol-THO » : l'accent est sur la deuxième syllabe. « Despite » se dit « dis-PAÏT ».",
+    vocab: [
+      { en: "although", fr: "bien que", example: "Although I was tired, I stayed.", exampleFr: "Bien que j'étais fatigué, je suis resté.", context: "liaison" },
+      { en: "despite", fr: "malgré", example: "Despite the cold, we went swimming.", exampleFr: "Malgré le froid, nous sommes allés nager.", context: "liaison" },
+      { en: "however", fr: "cependant", example: "It's cheap. However, it's not good.", exampleFr: "C'est bon marché. Cependant, ce n'est pas bon.", context: "liaison" },
+      { en: "therefore", fr: "donc, par conséquent", example: "I was late, therefore I missed the bus.", exampleFr: "J'étais en retard, donc j'ai raté le bus.", context: "liaison" },
+      { en: "exhausted", fr: "épuisé", example: "After the match, we were exhausted.", exampleFr: "Après le match, nous étions épuisés.", context: "émotions" }
+    ],
+    exercises: [
+      { q: "Complète : « ___ it was raining, we went out. »", options: ["Although", "Despite", "However", "Therefore"], answer: 0, explain: "« Although » est suivi d'une phrase complète." },
+      { q: "Complète : « ___ the rain, we went out. »", options: ["Although", "Despite", "However", "Because"], answer: 1, explain: "« Despite » est suivi d'un nom : despite the rain." },
+      { q: "Complète : « It was expensive. ___, it was worth it. »", options: ["Although", "Despite", "However", "Because of"], answer: 2, explain: "« However » introduit une opposition entre deux phrases." },
+      { q: "Quelle phrase est correcte ?", options: ["Although it was cold, but we went out.", "Despite it was cold, we went out.", "Although being cold, we went out.", "Despite being cold, we went out."], answer: 3, explain: "« Despite » + -ing : despite being cold. Pas de « but » avec « although »." }
     ]
   }
 ];
