@@ -1786,5 +1786,269 @@ window.LESSONS = [
       { q: "Complète pour un bilan équilibré : « ___, the project is worth the risk. »", options: ["On balance", "On balancing", "In balance to", "By balance"], answer: 0, explain: "« On balance » conclut en tenant compte du pour et du contre." },
       { q: "Quelle expression exprime « à mon avis » ?", options: ["In my view", "In my vision of", "On my view to", "By my view"], answer: 0, explain: "« In my view » est la formule courante pour introduire son avis." }
     ]
+  },
+  {
+    id: "c2-register",
+    level: "C2",
+    title: "Choisir le bon registre : formel ou familier",
+    objective: "Adapter son vocabulaire à la situation : un message à un ami n'est pas un rapport officiel.",
+    explanation: [
+      "L'anglais a souvent deux mots pour une même idée : un mot d'origine latine ou française, plus formel, et un mot plus courant, d'origine germanique. Exemple : purchase (acheter, formel) / buy (acheter, courant).",
+      "Dans un courriel officiel : We would be grateful if you could assist us (nous vous serions reconnaissants de bien vouloir nous aider). Entre amis : Could you help me out?",
+      "Les verbes à particule sont plus familiers : find out (découvrir) est plus courant que ascertain. Mais dans un rapport, on préfère souvent le verbe simple.",
+      "Un mot inadapté peut sembler froid ou maladroit. Choisis le registre selon la personne à qui tu écris."
+    ],
+    examples: [
+      { en: "We would be grateful if you could assist us with this matter.", fr: "Nous vous serions reconnaissants de bien vouloir nous aider sur ce point." },
+      { en: "Could you help me out with this?", fr: "Tu peux me donner un coup de main pour ça ?" },
+      { en: "The committee will conclude its review next month.", fr: "Le comité conclura son examen le mois prochain." },
+      { en: "We'll wrap things up by Friday.", fr: "On aura fini d'ici vendredi." },
+      { en: "I would like to purchase two tickets.", fr: "Je voudrais acheter deux billets." }
+    ],
+    pronunciation: "Les mots formels gardent souvent une syllabe accentuée à un endroit inattendu : « PUR-chase » contre « BUY ». Adapte ton rythme à la situation.",
+    vocab: [
+      { en: "assist", fr: "aider (formel)", example: "The nurse assisted the doctor.", exampleFr: "L'infirmière a assisté le médecin.", context: "registre formel" },
+      { en: "conclude", fr: "conclure, terminer (formel)", example: "The meeting concluded at noon.", exampleFr: "La réunion s'est terminée à midi.", context: "registre formel" },
+      { en: "wrap up", fr: "finir, boucler (familier)", example: "Let's wrap up the meeting.", exampleFr: "Finissons la réunion.", context: "registre familier" },
+      { en: "grateful", fr: "reconnaissant", example: "I am grateful for your help.", exampleFr: "Je vous suis reconnaissant de votre aide.", context: "politesse" },
+      { en: "matter", fr: "question, affaire", example: "This is a serious matter.", exampleFr: "C'est une affaire sérieuse.", context: "registre formel" }
+    ],
+    exercises: [
+      { q: "Quel mot est le plus formel pour « acheter » ?", options: ["purchase", "buy", "get", "grab"], answer: 0, explain: "« Purchase » est plus formel que « buy »." },
+      { q: "Dans un courriel officiel, quelle phrase convient le mieux ?", options: ["We would be grateful if you could assist us.", "Hey, can you help me out?", "Yo, give me a hand.", "Sorry dude, no way."], answer: 0, explain: "La formule « We would be grateful if you could assist us » est polie et formelle." },
+      { q: "Quel verbe est le plus familier ?", options: ["wrap up", "conclude", "terminate", "finalize"], answer: 0, explain: "« Wrap up » est familier, les autres sont plus formels." },
+      { q: "Quel mot convient pour un rapport officiel ?", options: ["conclude", "end it", "stop it", "finish off"], answer: 0, explain: "« Conclude » convient mieux à l'écrit formel." }
+    ]
+  },
+  {
+    id: "c2-idioms",
+    level: "C2",
+    title: "Les idiomes courants : break the ice, bite the bullet",
+    objective: "Comprendre et utiliser des expressions imagées que les anglophones emploient tous les jours.",
+    explanation: [
+      "Un idiome a un sens qui ne se déduit pas des mots : to break the ice veut dire « briser la glace », c'est-à-dire mettre les gens à l'aise au début d'une rencontre.",
+      "To bite the bullet veut dire « serrer les dents » et accepter une chose désagréable qu'on ne peut pas éviter. To hit the nail on the head veut dire « mettre le doigt dessus ».",
+      "Pour des choses rares : once in a blue moon (une fois tous les trente-six du mois). Pour des choses très chères : cost an arm and a leg (coûter les yeux de la tête).",
+      "Les idiomes sont informels : utilise-les à l'oral et dans les messages amicaux, pas dans un rapport formel."
+    ],
+    examples: [
+      { en: "A joke helped to break the ice at the meeting.", fr: "Une blague a aidé à détendre l'atmosphère à la réunion." },
+      { en: "I hate the dentist, but I'll have to bite the bullet.", fr: "Je déteste le dentiste, mais je vais devoir serrer les dents." },
+      { en: "You hit the nail on the head with that comment.", fr: "Tu as mis le doigt dessus avec ce commentaire." },
+      { en: "We go to the cinema once in a blue moon.", fr: "Nous allons au cinéma tous les trente-six du mois." },
+      { en: "That new car cost him an arm and a leg.", fr: "Cette nouvelle voiture lui a coûté les yeux de la tête." }
+    ],
+    pronunciation: "Dans les idiomes, les mots courants sont souvent réduits : « gonna », « wanna », « gotta ». Écoute la phrase entière plutôt que chaque mot.",
+    vocab: [
+      { en: "break the ice", fr: "briser la glace", example: "Let's play a game to break the ice.", exampleFr: "Jouons à un jeu pour briser la glace.", context: "idiome" },
+      { en: "bite the bullet", fr: "serrer les dents", example: "She bit the bullet and told him the truth.", exampleFr: "Elle s'est forcée à lui dire la vérité.", context: "idiome" },
+      { en: "hit the nail on the head", fr: "mettre le doigt dessus", example: "You hit the nail on the head.", exampleFr: "Tu as mis le doigt dessus.", context: "idiome" },
+      { en: "once in a blue moon", fr: "très rarement", example: "It snows here once in a blue moon.", exampleFr: "Il neige ici très rarement.", context: "idiome" },
+      { en: "cost an arm and a leg", fr: "coûter les yeux de la tête", example: "The hotel cost an arm and a leg.", exampleFr: "L'hôtel a coûté les yeux de la tête.", context: "idiome" }
+    ],
+    exercises: [
+      { q: "Que veut dire « to break the ice » ?", options: ["mettre les gens à l'aise", "casser quelque chose", "partir tôt", "avoir froid"], answer: 0, explain: "C'est un idiome : il met les gens à l'aise au début d'une rencontre." },
+      { q: "Complète : « I don't like it, but I'll have to ___ the bullet. »", options: ["bite", "eat", "take", "shoot"], answer: 0, explain: "L'idiome est « bite the bullet » : serrer les dents." },
+      { q: "Que veut dire « once in a blue moon » ?", options: ["très rarement", "tous les jours", "le soir", "en été"], answer: 0, explain: "« Once in a blue moon » veut dire très rarement." },
+      { q: "Quel idiome veut dire « coûter très cher » ?", options: ["cost an arm and a leg", "break the ice", "hit the road", "under the weather"], answer: 0, explain: "« Cost an arm and a leg » veut dire coûter très cher." }
+    ]
+  },
+  {
+    id: "c2-ellipsis",
+    level: "C2",
+    title: "Répondre sans répéter : so do I, neither did I, I think so",
+    objective: "Répondre naturellement en évitant les répétitions, comme le font les anglophones.",
+    explanation: [
+      "Pour dire « moi aussi » : so + auxiliaire + sujet : I like coffee. So do I (moi aussi). Si la phrase est négative : I don't like tea. Neither do I (moi non plus).",
+      "Pour éviter de répéter une phrase entière : I think so (je pense que oui), I hope not (j'espère que non), I'm afraid so (j'ai peur que oui).",
+      "On garde l'auxiliaire qui correspond au temps de la phrase : She has finished. So have I. He was late. So was I.",
+      "Dans une réponse à une proposition, on peut dire : I'd love to, but I can't (j'adorerais, mais je ne peux pas). Le verbe est omis après to."
+    ],
+    examples: [
+      { en: "I really enjoyed the film. So did I.", fr: "J'ai vraiment aimé le film. Moi aussi." },
+      { en: "I don't understand the question. Neither do I.", fr: "Je ne comprends pas la question. Moi non plus." },
+      { en: "Will it rain tomorrow? I hope not.", fr: "Va-t-il pleuvoir demain ? J'espère que non." },
+      { en: "Are you coming? I'd love to, but I can't.", fr: "Tu viens ? J'adorerais, mais je ne peux pas." },
+      { en: "She has finished. So have I.", fr: "Elle a fini. Moi aussi." }
+    ],
+    pronunciation: "Dans « So do I », l'accent tombe sur « do ». Dans « Neither do I », l'accent tombe sur « nei-ther ».",
+    vocab: [
+      { en: "enjoy", fr: "apprécier", example: "I enjoy walking.", exampleFr: "J'aime marcher.", context: "verbes" },
+      { en: "understand", fr: "comprendre (passé : understood)", example: "Do you understand?", exampleFr: "Tu comprends ?", context: "verbes" },
+      { en: "afraid", fr: "désolé, craignant", example: "I'm afraid I can't come.", exampleFr: "Je crains de ne pas pouvoir venir.", context: "politesse" },
+      { en: "love to", fr: "adorer (faire)", example: "I'd love to join you.", exampleFr: "J'adorerais vous rejoindre.", context: "politesse" },
+      { en: "hope", fr: "espérer", example: "I hope you feel better.", exampleFr: "J'espère que tu vas mieux.", context: "verbes" }
+    ],
+    exercises: [
+      { q: "Complète : « I like coffee. ___ I. » (moi aussi)", options: ["So do", "Neither do", "Too do", "So am"], answer: 0, explain: "Pour « moi aussi » avec un verbe au présent : so do I." },
+      { q: "Complète : « I don't know. ___ I. » (moi non plus)", options: ["Neither do", "So do", "Either do", "Too don't"], answer: 0, explain: "Pour « moi non plus » : neither do I." },
+      { q: "Complète : « Is it expensive? I'm afraid ___. »", options: ["so", "it is", "yes it", "very"], answer: 0, explain: "« I'm afraid so » remplace toute la réponse." },
+      { q: "Complète : « She was late. ___ I. » (moi aussi)", options: ["So was", "So did", "So am", "So do"], answer: 0, explain: "Au passé avec « was » : so was I." }
+    ]
+  },
+  {
+    id: "c2-would-rather",
+    level: "C2",
+    title: "Préférer et recommander : would rather, had better",
+    objective: "Exprimer une préférence ou un conseil fort, avec les bonnes structures.",
+    explanation: [
+      "Would rather + verbe de base exprime une préférence pour soi : I'd rather stay home tonight (je préfère rester à la maison ce soir).",
+      "Pour une préférence qui concerne quelqu'un d'autre, on utilise would rather + sujet + past simple : I'd rather you didn't smoke here (je préfère que tu ne fumes pas ici).",
+      "Had better + verbe de base donne un conseil fort, avec une conséquence possible : You'd better leave now, the train is coming (tu ferais mieux de partir maintenant). C'est plus fort que should.",
+      "La forme négative est had better not : You'd better not be late (tu ferais mieux de ne pas être en retard)."
+    ],
+    examples: [
+      { en: "I'd rather stay home tonight.", fr: "Je préfère rester à la maison ce soir." },
+      { en: "I'd rather you didn't smoke here.", fr: "Je préfère que tu ne fumes pas ici." },
+      { en: "You'd better leave now, or you'll miss the train.", fr: "Tu ferais mieux de partir maintenant, sinon tu vas rater le train." },
+      { en: "You'd better not be late tomorrow.", fr: "Tu ferais mieux de ne pas être en retard demain." },
+      { en: "Would you rather have tea or coffee?", fr: "Tu préfères le thé ou le café ?" }
+    ],
+    pronunciation: "« Would rather » se dit « wud RA-ther ». « Had better » se dit « had BE-ter », souvent « 'd better ».",
+    vocab: [
+      { en: "rather", fr: "plutôt", example: "I'd rather walk than drive.", exampleFr: "Je préfère marcher plutôt que conduire.", context: "préférence" },
+      { en: "smoke", fr: "fumer", example: "Smoking is not allowed here.", exampleFr: "Il est interdit de fumer ici.", context: "règles" },
+      { en: "miss", fr: "rater, manquer", example: "Don't miss the bus.", exampleFr: "Ne rate pas le bus.", context: "transport" },
+      { en: "tonight", fr: "ce soir", example: "We are going out tonight.", exampleFr: "Nous sortons ce soir.", context: "temps" },
+      { en: "warning", fr: "avertissement", example: "It's a warning, be careful.", exampleFr: "C'est un avertissement, fais attention.", context: "conseil" }
+    ],
+    exercises: [
+      { q: "Complète : « I'd ___ stay at home tonight. »", options: ["rather", "better", "prefer to", "like"], answer: 0, explain: "« Would rather » exprime une préférence personnelle." },
+      { q: "Complète : « I'd rather you ___ here. » (ne pas fumer)", options: ["didn't smoke", "don't smoke", "wouldn't smoke", "not smoke"], answer: 0, explain: "Préférence pour quelqu'un d'autre : would rather + past simple." },
+      { q: "Complète : « You'd ___ leave now. »", options: ["better", "rather", "best", "more"], answer: 0, explain: "« Had better » donne un conseil fort : you'd better." },
+      { q: "Quelle phrase veut dire « tu ferais mieux de ne pas être en retard » ?", options: ["You'd better not be late.", "You'd better be not late.", "You'd rather not be late.", "You better not late."], answer: 0, explain: "La négation de « had better » se place après better : had better not." }
+    ]
+  },
+  {
+    id: "c2-imply-infer",
+    level: "C2",
+    title: "Sous-entendre ou déduire : imply, infer, suggest",
+    objective: "Distinguer celui qui dit une chose de celui qui la comprend.",
+    explanation: [
+      "Imply veut dire « sous-entendre » : celui qui parle laisse entendre quelque chose sans le dire clairement. Are you implying that I'm lying? (tu veux dire que je mens ?)",
+      "Infer veut dire « déduire » : celui qui écoute comprend quelque chose à partir de ce qu'il entend. From your tone, I infer that you are upset (à ton ton, je déduis que tu es contrarié).",
+      "Suggest est plus doux : il veut dire « suggérer » ou « laisser penser ». Her silence suggests she disagrees (son silence laisse penser qu'elle n'est pas d'accord).",
+      "Retiens : le locuteur implique, l'auditeur infère. Les deux verbes ne sont pas interchangeables."
+    ],
+    examples: [
+      { en: "Are you implying that I'm lying?", fr: "Tu veux dire que je mens ?" },
+      { en: "From his tone, I inferred that he was angry.", fr: "À son ton, j'ai déduit qu'il était en colère." },
+      { en: "Her silence suggests that she disagrees.", fr: "Son silence laisse penser qu'elle n'est pas d'accord." },
+      { en: "The report implies that sales will fall.", fr: "Le rapport laisse entendre que les ventes vont baisser." },
+      { en: "We can infer a lot from the data.", fr: "On peut déduire beaucoup de choses des données." }
+    ],
+    pronunciation: "« Imply » et « infer » se ressemblent : retiens la différence de sens, pas la prononciation.",
+    vocab: [
+      { en: "imply", fr: "sous-entendre, impliquer", example: "Her smile implies approval.", exampleFr: "Son sourire sous-entend une approbation.", context: "communication" },
+      { en: "infer", fr: "déduire", example: "I inferred the meaning from the context.", exampleFr: "J'ai déduit le sens du contexte.", context: "communication" },
+      { en: "suggest", fr: "suggérer, laisser penser", example: "The evidence suggests a mistake.", exampleFr: "Les éléments laissent penser à une erreur.", context: "communication" },
+      { en: "tone", fr: "ton (de la voix)", example: "Her tone was friendly.", exampleFr: "Son ton était amical.", context: "communication" },
+      { en: "upset", fr: "contrarié, bouleversé", example: "He was upset about the news.", exampleFr: "Il était contrarié par la nouvelle.", context: "émotions" }
+    ],
+    exercises: [
+      { q: "Qui fait l'action « imply » ?", options: ["celui qui parle", "celui qui écoute", "personne", "les deux"], answer: 0, explain: "Le locuteur sous-entend (imply), l'auditeur déduit (infer)." },
+      { q: "Complète : « From his silence, I ___ that he was unhappy. »", options: ["inferred", "implied", "suggested him", "infered to"], answer: 0, explain: "« Infer » : l'auditeur déduit à partir de ce qu'il entend." },
+      { q: "Complète : « Are you ___ that I was wrong? »", options: ["implying", "inferring", "inferring to", "implied to"], answer: 0, explain: "Le locuteur sous-entend : implying." },
+      { q: "Quel verbe est le plus doux ?", options: ["suggest", "imply", "infer", "accuse"], answer: 0, explain: "« Suggest » est plus doux que « imply » ou « accuse »." }
+    ]
+  },
+  {
+    id: "c2-collocations",
+    level: "C2",
+    title: "Les collocations : make a decision, heavy rain, deeply concerned",
+    objective: "Utiliser les bons mots ensemble, comme un locuteur natif.",
+    explanation: [
+      "Une collocation est une association de mots qui se disent naturellement ensemble. On dit make a decision (prendre une décision), mais do homework (faire ses devoirs) : il n'y a pas de règle logique.",
+      "Certains adjectifs vont avec certains noms : heavy rain (forte pluie), strong coffee (café fort), high hopes (grands espoirs). On ne dit pas « strong rain ».",
+      "Certains adverbes renforcent un adjectif : deeply concerned (profondément inquiet), highly recommended (vivement recommandé), fully aware (pleinement conscient).",
+      "La meilleure façon de les apprendre est de les mémoriser par groupes, comme on les entend dans les textes et les conversations."
+    ],
+    examples: [
+      { en: "We need to make a decision by Friday.", fr: "Nous devons prendre une décision d'ici vendredi." },
+      { en: "There was heavy rain all night.", fr: "Il y a eu une forte pluie toute la nuit." },
+      { en: "I'm deeply concerned about the results.", fr: "Je suis profondément inquiet à propos des résultats." },
+      { en: "This restaurant is highly recommended.", fr: "Ce restaurant est vivement recommandé." },
+      { en: "She is fully aware of the risks.", fr: "Elle est pleinement consciente des risques." }
+    ],
+    pronunciation: "Les collocations se disent d'un seul souffle : « make a DECI-sion », « HEAVY RAIN ». L'accent tombe sur le mot le plus important.",
+    vocab: [
+      { en: "decision", fr: "décision", example: "It was a hard decision.", exampleFr: "C'était une décision difficile.", context: "collocation" },
+      { en: "heavy", fr: "fort, lourd (pluie, trafic)", example: "There is heavy traffic today.", exampleFr: "Il y a beaucoup de circulation aujourd'hui.", context: "collocation" },
+      { en: "concerned", fr: "inquiet", example: "Parents are concerned about safety.", exampleFr: "Les parents s'inquiètent pour la sécurité.", context: "collocation" },
+      { en: "recommend", fr: "recommander", example: "I recommend the fish.", exampleFr: "Je recommande le poisson.", context: "collocation" },
+      { en: "aware", fr: "conscient", example: "Are you aware of the problem?", exampleFr: "Es-tu au courant du problème ?", context: "collocation" }
+    ],
+    exercises: [
+      { q: "Quelle collocation est correcte ?", options: ["make a decision", "do a decision", "take a decision of", "have a decision"], answer: 0, explain: "On dit « make a decision » (prendre une décision)." },
+      { q: "Quel adjectif va avec « rain » ?", options: ["heavy", "strong", "big", "high"], answer: 0, explain: "On dit « heavy rain » : une forte pluie." },
+      { q: "Complète : « I am ___ concerned about your health. »", options: ["deeply", "strongly", "much", "highly"], answer: 0, explain: "« Deeply concerned » est la collocation naturelle." },
+      { q: "Quel adverbe va avec « aware » ?", options: ["fully", "heavily", "strongly", "highly"], answer: 0, explain: "On dit « fully aware » : pleinement conscient." }
+    ]
+  },
+  {
+    id: "c2-phrasal-advanced",
+    level: "C2",
+    title: "Verbes à particules avancés : come up with, put up with, get away with",
+    objective: "Comprendre et utiliser des verbes à particules fréquents dans la vie réelle et au travail.",
+    explanation: [
+      "Come up with signifie « trouver une idée, proposer » : They came up with a brilliant plan (ils ont trouvé un plan brillant).",
+      "Put up with signifie « supporter, tolérer » : I can't put up with this noise anymore (je ne supporte plus ce bruit).",
+      "Get away with signifie « échapper à une sanction » : He got away with it because nobody saw him (il s'en est tiré parce que personne ne l'a vu).",
+      "Look up to signifie « admirer, avoir de la considération pour » : Many young people look up to her (beaucoup de jeunes l'admirent). Run out of signifie « être à court de » : We've run out of milk (nous n'avons plus de lait)."
+    ],
+    examples: [
+      { en: "They came up with a brilliant solution.", fr: "Ils ont trouvé une solution brillante." },
+      { en: "I can't put up with this noise any longer.", fr: "Je ne supporte plus ce bruit." },
+      { en: "He got away with cheating on the exam.", fr: "Il a triché à l'examen et n'a pas été puni." },
+      { en: "Many students look up to their teacher.", fr: "Beaucoup d'élèves admirent leur professeur." },
+      { en: "We've run out of time.", fr: "Nous n'avons plus de temps." }
+    ],
+    pronunciation: "Dans les verbes à particules, la particule est souvent accentuée : « come UP with », « put UP with ».",
+    vocab: [
+      { en: "solution", fr: "solution", example: "Find a solution to the problem.", exampleFr: "Trouve une solution au problème.", context: "travail" },
+      { en: "cheat", fr: "tricher", example: "Don't cheat in the test.", exampleFr: "Ne triche pas au test.", context: "études" },
+      { en: "noise", fr: "bruit", example: "The noise kept me awake.", exampleFr: "Le bruit m'a empêché de dormir.", context: "quotidien" },
+      { en: "any longer", fr: "plus longtemps", example: "I can't wait any longer.", exampleFr: "Je ne peux plus attendre.", context: "temps" },
+      { en: "brilliant", fr: "brillant", example: "That's a brilliant idea.", exampleFr: "C'est une idée brillante.", context: "qualités" }
+    ],
+    exercises: [
+      { q: "Que veut dire « come up with » ?", options: ["trouver une idée", "arriver avec quelqu'un", "venir en haut", "rentrer"], answer: 0, explain: "« Come up with » veut dire trouver une idée ou une solution." },
+      { q: "Complète : « I can't ___ this noise any longer. »", options: ["put up with", "put on", "put out", "put off"], answer: 0, explain: "« Put up with » veut dire supporter." },
+      { q: "Complète : « He ___ away with it. » (ne pas être puni)", options: ["got", "took", "came", "went"], answer: 0, explain: "« Get away with » veut dire échapper à une sanction." },
+      { q: "Que veut dire « run out of » ?", options: ["être à court de", "courir dehors", "partir en courant", "sortir de la maison"], answer: 0, explain: "« Run out of » veut dire être à court de quelque chose." }
+    ]
+  },
+  {
+    id: "c2-formal-style",
+    level: "C2",
+    title: "Le style formel : transformer un verbe en nom",
+    objective: "Écrire des phrases plus denses et plus formelles, comme dans les rapports et les articles.",
+    explanation: [
+      "Dans les textes formels, on transforme souvent un verbe en nom : They decided to reduce costs becomes The decision to reduce costs was taken quickly (la décision de réduire les coûts a été prise rapidement).",
+      "Quelques exemples : to refuse → refusal (refus), to implement → implementation (mise en œuvre), to achieve → achievement (réussite), to decide → decision (décision).",
+      "La phrase devient plus impersonnelle : Their refusal to cooperate delayed the project (leur refus de coopérer a retardé le projet).",
+      "Ce style est utile à l'écrit, mais évite de le mettre partout : à l'oral, on préfère des phrases simples et claires."
+    ],
+    examples: [
+      { en: "Their refusal to cooperate delayed the project.", fr: "Leur refus de coopérer a retardé le projet." },
+      { en: "The implementation of the new policy will take a year.", fr: "La mise en œuvre de la nouvelle politique prendra un an." },
+      { en: "The decision was reached after lengthy discussion.", fr: "La décision a été prise après de longues discussions." },
+      { en: "Her achievement surprised everyone.", fr: "Sa réussite a surpris tout le monde." },
+      { en: "The report highlights a significant increase in costs.", fr: "Le rapport met en évidence une hausse importante des coûts." }
+    ],
+    pronunciation: "Les noms en -tion se prononcent avec le son « sh » : « implemen-TAY-shun ». Insiste sur la syllabe accentuée, qui est souvent l'avant-dernière.",
+    vocab: [
+      { en: "refusal", fr: "refus", example: "His refusal surprised us.", exampleFr: "Son refus nous a surpris.", context: "registre formel" },
+      { en: "implementation", fr: "mise en œuvre", example: "The implementation starts next week.", exampleFr: "La mise en œuvre commence la semaine prochaine.", context: "registre formel" },
+      { en: "achievement", fr: "réussite, accomplissement", example: "It was a great achievement.", exampleFr: "C'était une grande réussite.", context: "registre formel" },
+      { en: "lengthy", fr: "long (formel)", example: "It was a lengthy meeting.", exampleFr: "C'était une réunion longue.", context: "registre formel" },
+      { en: "highlight", fr: "mettre en évidence", example: "The report highlights the risks.", exampleFr: "Le rapport met en évidence les risques.", context: "registre formel" }
+    ],
+    exercises: [
+      { q: "Quel nom correspond au verbe « to refuse » ?", options: ["refusal", "refuse", "refusing", "refused"], answer: 0, explain: "Le nom formel de « refuse » est « refusal »." },
+      { q: "Complète : « The ___ of the new policy will take a year. » (implementer)", options: ["implementation", "implement", "implementing", "implemented"], answer: 0, explain: "Le nom correspondant est « implementation »." },
+      { q: "Quelle phrase est la plus formelle ?", options: ["The decision was reached after lengthy discussion.", "They decided after a long chat.", "We decided after talking a lot.", "They just decided it."], answer: 0, explain: "La version nominalisée avec « reached » et « lengthy » est plus formelle." },
+      { q: "Quel nom correspond à « to achieve » ?", options: ["achievement", "achieve", "achieving", "achieved"], answer: 0, explain: "Le nom formel de « to achieve » est « achievement »." }
+    ]
   }
 ];
