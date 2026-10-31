@@ -109,5 +109,32 @@ window.LEVEL_TESTS = {
     { q: "Quelle phrase est correcte ?", o: ["Despite it was cold, we went out.", "Despite being cold, we went out.", "Although it was cold, but we went out.", "Although being cold, we went out."], a: 1, e: "« Despite » + -ing. Pas de « but » avec « although »." },
     { q: "Quelle phrase veut dire « je me suis fait couper les cheveux » ?", o: ["I had cut my hair.", "I cut my hair myself.", "I had my hair cut.", "I had hair cutting."], a: 2, e: "Have + objet + participe passé." },
     { q: "Quelle phrase est correcte pour un regret sur le passé ?", o: ["I wish I was there yesterday.", "I wish I am there yesterday.", "I wish I would be there yesterday.", "I wish I had been there yesterday."], a: 3, e: "Regret passé : wish + past perfect." }
+  ],
+  C1: [
+    { q: "Never ___ such a beautiful view.", o: ["have I seen", "I have seen", "I saw", "have seen I"], a: 0, e: "Après « never » en début de phrase : inversion." },
+    { q: "Hardly ___ I arrived when it started to rain.", o: ["have", "had", "did", "was"], a: 1, e: "« Hardly ... when » demande l'inversion au past perfect." },
+    { q: "No sooner ___ she left than the phone rang.", o: ["did", "was", "had", "has"], a: 2, e: "« No sooner ... than » demande l'inversion : had she left." },
+    { q: "Quelle phrase est correcte ?", o: ["Not only he won, but he also broke the record.", "Not only he did win, but he broke the record.", "Not only won he, but he broke the record.", "Not only did he win, but he also broke the record."], a: 3, e: "Après « not only » en début de phrase : did + sujet + verbe de base." },
+    { q: "It was Marie ___ won the prize.", o: ["who", "which", "where", "what"], a: 0, e: "Pour une personne mise en valeur : it was ... who." },
+    { q: "What I want ___ a quiet place to think.", o: ["are", "is", "was to", "be"], a: 1, e: "Avec « what » en sujet, le verbe est au singulier ici : is." },
+    { q: "It was the heat ___ made him tired.", o: ["who", "where", "that", "when"], a: 2, e: "Pour une chose mise en valeur : it was ... that." },
+    { q: "I suggest that he ___ a doctor.", o: ["sees", "saw", "is seeing", "see"], a: 3, e: "Après « suggest that » : forme de base, see." },
+    { q: "It is essential that she ___ informed.", o: ["be", "is", "will be", "was"], a: 0, e: "Après « essential that » : forme de base, be." },
+    { q: "They demanded that the report ___ by Friday.", o: ["is finished", "be finished", "will be finished", "was finishing"], a: 1, e: "Après « demanded that » : forme de base, be finished." },
+    { q: "Quelle phrase est correcte ?", o: ["The doctor recommended that he takes a break.", "The doctor recommended that he took a break.", "The doctor recommended that he take a break.", "The doctor recommended him to takes a break."], a: 2, e: "Après « recommended that » : forme de base, take." },
+    { q: "You ___ paid. I already did it.", o: ["mustn't have", "couldn't have", "shouldn't", "needn't have"], a: 3, e: "« Needn't have » : ce n'était pas nécessaire, mais c'est fait." },
+    { q: "She ___ very tired after the long flight.", o: ["must have been", "must be", "must have", "can't be"], a: 0, e: "Déduction sur le passé : must have been + adjectif." },
+    { q: "He ___ right about the result.", o: ["may be well", "may well be", "well may", "is well"], a: 1, e: "« May well » exprime une forte probabilité." },
+    { q: "___ the report, she sent it to her boss.", o: ["Finishing", "Finished to", "Having finished", "Has finished"], a: 2, e: "Action terminée avant la principale : having + participe passé." },
+    { q: "___ in a hurry, the letter had many mistakes.", o: ["Writing", "Having written", "Write", "Written"], a: 3, e: "Forme passive réduite : participe passé seul." },
+    { q: "Quelle phrase est correcte ?", o: ["Having finished the test, we left the room.", "Having finished the test, the teacher left.", "Having finished the test, the room was empty.", "Finishing the test, the bell rang for us."], a: 0, e: "Le sujet de la proposition réduite doit être celui de la phrase principale." },
+    { q: "I ___ believe you are right.", o: ["am", "do", "does", "did be"], a: 1, e: "Pour insister au présent : do + verbe de base." },
+    { q: "It was not ___ 2010 ___ the law changed.", o: ["after / when", "since / that", "until / that", "until / when"], a: 2, e: "« It was not until ... that » met en avant un moment précis." },
+    { q: "Not until midnight ___ we go to bed.", o: ["do", "were", "have", "did"], a: 3, e: "Après « not until » en début de phrase : did + sujet." },
+    { q: "By the time we got there, they ___ for an hour.", o: ["had been waiting", "were waiting", "waited", "have been waiting"], a: 0, e: "Action qui durait avant un autre moment passé : had been + -ing." },
+    { q: "It ___ when she arrived at the station.", o: ["rained", "was raining", "had rained", "has been raining"], a: 1, e: "Le décor d'un récit : past continuous." },
+    { q: "Every summer, we ___ to the coast.", o: ["would have gone", "would went", "would go", "are going"], a: 2, e: "Dans un récit, « would » + verbe de base : habitude passée." },
+    { q: "Quelle expression signifie « dans une certaine mesure » ?", o: ["to all extent", "in some extend", "at some extent", "to some extent"], a: 3, e: "« To some extent » veut dire dans une certaine mesure." },
+    { q: "It ___ be argued that the plan is too expensive.", o: ["could", "must", "is", "does"], a: 0, e: "« It could be argued that » introduit une opinion nuancée." }
   ]
 };

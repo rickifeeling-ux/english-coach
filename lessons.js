@@ -1522,5 +1522,269 @@ window.LESSONS = [
       { q: "Complète : « It was expensive. ___, it was worth it. »", options: ["Although", "Despite", "However", "Because of"], answer: 2, explain: "« However » introduit une opposition entre deux phrases." },
       { q: "Quelle phrase est correcte ?", options: ["Although it was cold, but we went out.", "Despite it was cold, we went out.", "Although being cold, we went out.", "Despite being cold, we went out."], answer: 3, explain: "« Despite » + -ing : despite being cold. Pas de « but » avec « although »." }
     ]
+  },
+  {
+    id: "c1-inversion",
+    level: "C1",
+    title: "L'inversion pour insister : never, hardly, not only",
+    objective: "Mettre de l'emphase à l'écrit et à l'oral avec une inversion sujet-auxiliaire.",
+    explanation: [
+      "Après certains mots négatifs placés en début de phrase, on inverse l'auxiliaire et le sujet : Never have I seen such a view (je n'ai jamais vu un tel paysage).",
+      "Structures courantes : hardly ... when (à peine ... que), no sooner ... than (à peine ... que), not only ... but also (non seulement ... mais aussi).",
+      "Avec « rarely », « seldom », « little » : Rarely do we agree (rarement sommes-nous d'accord). Le principe reste le même : l'auxiliaire passe avant le sujet.",
+      "Cette forme est plutôt écrite ou soutenue. À l'oral, on l'utilise surtout pour insister."
+    ],
+    examples: [
+      { en: "Never have I seen such a beautiful view.", fr: "Je n'ai jamais vu un aussi beau paysage." },
+      { en: "Hardly had I arrived when the phone rang.", fr: "À peine étais-je arrivé que le téléphone a sonné." },
+      { en: "No sooner had she left than it started raining.", fr: "À peine était-elle partie qu'il s'est mis à pleuvoir." },
+      { en: "Not only did he win, but he also broke the record.", fr: "Non seulement il a gagné, mais il a aussi battu le record." },
+      { en: "Rarely do we see such talent.", fr: "Nous voyons rarement un tel talent." }
+    ],
+    pronunciation: "Dans « hardly had I », insiste sur « hardly » et « had » : « HARD-li HAD ai ». La phrase se dit d'un souffle, sans pause.",
+    vocab: [
+      { en: "hardly", fr: "à peine", example: "I hardly know him.", exampleFr: "Je le connais à peine.", context: "emphase" },
+      { en: "record", fr: "record", example: "She set a new record.", exampleFr: "Elle a établi un nouveau record.", context: "sport" },
+      { en: "talent", fr: "talent", example: "He has a real talent for music.", exampleFr: "Il a un vrai talent pour la musique.", context: "qualités" },
+      { en: "rarely", fr: "rarement", example: "We rarely eat out.", exampleFr: "Nous mangeons rarement au restaurant.", context: "fréquence" },
+      { en: "no sooner", fr: "à peine (que)", example: "No sooner had I sat down than the bell rang.", exampleFr: "À peine assis, la cloche a sonné.", context: "temps" }
+    ],
+    exercises: [
+      { q: "Complète : « Never ___ such a mess. »", options: ["have I seen", "I have seen", "I saw", "have seen I"], answer: 0, explain: "Après « never » en début de phrase, l'auxiliaire passe avant le sujet." },
+      { q: "Complète : « Hardly ___ I arrived when it started to rain. »", options: ["had", "have", "did", "was"], answer: 0, explain: "« Hardly » + had + sujet + participe passé, puis « when »." },
+      { q: "Complète : « No sooner ___ she left than the phone rang. »", options: ["had", "did", "was", "has"], answer: 0, explain: "« No sooner » demande l'inversion au past perfect : had she left." },
+      { q: "Quelle phrase est correcte ?", options: ["Not only he won, but he also broke the record.", "Not only did he win, but he also broke the record.", "Not only he did win, but he broke the record.", "Not only won he, but he broke the record."], answer: 1, explain: "Après « not only » en début de phrase : did + sujet + verbe de base." }
+    ]
+  },
+  {
+    id: "c1-cleft-sentences",
+    level: "C1",
+    title: "Mettre en valeur : it was ... who / what I need is",
+    objective: "Mettre en avant un élément précis de la phrase.",
+    explanation: [
+      "On met en valeur une personne avec It was ... who : It was my sister who called you (c'est ma sœur qui t'a appelé).",
+      "On met en valeur une chose avec It was ... that ou which : It was the rain that ruined the trip (c'est la pluie qui a gâché le voyage).",
+      "On met en valeur une action ou un besoin avec What ... is : What I need is a holiday (ce dont j'ai besoin, c'est de vacances).",
+      "Ces phrases se disent avec un accent sur l'élément mis en valeur : « It was MY sister who called. »"
+    ],
+    examples: [
+      { en: "It was my sister who called you yesterday.", fr: "C'est ma sœur qui t'a appelé hier." },
+      { en: "It was the rain that ruined our trip.", fr: "C'est la pluie qui a gâché notre voyage." },
+      { en: "What I need is a holiday.", fr: "Ce dont j'ai besoin, c'est de vacances." },
+      { en: "What he did was lie to the manager.", fr: "Ce qu'il a fait, c'est mentir au directeur." },
+      { en: "It is her attitude that worries me.", fr: "C'est son attitude qui m'inquiète." }
+    ],
+    pronunciation: "L'élément mis en valeur porte l'accent : « It was MY sister who called. » La partie après « who » ou « that » est plus basse.",
+    vocab: [
+      { en: "ruin", fr: "gâcher, ruiner", example: "The storm ruined the party.", exampleFr: "L'orage a gâché la fête.", context: "vie" },
+      { en: "holiday", fr: "vacances", example: "We are going on holiday in July.", exampleFr: "Nous partons en vacances en juillet.", context: "voyage" },
+      { en: "attitude", fr: "attitude", example: "I like her positive attitude.", exampleFr: "J'aime son attitude positive.", context: "personnalité" },
+      { en: "lie", fr: "mentir", example: "Don't lie to me.", exampleFr: "Ne me mens pas.", context: "relations" },
+      { en: "worry", fr: "inquiéter", example: "The news worries me.", exampleFr: "Cette nouvelle m'inquiète.", context: "émotions" }
+    ],
+    exercises: [
+      { q: "Complète : « It was Marie ___ won the prize. »", options: ["who", "which", "where", "what"], answer: 0, explain: "Pour une personne mise en valeur : it was ... who." },
+      { q: "Complète : « What I want ___ a quiet place to think. »", options: ["is", "are", "was to", "be"], answer: 0, explain: "Avec « what », le verbe s'accorde avec la fin de la phrase, ici singulier : is." },
+      { q: "Complète : « It was the heat ___ made him tired. »", options: ["that", "who", "where", "when"], answer: 0, explain: "Pour une chose mise en valeur : it was ... that." },
+      { q: "Quelle phrase est correcte ?", options: ["What I did was to leave early.", "What I did is leave early.", "It was to leave early what I did.", "It is leave early that I did."], answer: 0, explain: "La structure « What ... was to + verbe » ou « What ... was + verbe » met en valeur une action." }
+    ]
+  },
+  {
+    id: "c1-subjunctive",
+    level: "C1",
+    title: "Le subjonctif : I suggest that he be there",
+    objective: "Exprimer une demande, une recommandation ou une nécessité avec la forme de base du verbe.",
+    explanation: [
+      "Après certains verbes (suggest, recommend, insist, demand, require), on utilise that + sujet + verbe de base, sans « s » à la 3e personne : I suggest that he see a doctor (je suggère qu'il voie un médecin).",
+      "Même chose après des expressions comme it is essential / important / vital that : It is essential that she be informed (il est essentiel qu'elle soit informée).",
+      "La forme de base ne change jamais : que ce soit I, you, he, she, it ou they. On dit donc « he see », pas « he sees ».",
+      "À l'oral, la forme est plus rare, mais elle reste très utilisée dans les contextes formels, comme les réunions ou les courriers."
+    ],
+    examples: [
+      { en: "I suggest that he see a doctor.", fr: "Je suggère qu'il voie un médecin." },
+      { en: "It is essential that she be informed.", fr: "Il est essentiel qu'elle soit informée." },
+      { en: "They demanded that the report be finished by Friday.", fr: "Ils ont exigé que le rapport soit terminé vendredi." },
+      { en: "The doctor recommended that he take a break.", fr: "Le médecin a recommandé qu'il prenne une pause." },
+      { en: "I insist that you come with us.", fr: "J'insiste pour que tu viennes avec nous." }
+    ],
+    pronunciation: "Dans « he be », la forme est courte et plate. « Be » se dit « bi ». Ne rajoute pas de « s » à la fin.",
+    vocab: [
+      { en: "suggest", fr: "suggérer", example: "I suggest a different plan.", exampleFr: "Je suggère un autre plan.", context: "communication" },
+      { en: "recommend", fr: "recommander", example: "I recommend this book.", exampleFr: "Je recommande ce livre.", context: "communication" },
+      { en: "insist", fr: "insister", example: "She insisted on paying.", exampleFr: "Elle a insisté pour payer.", context: "communication" },
+      { en: "essential", fr: "essentiel", example: "Water is essential for life.", exampleFr: "L'eau est essentielle à la vie.", context: "qualités" },
+      { en: "demand", fr: "exiger", example: "They demanded an explanation.", exampleFr: "Ils ont exigé une explication.", context: "communication" }
+    ],
+    exercises: [
+      { q: "Complète : « I suggest that he ___ a doctor. »", options: ["see", "sees", "saw", "is seeing"], answer: 0, explain: "Après « suggest that », on utilise la forme de base : see." },
+      { q: "Complète : « It is essential that she ___ informed. »", options: ["be", "is", "will be", "was"], answer: 0, explain: "Après « essential that », la forme de base : be." },
+      { q: "Complète : « They demanded that the report ___ by Friday. »", options: ["be finished", "is finished", "will be finished", "was finishing"], answer: 0, explain: "Après « demanded that », on utilise la forme de base : be finished." },
+      { q: "Quelle phrase est correcte ?", options: ["The doctor recommended that he takes a break.", "The doctor recommended that he take a break.", "The doctor recommended that he took a break.", "The doctor recommended him to takes a break."], answer: 1, explain: "Après « recommended that », on utilise la forme de base : take." }
+    ]
+  },
+  {
+    id: "c1-modal-perfect",
+    level: "C1",
+    title: "Les modaux du passé : needn't have, must have been",
+    objective: "Parler de ce qui était inutile, ou faire une déduction sur le passé avec nuance.",
+    explanation: [
+      "Needn't have + participe passé signifie « ce n'était pas nécessaire, mais on l'a fait » : You needn't have come so early (tu n'avais pas besoin de venir si tôt, mais tu es venu).",
+      "Ne pas confondre avec didn't need to : She didn't need to come (elle n'a pas eu besoin de venir, elle n'est peut-être pas venue).",
+      "Pour une déduction très probable sur le passé : must have been. She must have been very tired (elle devait être très fatiguée).",
+      "May well et could well expriment une probabilité forte : He may well be right (il a très bien pu avoir raison)."
+    ],
+    examples: [
+      { en: "You needn't have come so early.", fr: "Tu n'avais pas besoin de venir si tôt." },
+      { en: "She didn't need to come, so she stayed home.", fr: "Elle n'avait pas besoin de venir, donc elle est restée chez elle." },
+      { en: "She must have been very tired after the trip.", fr: "Elle devait être très fatiguée après le voyage." },
+      { en: "He may well be right about the price.", fr: "Il a très bien pu avoir raison sur le prix." },
+      { en: "They could well have missed the train.", fr: "Ils ont très bien pu rater le train." }
+    ],
+    pronunciation: "« Needn't have » se dit « nìdnt av ». « May well » : le « well » est léger, « mèï wel ».",
+    vocab: [
+      { en: "necessary", fr: "nécessaire", example: "Is it necessary?", exampleFr: "Est-ce nécessaire ?", context: "qualités" },
+      { en: "trip", fr: "voyage, trajet", example: "We had a long trip.", exampleFr: "Nous avons fait un long voyage.", context: "voyage" },
+      { en: "probably", fr: "probablement", example: "He will probably come.", exampleFr: "Il viendra probablement.", context: "probabilité" },
+      { en: "right", fr: "juste, dans le vrai", example: "You are right.", exampleFr: "Tu as raison.", context: "opinions" },
+      { en: "miss", fr: "rater, manquer", example: "We missed the last bus.", exampleFr: "Nous avons raté le dernier bus.", context: "transport" }
+    ],
+    exercises: [
+      { q: "Complète : « You ___ paid. I already did it. » (c'était inutile)", options: ["needn't have", "mustn't have", "couldn't have", "shouldn't"], answer: 0, explain: "« Needn't have » : ce n'était pas nécessaire, mais c'est fait." },
+      { q: "Complète : « She ___ very tired after the long flight. » (déduction sur le passé)", options: ["must have been", "must be", "must have", "can't be"], answer: 0, explain: "Déduction sur le passé : must have been + adjectif." },
+      { q: "Complète : « He ___ right about the result. » (probablement)", options: ["may well be", "may be well", "well may", "is well"], answer: 0, explain: "« May well » exprime une forte probabilité : may well be." },
+      { q: "Quelle phrase est correcte ?", options: ["You needn't have come, but you did.", "You needn't come, but you did.", "You needn't to have come.", "You needn't have came."], answer: 0, explain: "« Needn't have » + participe passé : have come." }
+    ]
+  },
+  {
+    id: "c1-participle-clauses",
+    level: "C1",
+    title: "Les propositions participes : having finished, written in a hurry",
+    objective: "Relier deux idées avec une structure plus courte et plus élégante.",
+    explanation: [
+      "Pour une action terminée avant l'action principale, on utilise having + participe passé : Having finished dinner, we went out (après avoir dîné, nous sommes sortis).",
+      "Pour une action en cours, on utilise le verbe en -ing : Walking home, I met an old friend (en rentrant chez moi, j'ai rencontré un vieil ami).",
+      "Pour une phrase passive réduite, on utilise le participe passé : Written in a hurry, the letter had mistakes (écrite à la hâte, la lettre contenait des fautes).",
+      "Le sujet de la proposition réduite doit être le même que le sujet de la phrase principale. Sinon, la phrase devient confuse : « Walking home, the rain started » est une erreur."
+    ],
+    examples: [
+      { en: "Having finished dinner, we went out for a walk.", fr: "Après avoir dîné, nous sommes sortis faire un tour." },
+      { en: "Walking home, I met an old friend.", fr: "En rentrant chez moi, j'ai rencontré un vieil ami." },
+      { en: "Written in a hurry, the letter contained mistakes.", fr: "Écrite à la hâte, la lettre contenait des fautes." },
+      { en: "Seen from above, the city looks very small.", fr: "Vue d'en haut, la ville paraît très petite." },
+      { en: "Having lost my keys, I couldn't open the door.", fr: "Ayant perdu mes clés, je n'ai pas pu ouvrir la porte." }
+    ],
+    pronunciation: "« Having finished » se dit « hav-ing fi-nisht ». Les formes courtes sont enchaînées, sans pause.",
+    vocab: [
+      { en: "hurry", fr: "hâte, précipitation", example: "Don't hurry, we have time.", exampleFr: "Ne te presse pas, nous avons le temps.", context: "temps" },
+      { en: "above", fr: "au-dessus, d'en haut", example: "The plane flew above the clouds.", exampleFr: "L'avion volait au-dessus des nuages.", context: "lieux" },
+      { en: "mistake", fr: "faute, erreur", example: "I made a mistake.", exampleFr: "J'ai fait une erreur.", context: "écriture" },
+      { en: "finish", fr: "finir, terminer", example: "I finished my report.", exampleFr: "J'ai terminé mon rapport.", context: "travail" },
+      { en: "lose", fr: "perdre (passé : lost)", example: "I lost my phone.", exampleFr: "J'ai perdu mon téléphone.", context: "quotidien" }
+    ],
+    exercises: [
+      { q: "Complète : « ___ the report, she sent it to her boss. »", options: ["Having finished", "Finishing", "Finished to", "Has finished"], answer: 0, explain: "Une action terminée avant l'action principale : having + participe passé." },
+      { q: "Complète : « ___ home late, I found the door open. »", options: ["Arriving", "Having arrived to", "Arrive", "Arrived to"], answer: 0, explain: "Une action simultanée ou juste avant : verbe en -ing." },
+      { q: "Complète : « ___ in a hurry, the letter had many mistakes. »", options: ["Written", "Writing", "Having written", "Write"], answer: 0, explain: "Pour une forme passive réduite : participe passé seul." },
+      { q: "Quelle phrase est correcte ?", options: ["Having finished the test, the teacher left.", "Having finished the test, we left the room.", "Having finished the test, the room was empty.", "Finishing the test, the bell rang for us."], answer: 1, explain: "Le sujet de la proposition réduite doit être le même que celui de la phrase principale : nous avons terminé, donc nous sommes sortis." }
+    ]
+  },
+  {
+    id: "c1-emphasis",
+    level: "C1",
+    title: "Insister avec do et avec la structure it is ... that",
+    objective: "Renforcer une affirmation, ou mettre en avant un moment précis.",
+    explanation: [
+      "Pour insister sur un verbe au présent ou au passé, on ajoute do ou did : I do believe you're right (je crois vraiment que tu as raison).",
+      "À l'impératif, do sert à insister et à rendre la demande plus chaleureuse : Do come in! (entre donc, je t'en prie !).",
+      "Pour mettre en avant un moment précis, on utilise It was not until ... that : It was not until 2010 that the law changed (ce n'est qu'en 2010 que la loi a changé).",
+      "L'inversion suit cette structure : Not until 2010 did the law change."
+    ],
+    examples: [
+      { en: "I do believe you are right.", fr: "Je crois vraiment que tu as raison." },
+      { en: "She did finish the project, despite the delays.", fr: "Elle a bel et bien terminé le projet, malgré les retards." },
+      { en: "Do come in, the tea is ready.", fr: "Entre donc, le thé est prêt." },
+      { en: "It was not until 2010 that the law changed.", fr: "Ce n'est qu'en 2010 que la loi a changé." },
+      { en: "Not until midnight did we finally go to bed.", fr: "Ce n'est qu'à minuit que nous sommes enfin allés nous coucher." }
+    ],
+    pronunciation: "Dans « do believe », le « do » est accentué : « du bi-LIEV ». Dans « Do come in », insiste sur « come ».",
+    vocab: [
+      { en: "delay", fr: "retard", example: "The flight had a delay.", exampleFr: "Le vol a eu du retard.", context: "voyage" },
+      { en: "law", fr: "loi", example: "The new law starts in March.", exampleFr: "La nouvelle loi entre en vigueur en mars.", context: "société" },
+      { en: "finally", fr: "enfin", example: "We finally arrived.", exampleFr: "Nous sommes enfin arrivés.", context: "temps" },
+      { en: "believe", fr: "croire", example: "I believe in you.", exampleFr: "Je crois en toi.", context: "opinions" },
+      { en: "despite", fr: "malgré", example: "Despite the rain, we went out.", exampleFr: "Malgré la pluie, nous sommes sortis.", context: "liaison" }
+    ],
+    exercises: [
+      { q: "Complète pour insister : « I ___ believe you are right. »", options: ["do", "am", "does", "did be"], answer: 0, explain: "Pour insister au présent : do + verbe de base." },
+      { q: "Complète : « It was not ___ 2010 ___ the law changed. »", options: ["until / that", "after / when", "since / that", "until / when"], answer: 0, explain: "« It was not until ... that » met en avant un moment précis." },
+      { q: "Complète l'inversion : « Not until midnight ___ we go to bed. »", options: ["did", "do", "were", "have"], answer: 0, explain: "Après « not until » en début de phrase : did + sujet + verbe de base." },
+      { q: "Quelle phrase est correcte pour insister à l'impératif ?", options: ["Do come in, please.", "Come do in, please.", "Do coming in, please.", "Come, do in please."], answer: 0, explain: "À l'impératif, « Do » + verbe de base sert à insister." }
+    ]
+  },
+  {
+    id: "c1-narrative-tenses",
+    level: "C1",
+    title: "Raconter le passé : had been doing, used to, would",
+    objective: "Organiser une histoire avec les bons temps du passé.",
+    explanation: [
+      "Pour une action qui durait avant un autre moment passé, on utilise le past perfect continuous : By the time we arrived, they had been waiting for two hours (quand nous sommes arrivés, ils attendaient depuis deux heures).",
+      "Dans un récit, on utilise le past simple pour les actions principales, et le past continuous pour le décor : It was raining when she arrived (il pleuvait quand elle est arrivée).",
+      "Pour une habitude passée, on peut utiliser used to ou would dans un récit : Every summer, we would go to the coast (chaque été, nous allions à la côte).",
+      "Would ne parle pas d'un état : on dit « we used to have a house », pas « we would have a house »."
+    ],
+    examples: [
+      { en: "By the time we arrived, they had been waiting for two hours.", fr: "Quand nous sommes arrivés, ils attendaient depuis deux heures." },
+      { en: "It was raining when she arrived at the station.", fr: "Il pleuvait quand elle est arrivée à la gare." },
+      { en: "Every summer, we would go to the coast.", fr: "Chaque été, nous allions à la côte." },
+      { en: "We used to have a small house by the river.", fr: "Nous avions une petite maison au bord de la rivière." },
+      { en: "He had been working all night, so he was exhausted.", fr: "Il travaillait toute la nuit, alors il était épuisé." }
+    ],
+    pronunciation: "« Had been » se dit « 'd bin ». Dans un récit, les temps se suivent avec un rythme régulier.",
+    vocab: [
+      { en: "coast", fr: "côte, littoral", example: "We live near the coast.", exampleFr: "Nous habitons près de la côte.", context: "lieux" },
+      { en: "exhausted", fr: "épuisé", example: "I was exhausted after the race.", exampleFr: "J'étais épuisé après la course.", context: "émotions" },
+      { en: "station", fr: "gare", example: "Meet me at the station.", exampleFr: "Retrouve-moi à la gare.", context: "transport" },
+      { en: "by the river", fr: "au bord de la rivière", example: "The café is by the river.", exampleFr: "Le café est au bord de la rivière.", context: "lieux" },
+      { en: "wait", fr: "attendre", example: "We waited for the bus.", exampleFr: "Nous avons attendu le bus.", context: "transport" }
+    ],
+    exercises: [
+      { q: "Complète : « By the time we got there, they ___ for an hour. »", options: ["had been waiting", "were waiting", "waited", "have been waiting"], answer: 0, explain: "Une action qui durait avant un autre moment passé : had been + -ing." },
+      { q: "Complète (décor) : « It ___ when she arrived. »", options: ["was raining", "rained", "had rained", "has been raining"], answer: 0, explain: "Le décor d'un récit se dit au past continuous : was raining." },
+      { q: "Complète (habitude passée) : « Every summer, we ___ to the coast. »", options: ["would go", "would have gone", "would went", "are going"], answer: 0, explain: "Dans un récit, « would » + verbe de base exprime une habitude passée." },
+      { q: "Quelle phrase est correcte pour un état passé ?", options: ["We used to have a house by the river.", "We would have a house by the river.", "We would had a house by the river.", "We were used to have a house."], answer: 0, explain: "Pour un état, on utilise « used to », pas « would »." }
+    ]
+  },
+  {
+    id: "c1-hedging",
+    level: "C1",
+    title: "Nuancer son opinion : to some extent, arguably, on balance",
+    objective: "Exprimer une opinion avec prudence, en reconnaissant les limites de son propos.",
+    explanation: [
+      "Pour adoucir une affirmation, on utilise des expressions comme arguably (on peut dire que), to some extent (dans une certaine mesure), in my view (à mon avis).",
+      "Pour introduire une opinion nuancée : It could be argued that ... (on pourrait soutenir que ...).",
+      "Pour conclure avec un bilan équilibré : On balance, the plan is sound (tout bien considéré, le plan est solide).",
+      "L'objectif n'est pas de ne rien dire, mais de montrer qu'on connaît les limites de son opinion. C'est une compétence très valorisée dans les examens et au travail."
+    ],
+    examples: [
+      { en: "To some extent, I agree with you.", fr: "Dans une certaine mesure, je suis d'accord avec toi." },
+      { en: "It could be argued that the plan is too expensive.", fr: "On pourrait soutenir que le plan est trop cher." },
+      { en: "Arguably, technology has improved our lives.", fr: "On peut dire que la technologie a amélioré nos vies." },
+      { en: "On balance, the project is worth the risk.", fr: "Tout bien considéré, le projet vaut le risque." },
+      { en: "In my view, we need more time.", fr: "À mon avis, nous avons besoin de plus de temps." }
+    ],
+    pronunciation: "« Arguably » se dit « ARG-yoo-ab-li » : l'accent est sur la première syllabe. « To some extent » se dit « tou sem ikstent ».",
+    vocab: [
+      { en: "argue", fr: "soutenir un argument", example: "They argued that prices were too high.", exampleFr: "Ils ont soutenu que les prix étaient trop élevés.", context: "débat" },
+      { en: "extent", fr: "mesure, degré", example: "To what extent is this true?", exampleFr: "Dans quelle mesure est-ce vrai ?", context: "débat" },
+      { en: "balance", fr: "équilibre, bilan", example: "We need a balance between work and rest.", exampleFr: "Il faut un équilibre entre travail et repos.", context: "débat" },
+      { en: "sound", fr: "solide, bien fondé", example: "It is a sound argument.", exampleFr: "C'est un argument solide.", context: "débat" },
+      { en: "risk", fr: "risque", example: "There is a risk of delay.", exampleFr: "Il y a un risque de retard.", context: "débat" }
+    ],
+    exercises: [
+      { q: "Quelle expression signifie « dans une certaine mesure » ?", options: ["to some extent", "to all extent", "in some extend", "at some extent"], answer: 0, explain: "« To some extent » veut dire « dans une certaine mesure »." },
+      { q: "Complète : « It ___ be argued that the plan is too expensive. »", options: ["could", "must", "is", "does"], answer: 0, explain: "« It could be argued that » introduit une opinion nuancée." },
+      { q: "Complète pour un bilan équilibré : « ___, the project is worth the risk. »", options: ["On balance", "On balancing", "In balance to", "By balance"], answer: 0, explain: "« On balance » conclut en tenant compte du pour et du contre." },
+      { q: "Quelle expression exprime « à mon avis » ?", options: ["In my view", "In my vision of", "On my view to", "By my view"], answer: 0, explain: "« In my view » est la formule courante pour introduire son avis." }
+    ]
   }
 ];
