@@ -2578,5 +2578,71 @@ window.LESSONS = [
       { q: "Que veut dire « let the cat out of the bag » ?", options: ["sortir un animal", "perdre un sac", "révéler un secret", "fermer une porte"], answer: 2, explain: "L'idiome signifie révéler un secret, souvent par erreur." },
       { q: "Que veut dire « hit the books » ?", options: ["frapper quelqu'un", "acheter des livres", "partir en vacances", "se mettre à réviser"], answer: 3, explain: "L'idiome signifie se mettre sérieusement à réviser." }
     ]
+  },
+  {
+    id: "c1-high-time-subjunctive",
+    level: "C1",
+    title: "Il est grand temps : it's high time, I'd rather, if only",
+    objective: "Exprimer une urgence, un regret ou un souhait avec un temps du passé qui parle du présent.",
+    explanation: [
+      "It's high time + sujet + passé simple exprime une urgence : It's high time we left (il est grand temps que nous partions). Le passé ici ne parle pas du passé.",
+      "I'd rather + sujet + passé simple exprime une préférence pour une autre personne : I'd rather you didn't tell him (je préfère que tu ne lui dises pas).",
+      "If only + passé simple exprime un regret sur le présent, et if only + past perfect sur le passé : If only I knew the answer (si seulement je connaissais la réponse).",
+      "Ces structures donnent de la nuance et du naturel à l'oral comme à l'écrit."
+    ],
+    examples: [
+      { en: "It's high time we left for the airport.", fr: "Il est grand temps que nous partions pour l'aéroport." },
+      { en: "I'd rather you didn't tell him yet.", fr: "Je préfère que tu ne lui dises rien pour l'instant." },
+      { en: "If only I knew the answer.", fr: "Si seulement je connaissais la réponse." },
+      { en: "If only we had left earlier.", fr: "Si seulement nous étions partis plus tôt." },
+      { en: "It's high time someone did something about the traffic.", fr: "Il est grand temps que quelqu'un fasse quelque chose pour la circulation." }
+    ],
+    pronunciation: "« High time » se dit « hai taim ». « If only » se dit « if ounly » : le « l » est léger.",
+    vocab: [
+      { en: "urgent", fr: "urgent", example: "This is urgent.", exampleFr: "C'est urgent.", context: "temps" },
+      { en: "regret", fr: "regret", example: "I have no regrets.", exampleFr: "Je n'ai aucun regret.", context: "émotions" },
+      { en: "airport", fr: "aéroport", example: "The airport is far from the city.", exampleFr: "L'aéroport est loin de la ville.", context: "voyage" },
+      { en: "traffic", fr: "circulation", example: "The traffic is heavy this morning.", exampleFr: "La circulation est dense ce matin.", context: "transport" },
+      { en: "earlier", fr: "plus tôt", example: "Please come earlier.", exampleFr: "Viens plus tôt, s'il te plaît.", context: "temps" }
+    ],
+    exercises: [
+      { q: "Complète : « It's high time we ___. » (partir)", options: ["left", "leave", "will leave", "are leaving"], answer: 0, explain: "Après « it's high time », on utilise le passé simple : left." },
+      { q: "Complète : « I'd rather you ___ him yet. » (ne pas dire)", options: ["don't tell", "didn't tell", "won't tell", "not tell"], answer: 1, explain: "Préférence pour une autre personne : passé simple après « I'd rather »." },
+      { q: "Complète : « If only I ___ the answer now. » (regret présent)", options: ["know", "would know", "knew", "have known"], answer: 2, explain: "Regret sur le présent : if only + passé simple." },
+      { q: "Complète : « If only we ___ earlier. » (regret passé)", options: ["left", "would leave", "leave", "had left"], answer: 3, explain: "Regret sur le passé : if only + past perfect." }
+    ]
+  },
+  {
+    id: "c2-ellipsis-advanced",
+    level: "C2",
+    title: "Éviter les répétitions : some ... others, if so, if necessary",
+    objective: "Supprimer les mots répétés pour écrire avec fluidité, comme un locuteur expérimenté.",
+    explanation: [
+      "Dans une énumération, on supprime le verbe répété : Some were happy, others (were) not. Le verbe est sous-entendu après others.",
+      "On remplace une phrase par so ou not : Is it possible? If so, tell me how (si c'est possible, dis-moi comment). If not, we'll wait (sinon, nous attendrons).",
+      "On utilise if necessary, if appropriate, if possible pour une précision courte : Call me if necessary (appelle-moi si nécessaire).",
+      "Ces formules sont courantes dans les consignes et les rapports. Elles rendent le texte plus dense et plus élégant."
+    ],
+    examples: [
+      { en: "Some students were happy, others were not.", fr: "Certains élèves étaient contents, d'autres non." },
+      { en: "Is the room free? If so, let's book it.", fr: "La salle est libre ? Si oui, réservons-la." },
+      { en: "If not, we will look for another venue.", fr: "Sinon, nous chercherons un autre lieu." },
+      { en: "Call me if necessary.", fr: "Appelle-moi si nécessaire." },
+      { en: "Some came by car, others by train.", fr: "Certains sont venus en voiture, d'autres en train." }
+    ],
+    pronunciation: "Dans « others were not », l'accent tombe sur « not ». « If so » se dit d'un souffle, sans pause.",
+    vocab: [
+      { en: "venue", fr: "lieu (salle, site)", example: "The venue is near the station.", exampleFr: "Le lieu est près de la gare.", context: "événement" },
+      { en: "free", fr: "libre", example: "Is this seat free?", exampleFr: "Cette place est-elle libre ?", context: "quotidien" },
+      { en: "book", fr: "réserver", example: "We booked a table.", exampleFr: "Nous avons réservé une table.", context: "quotidien" },
+      { en: "necessary", fr: "nécessaire", example: "It is necessary to sign.", exampleFr: "Il est nécessaire de signer.", context: "formel" },
+      { en: "appropriate", fr: "approprié", example: "Choose an appropriate time.", exampleFr: "Choisis un moment approprié.", context: "formel" }
+    ],
+    exercises: [
+      { q: "Complète : « Some were late, others ___ on time. »", options: ["were", "was", "are", "did"], answer: 0, explain: "Le verbe est sous-entendu après « others » : others were." },
+      { q: "Complète : « Is it possible? If ___, tell me how. »", options: ["it", "so", "yes", "that"], answer: 1, explain: "« If so » remplace toute la phrase précédente : si c'est le cas." },
+      { q: "Complète : « Call me ___. » (si besoin)", options: ["if need", "if necessity", "if necessary", "in necessary"], answer: 2, explain: "« If necessary » signifie si nécessaire." },
+      { q: "Complète : « If ___, we will look elsewhere. » (sinon)", options: ["no", "none", "never", "not"], answer: 3, explain: "« If not » signifie sinon." }
+    ]
   }
 ];
